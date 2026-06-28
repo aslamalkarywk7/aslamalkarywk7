@@ -1,0 +1,1156 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Islam El-Nashar — Web & Game Developer & AI Enthusiast from Egypt. Explore projects, skills, and get in touch." />
+    <meta name="author" content="Islam El-Nashar" />
+    <meta name="keywords" content="Islam El-Nashar, Web Developer, Game Developer, AI Enthusiast, Portfolio, Egypt, إسلام الناشر, مطور ويب, مطور ألعاب, برمجيات" />
+    <meta name="copyright" content="© 2026 Islam El-Nashar. All rights reserved." />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Islam El-Nashar — Web & Game Developer & AI Enthusiast</title>
+    <link rel="icon" type="image/png" href="img/logo_icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <!-- Space Grotesk: used for the footer identity badge -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <header class="nav" id="nav" role="banner">
+        <div class="nav__inner container">
+            <a href="#" class="nav__logo" aria-label="Home">
+                <svg class="nav__logo-icon" width="32" height="32" viewBox="0 0 100 100" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <!-- Hexagon frame -->
+                    <polygon points="50,15 85,35 85,75 50,95 15,75 15,35" class="logo-hex" />
+                    <!-- Core pulse -->
+                    <circle cx="50" cy="55" r="12" class="logo-core" />
+                    <!-- Inner tech triangles / brackets -->
+                    <path d="M 36 45 L 26 55 L 36 65" class="logo-bracket-left" />
+                    <path d="M 64 45 L 74 55 L 64 65" class="logo-bracket-right" />
+                    <!-- Orbiting node -->
+                    <circle cx="50" cy="15" r="5" class="logo-orbit" />
+                </svg>
+                <div class="nav__logo-text">
+                    <span class="nav__logo-name">Islam El-Nashar</span>
+                    <span class="nav__logo-sub">aslamalkarywk7</span>
+                </div>
+            </a>
+            <nav class="nav__links" role="navigation" aria-label="Main navigation">
+                <a href="#about" class="nav__link" data-i18n="nav.about">About</a>
+                <a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a>
+                <a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a>
+                <a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a>
+            </nav>
+            <div class="nav__actions">
+                <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Toggle language" title="Switch language">
+                    <span class="lang-toggle-btn__globe" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </span>
+                    <span class="lang-toggle-btn__label" data-i18n="lang.btn">عربي</span>
+                </button>
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ═══════════════ HERO ═══════════════ -->
+        <section class="hero" id="hero" aria-label="Introduction">
+            <canvas id="hero-canvas" class="hero__canvas"></canvas>
+            <div class="hero__inner container">
+                <div class="hero__content">
+                    <p class="hero__greeting reveal" data-i18n="hero.greeting">Hi, I'm</p>
+                    <h1 class="hero__name reveal">Islam El-Nashar</h1>
+                    <p class="hero__headline reveal" data-i18n="hero.headline">Web &amp; Game Developer &amp; AI Enthusiast from Egypt</p>
+                    <p class="hero__desc reveal" id="hero-desc-text">
+                        A <span id="age" class="hero__age" aria-label="Dynamic age">19</span>-year-old developer crafting the future of web and
+                        gaming — blending clean code with creative vision to build innovative, complex platforms.
+                    </p>
+                    <div class="hero__actions reveal">
+                        <a href="#projects" class="btn btn--primary" data-i18n="hero.cta1">Explore My Projects</a>
+                        <a href="#contact" class="btn btn--secondary" data-i18n="hero.cta2">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="hero__visual reveal">
+                    <div class="hero__image-wrapper">
+                        <div class="hero__image-glow"></div>
+                        <img class="hero__image" src="img/my.png" alt="Islam El-Nashar — Web & Game Developer"
+                            width="320" height="320" loading="eager" />
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator" aria-hidden="true">
+                <span class="hero__scroll-line"></span>
+            </div>
+        </section>
+
+        <!-- ═══════════════ ABOUT ═══════════════ -->
+        <section class="about section" id="about" aria-label="About me">
+            <div class="container">
+                <h2 class="section__title reveal" data-i18n="about.title">About Me</h2>
+                <div class="about__grid">
+                    <div class="about__text reveal">
+                        <p data-i18n="about.p1" data-i18n-html>I'm <strong>Islam El-Nashar</strong> (إسلام النشار), a passionate developer from Egypt with deep experience in <strong>web development</strong>, <strong>game programming</strong>, and <strong>AI research</strong> — all built through extensive self-learning and hands-on project building.</p>
+                        <p data-i18n="about.p2" data-i18n-html>Currently, I'm working on small and medium-sized <strong>AI</strong> projects while planning a large-scale AI initiative. I love coding, designing, and building innovative, complex technical platforms that push boundaries.</p>
+                        <p data-i18n="about.p3" data-i18n-html>Right now I'm focused on mastering <strong>advanced AI</strong> and <strong>full-stack web development</strong> to create tools and experiences that make a real impact.</p>
+                        <!-- <div class="about__actions" style="margin-top: 24px;">
+                            <a href="cv.html" class="btn btn--secondary" data-i18n="about.cv">View CV</a>
+                        </div> -->
+                    </div>
+                    <div class="about__stats reveal">
+                        <div class="about__stat">
+                            <span class="about__stat-number" id="ageStat">19</span>
+                            <span class="about__stat-label" data-i18n="about.stat1">Years Old</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">6+</span>
+                            <span class="about__stat-label" data-i18n="about.stat2">Languages</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">30+</span>
+                            <span class="about__stat-label" data-i18n="about.stat3">Technologies</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">∞</span>
+                            <span class="about__stat-label" data-i18n="about.stat4">Curiosity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ GITHUB ACTIVITY ═══════════════ -->
+        <section class="github-activity section" id="github-activity" aria-label="GitHub Contribution Activity">
+            <div class="container">
+                <div class="github-activity-chart reveal">
+                    <h2 class="github-activity-chart__heading" data-i18n="github.heading">GitHub Contribution Ecosystem</h2>
+                    <p class="github-activity-chart__sub" data-i18n="github.sub">A live snapshot of my public activity and coding stats.</p>
+                    <div class="github-activity-chart__images">
+                        <img src="https://github-readme-stats.vercel.app/api?username=aslamalkarywk7&show_icons=true&locale=en&theme=tokyonight&count_private=true&hide_border=true"
+                            alt="Islam El-Nashar's GitHub Contribution Chart" class="github-activity-chart__img"
+                            loading="lazy" />
+                        <img src="https://streak-stats.demolab.com?user=aslamalkarywk7&theme=tokyonight&hide_border=true"
+                            alt="Islam El-Nashar's GitHub Streak Stats" class="github-activity-chart__img"
+                            loading="lazy" />
+                    </div>
+                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=aslamalkarywk7&theme=tokyo-night&hide_border=true&area=true"
+                        alt="Islam El-Nashar's GitHub Activity Graph" class="github-activity-chart__graph"
+                        loading="lazy" />
+                    <!-- ── Trophies row ───────────────────────── -->
+                    <div class="github-trophies">
+                        <p class="github-trophies__heading" data-i18n="github.trophies">Collaboration &amp; Badges</p>
+                        <img src="https://github-profile-trophy.vercel.app/?username=aslamalkarywk7&theme=darkhub&no-bg=true&no-frame=true&margin-w=15"
+                            alt="Islam El-Nashar's GitHub Profile Trophies" class="github-trophies__img"
+                            loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ OPEN SOURCE IMPACT ═══════════════ -->
+        <!-- Cards are rendered dynamically from the GitHub PR Search API -->
+        <section class="oss-impact section" id="oss-impact" aria-label="Open Source Contributions">
+            <div class="container">
+                <h2 class="section__title reveal" data-i18n="oss.title">Open Source Impact</h2>
+                <p class="section__subtitle reveal" data-i18n="oss.subtitle">Real pull requests fetched live from the GitHub API — every card links directly to the actual contribution.</p>
+                <!-- oss-cards is populated entirely by script.js -->
+                <div class="oss-grid" id="oss-cards" aria-live="polite" aria-label="Open source contributions list">
+                    <!-- ── Skeleton placeholders (replaced by JS) ──── -->
+                    <div class="oss-card oss-card--skel" aria-hidden="true">
+                        <div class="oss-skel oss-skel--title"></div>
+                        <div class="oss-skel oss-skel--sub"></div>
+                        <div class="oss-skel oss-skel--body"></div>
+                        <div class="oss-skel oss-skel--body short"></div>
+                    </div>
+                    <div class="oss-card oss-card--skel" aria-hidden="true">
+                        <div class="oss-skel oss-skel--title"></div>
+                        <div class="oss-skel oss-skel--sub"></div>
+                        <div class="oss-skel oss-skel--body"></div>
+                        <div class="oss-skel oss-skel--body short"></div>
+                    </div>
+                    <div class="oss-card oss-card--skel" aria-hidden="true">
+                        <div class="oss-skel oss-skel--title"></div>
+                        <div class="oss-skel oss-skel--sub"></div>
+                        <div class="oss-skel oss-skel--body"></div>
+                        <div class="oss-skel oss-skel--body short"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ SKILLS ═══════════════ -->
+        <section class="skills section" id="skills" aria-label="Technical skills">
+            <div class="container">
+                <h2 class="section__title reveal" data-i18n="skills.title">Tech Stack</h2>
+                <p class="section__subtitle reveal" data-i18n="skills.subtitle">Technologies I work with, organized by domain.</p>
+
+                <div class="skills__tabs reveal" role="tablist" aria-label="Skill categories">
+                    <button class="skills__tab active" role="tab" aria-selected="true" aria-controls="tab-languages"
+                        id="btn-languages" data-tab="languages" data-i18n="skills.tab1">Languages</button>
+                    <button class="skills__tab" role="tab" aria-selected="false" aria-controls="tab-web" id="btn-web"
+                        data-tab="web" data-i18n="skills.tab2">Web &amp; Backend</button>
+                    <button class="skills__tab" role="tab" aria-selected="false" aria-controls="tab-ai" id="btn-ai"
+                        data-tab="ai" data-i18n="skills.tab3">AI &amp; DevOps</button>
+                    <button class="skills__tab" role="tab" aria-selected="false" aria-controls="tab-tools"
+                        id="btn-tools" data-tab="tools" data-i18n="skills.tab4">Design &amp; Tools</button>
+                </div>
+
+                <!-- Tab: Languages ─────────────────────────────────── -->
+                <div class="skills__panel active" role="tabpanel" id="tab-languages" aria-labelledby="btn-languages">
+                    <div class="skills__grid">
+                        <div class="skill-card" data-level="5">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">JavaScript</span>
+                            <div class="skill-card__mastery" aria-label="Expert">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">TypeScript</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">C#</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/c/c-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">C</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cplusplus/cplusplus-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">C++</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Java</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="5">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Python</span>
+                            <div class="skill-card__mastery" aria-label="Expert">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dart/dart-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Dart</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="2">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">VB</span>
+                            </div>
+                            <span class="skill-card__name">Visual Basic</span>
+                            <div class="skill-card__mastery" aria-label="Familiar">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Web & Backend ────────────────────────── -->
+                <div class="skills__panel" role="tabpanel" id="tab-web" aria-labelledby="btn-web" hidden>
+                    <div class="skills__grid">
+                        <div class="skill-card" data-level="5">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">HTML</span>
+                            <div class="skill-card__mastery" aria-label="Expert">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="5">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">CSS</span>
+                            <div class="skill-card__mastery" aria-label="Expert">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/tailwindcss/tailwindcss-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Tailwind</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">React</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/svelte/svelte-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Svelte</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/angularjs/angularjs-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">AngularJS</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jquery/jquery-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">jQuery</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flutter/flutter-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Flutter</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sass/sass-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Sass</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="5">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">JSON</span>
+                            </div>
+                            <span class="skill-card__name">JSON</span>
+                            <div class="skill-card__mastery" aria-label="Expert">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nodejs/nodejs-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Node.js</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">BUN</span>
+                            </div>
+                            <span class="skill-card__name">Bun</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card skill-card--inv" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/express/express-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Express.js</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card skill-card--inv" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/django/django-plain.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Django</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card skill-card--inv" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flask/flask-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Flask</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">tRPC</span>
+                            </div>
+                            <span class="skill-card__name">tRPC</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">LGT</span>
+                            </div>
+                            <span class="skill-card__name">Logto</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">DRC</span>
+                            </div>
+                            <span class="skill-card__name">Directus</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/wordpress/wordpress-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">WordPress</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card skill-card--inv" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/unity/unity-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Unity</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mongodb/mongodb-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">MongoDB</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">OS</span>
+                            </div>
+                            <span class="skill-card__name">OutSystems</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="2">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">ARIS</span>
+                            </div>
+                            <span class="skill-card__name">ARIS</span>
+                            <div class="skill-card__mastery" aria-label="Familiar">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="2">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">ALF</span>
+                            </div>
+                            <span class="skill-card__name">Alfabet</span>
+                            <div class="skill-card__mastery" aria-label="Familiar">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">WF</span>
+                            </div>
+                            <span class="skill-card__name">Webflow</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">BDB</span>
+                            </div>
+                            <span class="skill-card__name">Budibase</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">PA</span>
+                            </div>
+                            <span class="skill-card__name">Power Automate</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">PBI</span>
+                            </div>
+                            <span class="skill-card__name">Power BI</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: AI & DevOps ──────────────────────────── -->
+                <div class="skills__panel" role="tabpanel" id="tab-ai" aria-labelledby="btn-ai" hidden>
+                    <div class="skills__grid">
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Docker</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card skill-card--inv" data-level="5">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">GitHub</span>
+                            <div class="skill-card__mastery" aria-label="Expert">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/bitbucket/bitbucket-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Bitbucket</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/firebase/firebase-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Firebase</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/netlify/netlify-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Netlify</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">PSM</span>
+                            </div>
+                            <span class="skill-card__name">Plastic SCM</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">PFB</span>
+                            </div>
+                            <span class="skill-card__name">Playfab</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">SG</span>
+                            </div>
+                            <span class="skill-card__name">SiteGround</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">HF</span>
+                            </div>
+                            <span class="skill-card__name">Hugging Face</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">GMN</span>
+                            </div>
+                            <span class="skill-card__name">Gemini</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">LLM</span>
+                            </div>
+                            <span class="skill-card__name">Llama</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">GPT</span>
+                            </div>
+                            <span class="skill-card__name">GPT</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Design & Tools ───────────────────────── -->
+                <div class="skills__panel" role="tabpanel" id="tab-tools" aria-labelledby="btn-tools" hidden>
+                    <div class="skills__grid">
+                        <div class="skill-card" data-level="5">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">VS Code</span>
+                            <div class="skill-card__mastery" aria-label="Expert">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/visualstudio/visualstudio-plain.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Visual Studio</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postman/postman-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Postman</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">OBS</span>
+                            </div>
+                            <span class="skill-card__name">Obsidian</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">365</span>
+                            </div>
+                            <span class="skill-card__name">Office 365</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">CUR</span>
+                            </div>
+                            <span class="skill-card__name">Cursor AI</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">EXC</span>
+                            </div>
+                            <span class="skill-card__name">Excalidraw</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">MRM</span>
+                            </div>
+                            <span class="skill-card__name">Mermaid AI</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/blender/blender-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Blender</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/gimp/gimp-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">GIMP</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="4">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/figma/figma-original.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Figma</span>
+                            <div class="skill-card__mastery" aria-label="Advanced">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/photoshop/photoshop-plain.svg"
+                                    alt="" aria-hidden="true" loading="lazy" width="36" height="36" />
+                            </div>
+                            <span class="skill-card__name">Photoshop</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">AUD</span>
+                            </div>
+                            <span class="skill-card__name">Audacity</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-level="3">
+                            <div class="skill-card__icon">
+                                <span class="skill-card__icon-text">DVR</span>
+                            </div>
+                            <span class="skill-card__name">DaVinci Resolve</span>
+                            <div class="skill-card__mastery" aria-label="Proficient">
+                                <span class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span><span class="skill-card__dot"></span><span
+                                    class="skill-card__dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ PROJECTS ═══════════════ -->
+        <section class="projects section" id="projects" aria-label="GitHub projects">
+            <div class="container">
+                <h2 class="section__title reveal" data-i18n="projects.title">Projects</h2>
+                <p class="section__subtitle reveal" data-i18n="projects.subtitle">Pulled live from my GitHub — always up to date.</p>
+                <div class="projects__grid" id="github-projects">
+                    <!-- Skeleton loaders -->
+                    <div class="project-card skeleton">
+                        <div class="skeleton__bar"></div>
+                        <div class="skeleton__bar short"></div>
+                        <div class="skeleton__bar"></div>
+                    </div>
+                    <div class="project-card skeleton">
+                        <div class="skeleton__bar"></div>
+                        <div class="skeleton__bar short"></div>
+                        <div class="skeleton__bar"></div>
+                    </div>
+                    <div class="project-card skeleton">
+                        <div class="skeleton__bar"></div>
+                        <div class="skeleton__bar short"></div>
+                        <div class="skeleton__bar"></div>
+                    </div>
+                    <div class="project-card skeleton">
+                        <div class="skeleton__bar"></div>
+                        <div class="skeleton__bar short"></div>
+                        <div class="skeleton__bar"></div>
+                    </div>
+                    <div class="project-card skeleton">
+                        <div class="skeleton__bar"></div>
+                        <div class="skeleton__bar short"></div>
+                        <div class="skeleton__bar"></div>
+                    </div>
+                    <div class="project-card skeleton">
+                        <div class="skeleton__bar"></div>
+                        <div class="skeleton__bar short"></div>
+                        <div class="skeleton__bar"></div>
+                    </div>
+                </div>
+                <div class="projects__load-more" id="load-more-wrapper" style="display: none">
+                    <button id="load-more-btn" class="btn btn--primary" data-i18n="projects.loadmore">Load More Projects</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════ FOOTER / CONTACT HUB ═══════════════ -->
+    <footer class="footer" id="contact" role="contentinfo">
+        <div class="container">
+            <!-- ── Section header ───────────────────────────────── -->
+            <div class="contact-header reveal">
+                <h2 class="contact-title" data-i18n="contact.title">Get In Touch</h2>
+                <p class="contact-subtitle" data-i18n="contact.subtitle">Open to collaborations, freelance projects, and interesting conversations — let's build something great together.</p>
+            </div>
+
+            <!-- ── Dual-column hub ────────────────────────────── -->
+            <div class="contact-hub">
+                <!-- Left: Hub Cards ──────────────────────────── -->
+                <div class="contact-hub__left">
+                    <!-- Email Card — entire card is a mailto link -->
+                    <a href="mailto:aslamalkarywka@gmail.com" class="contact-card contact-card--email reveal"
+                        aria-label="Send email to Islam El-Nashar">
+                        <div class="contact-card__icon-wrap" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2.5" />
+                                <polyline points="2,5 12,14 22,5" />
+                            </svg>
+                        </div>
+                        <div class="contact-card__body">
+                            <span class="contact-card__label" data-i18n="contact.email.label">Drop an Email</span>
+                            <span class="contact-card__value">aslamalkarywka@gmail.com</span>
+                        </div>
+                        <span class="contact-card__arrow" aria-hidden="true">&#x2197;</span>
+                    </a>
+
+                    <!-- Social Hub Card — static container with live + coming-soon rows -->
+                    <div class="contact-card contact-card--socials reveal">
+                        <div class="contact-card__body">
+                            <span class="contact-card__label" data-i18n="contact.socials">Social Hubs</span>
+                        </div>
+                        <div class="social-rows">
+                            <!-- GitHub — live -->
+                            <a href="https://github.com/aslamalkarywk7" target="_blank" rel="noopener noreferrer"
+                                class="social-row social-row--active" aria-label="GitHub profile">
+                                <span class="social-row__icon" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                    </svg>
+                                </span>
+                                <span class="social-row__name">GitHub</span>
+                                <span class="social-row__arrow" aria-hidden="true">&#x2197;</span>
+                            </a>
+                            
+                            <!-- LinkedIn — coming soon
+                            <div class="social-row social-row--soon" aria-hidden="true">
+                                <span class="social-row__icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </span>
+                                <span class="social-row__name">LinkedIn</span>
+                                <span class="social-row__badge" data-i18n="contact.soon">Coming Soon</span>
+                            </div> -->
+
+                            <!-- Twitter / X — coming soon
+                            <div class="social-row social-row--soon" aria-hidden="true">
+                                <span class="social-row__icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.735-8.835L1.254 2.25H8.08l4.262 5.633 5.902-5.633zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    </svg>
+                                </span>
+                                <span class="social-row__name">Twitter / X</span>
+                                <span class="social-row__badge" data-i18n="contact.soon">Coming Soon</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form ─────────────────────────
+                <div class="contact-hub__right reveal">
+                    <div class="contact-form-wrap">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="contact-form__group">
+                                <label class="contact-form__label" for="cf-name" data-i18n="contact.form.name">Name</label>
+                                <input class="contact-form__input" type="text" id="cf-name" name="name"
+                                    placeholder="Islam El-Nashar" autocomplete="name" required />
+                            </div>
+                            <div class="contact-form__group">
+                                <label class="contact-form__label" for="cf-email" data-i18n="contact.form.email">Email</label>
+                                <input class="contact-form__input" type="email" id="cf-email" name="email"
+                                    placeholder="you@example.com" autocomplete="email" required />
+                            </div>
+                            <div class="contact-form__group">
+                                <label class="contact-form__label" for="cf-message" data-i18n="contact.form.msg">Message</label>
+                                <textarea class="contact-form__textarea" id="cf-message" name="message"
+                                    placeholder="Hey Islam, I'd love to collaborate on…" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="contact-form__btn" aria-label="Send message">
+                                <span class="contact-form__btn-text" data-i18n="contact.form.btn">Send Message</span>
+                                <svg class="contact-form__btn-icon" width="17" height="17" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="22" y1="2" x2="11" y2="13" />
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                </svg>
+                            </button>
+                        </form> -->
+                        <!-- Success state: shown by JS after submit -->
+                        <div class="contact-form__success" id="form-success" aria-live="polite" hidden>
+                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="9 12 11 14 15 10" />
+                            </svg>
+                            <p data-i18n="contact.success">Message received — I'll get back to you very soon!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Personal identity + Copyright ──────────────────────── -->
+            <div class="footer-bottom">
+                <!-- Developer identity badge: portrait + name -->
+                <div class="footer-identity" aria-label="Islam al-Nashera, Developer">
+                    <div class="footer-identity__portrait">
+                        <img src="img/my.png" alt="Islam El-Nashar — Web &amp; Game Developer" loading="lazy" width="52"
+                            height="52" />
+                    </div>
+                    <span class="footer-identity__name">islam al-Nashera DEV</span>
+                </div>
+                <p class="footer__copy">&copy; <span id="year"></span> <span data-i18n="footer.rights">Islam El-Nashar. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="animations.js" defer></script>
+    <script src="i18n.js" defer></script>
+</body>
+
+</html>

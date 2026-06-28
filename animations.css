@@ -1,0 +1,706 @@
+/* ═══════════════════════════════════════════
+   ADVANCED ANIMATIONS STYLES
+   Islam El-Nashar Portfolio — Animation CSS
+   ═══════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────
+   1. SCROLL PROGRESS BAR
+   ───────────────────────────────────────── */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent-l) 100%);
+    box-shadow: 0 0 10px var(--accent-glow);
+    z-index: 10000;
+    transition: width 0.1s ease-out;
+    width: 0;
+}
+
+/* ─────────────────────────────────────────
+   2. CUSTOM CURSOR
+   ───────────────────────────────────────── */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+    mix-blend-mode: difference;
+}
+
+.custom-cursor.cursor-hover {
+    width: 40px;
+    height: 40px;
+    border-color: var(--accent-l);
+}
+
+.custom-cursor-glow {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease;
+    filter: blur(40px);
+    opacity: 0.3;
+}
+
+.custom-cursor-glow.cursor-hover {
+    width: 300px;
+    height: 300px;
+    opacity: 0.5;
+}
+
+/* Hide on touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .custom-cursor,
+    .custom-cursor-glow {
+        display: none;
+    }
+}
+
+/* ─────────────────────────────────────────
+   3. RIPPLE EFFECT
+   ───────────────────────────────────────── */
+.ripple-effect {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-l) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9997;
+    animation: ripple-expand 1s ease-out forwards;
+}
+
+@keyframes ripple-expand {
+    0% {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+/* ─────────────────────────────────────────
+   4. HERO CANVAS BACKGROUND
+   ───────────────────────────────────────── */
+.hero__canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* ─────────────────────────────────────────
+   5. ENHANCED LOGO ANIMATIONS
+   ───────────────────────────────────────── */
+.logo-hex {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2;
+    animation: logo-hex-pulse 3s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes logo-hex-pulse {
+    0%,
+    100% {
+        stroke-width: 2;
+        opacity: 0.8;
+    }
+    50% {
+        stroke-width: 3;
+        opacity: 1;
+    }
+}
+
+.logo-core {
+    fill: var(--accent);
+    animation: logo-core-beat 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes logo-core-beat {
+    0%,
+    100% {
+        r: 12;
+        opacity: 0.8;
+    }
+    50% {
+        r: 14;
+        opacity: 1;
+    }
+}
+
+.logo-bracket-left,
+.logo-bracket-right {
+    fill: none;
+    stroke: var(--accent-l);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: logo-bracket-glow 2.5s ease-in-out infinite;
+}
+
+.logo-bracket-right {
+    animation-delay: 0.5s;
+}
+
+@keyframes logo-bracket-glow {
+    0%,
+    100% {
+        opacity: 0.6;
+        filter: drop-shadow(0 0 3px var(--accent));
+    }
+    50% {
+        opacity: 1;
+        filter: drop-shadow(0 0 8px var(--accent-l));
+    }
+}
+
+.logo-orbit {
+    fill: var(--accent-l);
+    filter: drop-shadow(0 0 5px var(--accent-glow));
+    animation: logo-orbit-pulse 2s ease-in-out infinite;
+}
+
+@keyframes logo-orbit-pulse {
+    0%,
+    100% {
+        r: 5;
+        opacity: 0.8;
+    }
+    50% {
+        r: 6;
+        opacity: 1;
+    }
+}
+
+/* Hover effect on nav logo */
+.nav__logo:hover .logo-hex {
+    stroke: var(--accent-l);
+    animation-duration: 1s;
+}
+
+.nav__logo:hover .logo-core {
+    fill: var(--white);
+    animation-duration: 1s;
+}
+
+/* ─────────────────────────────────────────
+   6. ACTIVE NAVIGATION LINK INDICATOR
+   ───────────────────────────────────────── */
+.nav__link.active {
+    color: var(--white);
+}
+
+.nav__link.active::after {
+    width: 100%;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+/* ─────────────────────────────────────────
+   7. SHIMMER ANIMATION FOR LOADING
+   ───────────────────────────────────────── */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        background-position: 200% 0;
+        opacity: 0.4;
+    }
+}
+
+/* ─────────────────────────────────────────
+   8. FLIP CARD ANIMATION (for future use)
+   ───────────────────────────────────────── */
+.flip-card {
+    perspective: 1000px;
+    position: relative;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* ─────────────────────────────────────────
+   9. ENHANCED SKILL CARD HOVER EFFECTS
+   ───────────────────────────────────────── */
+.skill-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        var(--accent-glow) 50%,
+        transparent 70%
+    );
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    animation: skill-shimmer 3s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes skill-shimmer {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+.skill-card:hover::after {
+    opacity: 1;
+    animation-play-state: running;
+}
+
+/* ─────────────────────────────────────────
+   10. MAGNETIC PROJECT CARDS
+   ───────────────────────────────────────── */
+.project-card {
+    transition: transform 0.1s ease-out, border-color 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        var(--accent-glow) 0%,
+        transparent 50%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: var(--radius);
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+/* ─────────────────────────────────────────
+   11. TEXT SPLIT ANIMATION
+   ───────────────────────────────────────── */
+.text-split {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.text-split span {
+    display: inline-block;
+    animation: text-slide-up 0.8s cubic-bezier(0.4, 0, 0.2, 1) backwards;
+}
+
+@keyframes text-slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Stagger delays for each character */
+.text-split span:nth-child(1) {
+    animation-delay: 0.05s;
+}
+.text-split span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.text-split span:nth-child(3) {
+    animation-delay: 0.15s;
+}
+.text-split span:nth-child(4) {
+    animation-delay: 0.2s;
+}
+.text-split span:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+/* ─────────────────────────────────────────
+   12. ENHANCED BUTTON ANIMATIONS
+   ───────────────────────────────────────── */
+.btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.btn:hover::before {
+    transform: translateX(100%);
+}
+
+.btn--primary {
+    box-shadow: 0 0 20px var(--accent-glow), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn--primary:hover {
+    animation: btn-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes btn-pulse {
+    0%,
+    100% {
+        box-shadow: 0 0 20px var(--accent-glow), 0 8px 32px var(--accent-glow);
+    }
+    50% {
+        box-shadow: 0 0 40px var(--accent-glow), 0 12px 48px var(--accent-glow);
+    }
+}
+
+/* ─────────────────────────────────────────
+   13. SECTION TITLE ANIMATION
+   ───────────────────────────────────────── */
+.section__title {
+    animation: title-slide-in 0.8s cubic-bezier(0.4, 0, 0.2, 1) backwards;
+}
+
+@keyframes title-slide-in {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.section__title::after {
+    animation: title-line-grow 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s backwards;
+}
+
+@keyframes title-line-grow {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 48px;
+    }
+}
+
+/* ─────────────────────────────────────────
+   14. GITHUB STATS CARD ANIMATIONS
+   ───────────────────────────────────────── */
+.github-activity-chart {
+    position: relative;
+}
+
+.github-activity-chart__img,
+.github-activity-chart__graph {
+    border-radius: var(--radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.github-activity-chart__img:hover,
+.github-activity-chart__graph:hover {
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0 16px 48px rgba(114, 47, 55, 0.2);
+}
+
+/* ─────────────────────────────────────────
+   15. OSS CARD ENTRANCE ANIMATION
+   ───────────────────────────────────────── */
+.oss-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.oss-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    animation: oss-line-sweep 2s ease-in-out infinite;
+}
+
+@keyframes oss-line-sweep {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.oss-card:hover::before {
+    animation-duration: 1s;
+}
+
+/* ─────────────────────────────────────────
+   16. CONTACT CARD ADVANCED ANIMATIONS
+   ───────────────────────────────────────── */
+.contact-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        transparent 0%,
+        var(--accent-glow) 50%,
+        transparent 100%
+    );
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.contact-card:hover::after {
+    opacity: 0.1;
+}
+
+/* ─────────────────────────────────────────
+   17. FOOTER IDENTITY BADGE ANIMATION
+   ───────────────────────────────────────── */
+.footer-identity {
+    animation: identity-float 3s ease-in-out infinite;
+}
+
+@keyframes identity-float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* ─────────────────────────────────────────
+   18. ABOUT STATS PULSE ANIMATION
+   ───────────────────────────────────────── */
+.about__stat:hover .about__stat-number {
+    animation: stat-pulse 0.6s ease-in-out;
+}
+
+@keyframes stat-pulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+/* ─────────────────────────────────────────
+   19. HERO SCROLL INDICATOR ENHANCED
+   ───────────────────────────────────────── */
+.hero__scroll-indicator {
+    animation: indicator-bounce 2s ease-in-out infinite;
+}
+
+@keyframes indicator-bounce {
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, 10px);
+    }
+}
+
+/* ─────────────────────────────────────────
+   20. PAGE TRANSITIONS
+   ───────────────────────────────────────── */
+body {
+    animation: page-fade-in 0.5s ease-out;
+}
+
+@keyframes page-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ─────────────────────────────────────────
+   21. MOBILE MENU ANIMATION
+   ───────────────────────────────────────── */
+@media (max-width: 768px) {
+    .nav__links.open .nav__link {
+        animation: mobile-link-slide 0.5s cubic-bezier(0.4, 0, 0.2, 1) backwards;
+    }
+
+    @keyframes mobile-link-slide {
+        0% {
+            transform: translateX(-30px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .nav__links.open .nav__link:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+    .nav__links.open .nav__link:nth-child(2) {
+        animation-delay: 0.15s;
+    }
+    .nav__links.open .nav__link:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+    .nav__links.open .nav__link:nth-child(4) {
+        animation-delay: 0.25s;
+    }
+    .nav__links.open .nav__link:nth-child(5) {
+        animation-delay: 0.3s;
+    }
+}
+
+/* ─────────────────────────────────────────
+   22. PERFORMANCE OPTIMIZATIONS
+   ───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .custom-cursor,
+    .custom-cursor-glow,
+    .ripple-effect,
+    .scroll-progress {
+        display: none !important;
+    }
+}
+
+/* Hardware acceleration */
+.skill-card,
+.project-card,
+.btn,
+.nav__link,
+.hero__image {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
+}
+
+/* ─────────────────────────────────────────
+   23. LOADING STATES
+   ───────────────────────────────────────── */
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spinner-rotate 1s linear infinite;
+}
+
+@keyframes spinner-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ─────────────────────────────────────────
+   24. GLOW EFFECTS
+   ───────────────────────────────────────── */
+.glow {
+    filter: drop-shadow(0 0 10px var(--accent-glow));
+    animation: glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+    0%,
+    100% {
+        filter: drop-shadow(0 0 10px var(--accent-glow));
+    }
+    50% {
+        filter: drop-shadow(0 0 20px var(--accent-glow)) drop-shadow(0 0 30px var(--accent-glow));
+    }
+}
+
+/* ═══════════════════════════════════════════
+   END OF ANIMATIONS
+   ═══════════════════════════════════════════ */
