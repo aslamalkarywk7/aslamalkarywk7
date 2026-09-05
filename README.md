@@ -116,57 +116,57 @@
 
 ## <div align="center">📚 Top 39 Programming Languages — Classified by OS & Environment</div>
 
-### أنظمة الهواتف (Android & iOS)
-- <img src="https://skillicons.dev/icons?i=kotlin" width="20" height="20" style="vertical-align:middle" /> **Kotlin:** اللغة الرسمية لتطوير تطبيقات Android الحديثة
-- <img src="https://skillicons.dev/icons?i=java" width="20" height="20" style="vertical-align:middle" /> **Java:** العصب التاريخي لتطبيقات Android وأنظمة المؤسسات
-- <img src="https://skillicons.dev/icons?i=swift" width="20" height="20" style="vertical-align:middle" /> **Swift:** اللغة الرسمية لتطوير تطبيقات iOS و macOS
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/objectivec/objectivec-plain.svg" width="20" height="20" style="vertical-align:middle" /> **Objective-C:** اللغة الكلاسيكية لأنظمة Apple (iOS / macOS)
-- <img src="https://skillicons.dev/icons?i=dart" width="20" height="20" style="vertical-align:middle" /> **Dart:** لغة بناء التطبيقات متعددة المنصات (Flutter)
+### Mobile Systems (Android & iOS)
+- <img src="https://skillicons.dev/icons?i=kotlin" width="20" height="20" style="vertical-align:middle" /> **Kotlin:** Official language for modern Android development
+- <img src="https://skillicons.dev/icons?i=java" width="20" height="20" style="vertical-align:middle" /> **Java:** Historic core for Android and enterprise systems
+- <img src="https://skillicons.dev/icons?i=swift" width="20" height="20" style="vertical-align:middle" /> **Swift:** Official language for iOS and macOS development
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/objectivec/objectivec-plain.svg" width="20" height="20" style="vertical-align:middle" /> **Objective-C:** Classic language for Apple ecosystems (iOS/macOS)
+- <img src="https://skillicons.dev/icons?i=dart" width="20" height="20" style="vertical-align:middle" /> **Dart:** Cross-platform app development with Flutter
 
-### أنظمة سطح المكتب (Desktop: Windows & macOS)
-- <img src="https://skillicons.dev/icons?i=cs" width="20" height="20" style="vertical-align:middle" /> **C#:** تطوير تطبيقات Windows والأنظمة المعتمدة على بيئة .NET
-- <img src="https://skillicons.dev/icons?i=cpp" width="20" height="20" style="vertical-align:middle" /> **C++:** تطبيقات البرامج عالية الأداء، الألعاب، والأدوات المتقدمة
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualbasic/visualbasic-original.svg" width="20" height="20" style="vertical-align:middle" /> **Visual Basic .NET:** بناء تطبيقات Windows المكتبية التقليدية
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/delphi/delphi-original.svg" width="20" height="20" style="vertical-align:middle" /> **Delphi / Object Pascal:** بناء برامج سطح المكتب السريعة والخفيفة
+### Desktop Systems (Windows & macOS)
+- <img src="https://skillicons.dev/icons?i=cs" width="20" height="20" style="vertical-align:middle" /> **C#:** Windows apps and .NET ecosystem
+- <img src="https://skillicons.dev/icons?i=cpp" width="20" height="20" style="vertical-align:middle" /> **C++:** High-performance apps, games, and advanced tools
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualbasic/visualbasic-original.svg" width="20" height="20" style="vertical-align:middle" /> **Visual Basic .NET:** Traditional Windows desktop applications
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/delphi/delphi-original.svg" width="20" height="20" style="vertical-align:middle" /> **Delphi / Object Pascal:** Fast and lightweight desktop software
 
-### أنظمة لينكس والبرمجة المنخفضة (Linux, Kernel & Embedded)
-- <img src="https://skillicons.dev/icons?i=c" width="20" height="20" style="vertical-align:middle" /> **C:** لغة بناء نواة نظام Linux والبرمجيات المباشرة للنظام
-- <img src="https://skillicons.dev/icons?i=rust" width="20" height="20" style="vertical-align:middle" /> **Rust:** لغة آمنة للذاكرة تُستخدم في تطوير أجزاء من Linux Kernel والأنظمة الحديثة
-- <img src="https://skillicons.dev/icons?i=bash" width="20" height="20" style="vertical-align:middle" /> **Bash / Shell:** لغة السكريبت لإدارة سيرفرات Linux وأتمتة المهام
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aarch64/aarch64-original.svg" width="20" height="20" style="vertical-align:middle" /> **Assembly (x86/ARM):** البرمجة المباشرة للمعالجات والهندسة العكسية
-- <img src="https://skillicons.dev/icons?i=zig" width="20" height="20" style="vertical-align:middle" /> **Zig:** لغة حديثة لتطوير أنظمة التشغيل وبديل كفء لـ C
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nim/nim-original.svg" width="20" height="20" style="vertical-align:middle" /> **Nim:** لغة سريعة تُترجم إلى C/C++ وتعمل بكفاءة على أنظمة Linux
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d/d-original.svg" width="20" height="20" style="vertical-align:middle" /> **D:** لغة تطوير أنظمة تجمع بين قوة C++ وسهولة اللغات الحديثة
+### Linux, Kernel & Embedded Systems
+- <img src="https://skillicons.dev/icons?i=c" width="20" height="20" style="vertical-align:middle" /> **C:** Core language for Linux kernel and system software
+- <img src="https://skillicons.dev/icons?i=rust" width="20" height="20" style="vertical-align:middle" /> **Rust:** Memory-safe language for Linux kernel parts and modern systems
+- <img src="https://skillicons.dev/icons?i=bash" width="20" height="20" style="vertical-align:middle" /> **Bash / Shell:** Scripting for Linux server management and automation
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aarch64/aarch64-original.svg" width="20" height="20" style="vertical-align:middle" /> **Assembly (x86/ARM):** Direct processor programming and reverse engineering
+- <img src="https://skillicons.dev/icons?i=zig" width="20" height="20" style="vertical-align:middle" /> **Zig:** Modern OS development, efficient C alternative
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nim/nim-original.svg" width="20" height="20" style="vertical-align:middle" /> **Nim:** Fast language compiling to C/C++ for Linux
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d/d-original.svg" width="20" height="20" style="vertical-align:middle" /> **D:** Systems language combining C++ power with modern ease
 
-### تقنيات الويب والسحابة (Web, Cloud & Backend)
-- <img src="https://skillicons.dev/icons?i=js" width="20" height="20" style="vertical-align:middle" /> **JavaScript:** لغة التفاعلية الأساسية لجميع متصفحات الويب
-- <img src="https://skillicons.dev/icons?i=ts" width="20" height="20" style="vertical-align:middle" /> **TypeScript:** النسخة المكتوبة بدقة (Typed) لبناء تطبيقات الويب الضخمة
-- <img src="https://skillicons.dev/icons?i=py" width="20" height="20" style="vertical-align:middle" /> **Python:** الذكاء الاصطناعي، أتمتة الأنظمة، والـ Backend
-- <img src="https://skillicons.dev/icons?i=php" width="20" height="20" style="vertical-align:middle" /> **PHP:** لغة تطوير أنظمة وتطبيقات الويب الديناميكية
-- <img src="https://skillicons.dev/icons?i=go" width="20" height="20" style="vertical-align:middle" /> **Go (Golang):** تطوير خدمات السحابة والـ Microservices وسيرفرات Google
-- <img src="https://skillicons.dev/icons?i=ruby" width="20" height="20" style="vertical-align:middle" /> **Ruby:** تطوير تطبيقات الويب السريعة عبر إطار Ruby on Rails
-- <img src="https://skillicons.dev/icons?i=elixir" width="20" height="20" style="vertical-align:middle" /> **Elixir:** بناء أنظمة الويب الموزعة وعالية التحمل (تعتمد على Erlang VM)
-- <img src="https://skillicons.dev/icons?i=erlang" width="20" height="20" style="vertical-align:middle" /> **Erlang:** أنظمة الاتصالات والخدمات ذات الاعتمادية المرتفعة
-- <img src="https://skillicons.dev/icons?i=scala" width="20" height="20" style="vertical-align:middle" /> **Scala:** معالجة البيانات الضخمة وبناء أنظمة الـ Backend المتزامنة
+### Web, Cloud & Backend Technologies
+- <img src="https://skillicons.dev/icons?i=js" width="20" height="20" style="vertical-align:middle" /> **JavaScript:** Core interactivity for all web browsers
+- <img src="https://skillicons.dev/icons?i=ts" width="20" height="20" style="vertical-align:middle" /> **TypeScript:** Typed superset for large-scale web apps
+- <img src="https://skillicons.dev/icons?i=py" width="20" height="20" style="vertical-align:middle" /> **Python:** AI, automation, and backend
+- <img src="https://skillicons.dev/icons?i=php" width="20" height="20" style="vertical-align:middle" /> **PHP:** Dynamic web systems and applications
+- <img src="https://skillicons.dev/icons?i=go" width="20" height="20" style="vertical-align:middle" /> **Go (Golang):** Cloud services, microservices, Google servers
+- <img src="https://skillicons.dev/icons?i=ruby" width="20" height="20" style="vertical-align:middle" /> **Ruby:** Rapid web development with Ruby on Rails
+- <img src="https://skillicons.dev/icons?i=elixir" width="20" height="20" style="vertical-align:middle" /> **Elixir:** Distributed, fault-tolerant web systems (Erlang VM)
+- <img src="https://skillicons.dev/icons?i=erlang" width="20" height="20" style="vertical-align:middle" /> **Erlang:** Telecom and high-reliability services
+- <img src="https://skillicons.dev/icons?i=scala" width="20" height="20" style="vertical-align:middle" /> **Scala:** Big data processing and concurrent backends
 
-### قواعد البيانات وعلوم البيانات (Data & Analytics)
-- <img src="https://skillicons.dev/icons?i=mysql" width="20" height="20" style="vertical-align:middle" /> **SQL:** لغة الاستعلام عن قواعد البيانات العلاقاتية
-- <img src="https://skillicons.dev/icons?i=r" width="20" height="20" style="vertical-align:middle" /> **R:** لغة التحليل الإحصائي وعلوم البيانات
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg" width="20" height="20" style="vertical-align:middle" /> **Julia:** الحوسبة العلمية عالية الأداء وتحليل البيانات
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sas/sas-original.svg" width="20" height="20" style="vertical-align:middle" /> **SAS:** لغة التحليل الإحصائي وإدارة البيانات للمؤسسات المالية
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" width="20" height="20" style="vertical-align:middle" /> **MATLAB:** النمذجة الرياضية والهندسية الحسابية
+### Databases & Data Science
+- <img src="https://skillicons.dev/icons?i=mysql" width="20" height="20" style="vertical-align:middle" /> **SQL:** Relational database querying
+- <img src="https://skillicons.dev/icons?i=r" width="20" height="20" style="vertical-align:middle" /> **R:** Statistical analysis and data science
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg" width="20" height="20" style="vertical-align:middle" /> **Julia:** High-performance scientific computing
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sas/sas-original.svg" width="20" height="20" style="vertical-align:middle" /> **SAS:** Enterprise statistical analysis
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" width="20" height="20" style="vertical-align:middle" /> **MATLAB:** Mathematical and engineering modeling
 
-### لغات وظيفية ومتخصصة (Functional & Specialized)
-- <img src="https://skillicons.dev/icons?i=haskell" width="20" height="20" style="vertical-align:middle" /> **Haskell:** البرمجة الوظيفية النقية (Pure Functional Programming)
-- <img src="https://skillicons.dev/icons?i=clojure" width="20" height="20" style="vertical-align:middle" /> **Clojure:** لغة وظيفية تعتمد على Lisp وتعمل على بيئة Java (JVM)
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lisp/lisp-original.svg" width="20" height="20" style="vertical-align:middle" /> **Lisp / Common Lisp:** لغة معالجة الرموز وبدايات الذكاء الاصطناعي
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scheme/scheme-original.svg" width="20" height="20" style="vertical-align:middle" /> **Scheme:** لغة برمجية بسيطة من عائلة Lisp تُستخدم في الأبحاث
-- <img src="https://skillicons.dev/icons?i=groovy" width="20" height="20" style="vertical-align:middle" /> **Groovy:** لغة برمجية لبيئة JVM تُستخدم في أدوات البناء مثل Gradle
-- <img src="https://skillicons.dev/icons?i=perl" width="20" height="20" style="vertical-align:middle" /> **Perl:** معالجة النصوص والنصوص البرمجية القديمة على Unix/Linux
-- <img src="https://skillicons.dev/icons?i=lua" width="20" height="20" style="vertical-align:middle" /> **Lua:** لغة سكريبت خفيفة وسريعة لإضافات الألعاب وأنظمة Nginx
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fortran/fortran-original.svg" width="20" height="20" style="vertical-align:middle" /> **Fortran:** الحوسبة العلمية والفيزيائية التاريخية
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cobol/cobol-original.svg" width="20" height="20" style="vertical-align:middle" /> **COBOL:** الأنظمة المالية والبنوك القديمة التي لا زالت تعمل عالمياً
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prolog/prolog-original.svg" width="20" height="20" style="vertical-align:middle" /> **Prolog:** البرمجة المنطقية وأنظمة القواعد الذكية
+### Functional & Specialized Languages
+- <img src="https://skillicons.dev/icons?i=haskell" width="20" height="20" style="vertical-align:middle" /> **Haskell:** Pure functional programming
+- <img src="https://skillicons.dev/icons?i=clojure" width="20" height="20" style="vertical-align:middle" /> **Clojure:** Functional Lisp on JVM
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lisp/lisp-original.svg" width="20" height="20" style="vertical-align:middle" /> **Lisp / Common Lisp:** Symbol processing and early AI
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scheme/scheme-original.svg" width="20" height="20" style="vertical-align:middle" /> **Scheme:** Minimal Lisp dialect for research
+- <img src="https://skillicons.dev/icons?i=groovy" width="20" height="20" style="vertical-align:middle" /> **Groovy:** JVM language for Gradle builds
+- <img src="https://skillicons.dev/icons?i=perl" width="20" height="20" style="vertical-align:middle" /> **Perl:** Text processing on Unix/Linux
+- <img src="https://skillicons.dev/icons?i=lua" width="20" height="20" style="vertical-align:middle" /> **Lua:** Lightweight scripting for games and Nginx
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fortran/fortran-original.svg" width="20" height="20" style="vertical-align:middle" /> **Fortran:** Historic scientific computing
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cobol/cobol-original.svg" width="20" height="20" style="vertical-align:middle" /> **COBOL:** Legacy financial/banking systems still running globally
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prolog/prolog-original.svg" width="20" height="20" style="vertical-align:middle" /> **Prolog:** Logic programming and rule-based AI
 
 <div align="center">
 
