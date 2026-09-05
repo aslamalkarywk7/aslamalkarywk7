@@ -377,35 +377,35 @@
 ## <div align="center">🧩 اللغات وأطر العمل — Extended Stack</div>
 
 ### Backend
-- **Node.js, Express, NestJS**
-- **Python** (Django, FastAPI, Flask)
-- **PHP** (Laravel, Symfony)
+- <img src="https://skillicons.dev/icons?i=nodejs" width="18" height="18" style="vertical-align:middle" /> **Node.js** <img src="https://skillicons.dev/icons?i=express" width="18" height="18" style="vertical-align:middle" /> **Express** <img src="https://skillicons.dev/icons?i=nestjs" width="18" height="18" style="vertical-align:middle" /> **NestJS**
+- <img src="https://skillicons.dev/icons?i=py" width="18" height="18" style="vertical-align:middle" /> **Python** (<img src="https://skillicons.dev/icons?i=django" width="16" height="16" style="vertical-align:middle" /> Django, <img src="https://skillicons.dev/icons?i=fastapi" width="16" height="16" style="vertical-align:middle" /> FastAPI, Flask)
+- <img src="https://skillicons.dev/icons?i=php" width="18" height="18" style="vertical-align:middle" /> **PHP** (<img src="https://skillicons.dev/icons?i=laravel" width="16" height="16" style="vertical-align:middle" /> Laravel, <img src="https://skillicons.dev/icons?i=symfony" width="16" height="16" style="vertical-align:middle" /> Symfony)
 
 ### قواعد البيانات والتخزين
-- **PostgreSQL, Redis, Prisma, Cloudflare R2**
+- <img src="https://skillicons.dev/icons?i=postgres" width="18" height="18" style="vertical-align:middle" /> **PostgreSQL** <img src="https://skillicons.dev/icons?i=redis" width="18" height="18" style="vertical-align:middle" /> **Redis** <img src="https://skillicons.dev/icons?i=prisma" width="18" height="18" style="vertical-align:middle" /> **Prisma** <img src="https://skillicons.dev/icons?i=cloudflare" width="18" height="18" style="vertical-align:middle" /> **Cloudflare R2**
 
 ### الشبكات والحاويات ومعالجة الميديا
-- **Docker, WireGuard, Tailscale, FFmpeg** — بناء أنظمة SaaS وأنابيب معالجة وتدفق الفيديو HLS/VR
+- <img src="https://skillicons.dev/icons?i=docker" width="18" height="18" style="vertical-align:middle" /> **Docker** <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wireguard/wireguard-original.svg" width="18" height="18" style="vertical-align:middle" /> **WireGuard** **Tailscale** <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ffmpeg/ffmpeg-original.svg" width="18" height="18" style="vertical-align:middle" /> **FFmpeg** — بناء أنظمة SaaS وأنابيب معالجة وتدفق الفيديو HLS/VR
 
 ### تطوير الواجهات الأمامية (Frontend)
-- **الأطر والمكتبات:** React.js, Next.js, Vue.js
-- **التنسيق ومكونات الواجهة:** Tailwind CSS, SASS/SCSS, Shadcn/ui, Radix UI, MUI
+- **الأطر والمكتبات:** <img src="https://skillicons.dev/icons?i=react" width="18" height="18" style="vertical-align:middle" /> React.js <img src="https://skillicons.dev/icons?i=nextjs" width="18" height="18" style="vertical-align:middle" /> Next.js <img src="https://skillicons.dev/icons?i=vue" width="18" height="18" style="vertical-align:middle" /> Vue.js
+- **التنسيق ومكونات الواجهة:** <img src="https://skillicons.dev/icons?i=tailwind" width="18" height="18" style="vertical-align:middle" /> Tailwind CSS <img src="https://skillicons.dev/icons?i=sass" width="18" height="18" style="vertical-align:middle" /> SASS/SCSS <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shadcnui/shadcnui-original.svg" width="18" height="18" style="vertical-align:middle" /> Shadcn/ui <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/radix/radix-original.svg" width="18" height="18" style="vertical-align:middle" /> Radix UI <img src="https://skillicons.dev/icons?i=materialui" width="18" height="18" style="vertical-align:middle" /> MUI
 
 ### الذكاء الاصطناعي والأتمتة (AI & Automation)
-- **نماذج وأدوات الذكاء الاصطناعي:** OpenAI API, Gemini API, LangChain
-- **الأتمتة وكشط الويب (Scraping):** Selenium, Puppeteer, Playwright
-- **معالجة وتحليل البيانات:** Pandas, NumPy, Scikit-learn
+- **نماذج وأدوات الذكاء الاصطناعي:** <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" width="18" height="18" style="vertical-align:middle" /> OpenAI API <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="18" height="18" style="vertical-align:middle" /> Gemini API <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/langchain/langchain-original.svg" width="18" height="18" style="vertical-align:middle" /> LangChain
+- **الأتمتة وكشط الويب (Scraping):** <img src="https://skillicons.dev/icons?i=selenium" width="18" height="18" style="vertical-align:middle" /> Selenium <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/puppeteer/puppeteer-original.svg" width="18" height="18" style="vertical-align:middle" /> Puppeteer <img src="https://skillicons.dev/icons?i=playwright" width="18" height="18" style="vertical-align:middle" /> Playwright
+- **معالجة وتحليل البيانات:** <img src="https://skillicons.dev/icons?i=py" width="18" height="18" style="vertical-align:middle" /> Pandas <img src="https://skillicons.dev/icons?i=numpy" width="18" height="18" style="vertical-align:middle" /> NumPy <img src="https://skillicons.dev/icons?i=scikitlearn" width="18" height="18" style="vertical-align:middle" /> Scikit-learn
 
 ### الاختبار، المراقبة، واستكشاف الأخطاء
-- **أدوات الاختبار:** Jest, PyTest, PHPUnit, Cypress
-- **أدوات المراقبة والأداء:** Sentry, LogRocket, New Relic, Lighthouse, Chrome DevTools
+- **أدوات الاختبار:** <img src="https://skillicons.dev/icons?i=jest" width="18" height="18" style="vertical-align:middle" /> Jest <img src="https://skillicons.dev/icons?i=py" width="18" height="18" style="vertical-align:middle" /> PyTest <img src="https://skillicons.dev/icons?i=php" width="18" height="18" style="vertical-align:middle" /> PHPUnit <img src="https://skillicons.dev/icons?i=cypress" width="18" height="18" style="vertical-align:middle" /> Cypress
+- **أدوات المراقبة والأداء:** <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sentry/sentry-original.svg" width="18" height="18" style="vertical-align:middle" /> Sentry <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/logrocket/logrocket-original.svg" width="18" height="18" style="vertical-align:middle" /> LogRocket <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/newrelic/newrelic-plain.svg" width="18" height="18" style="vertical-align:middle" /> New Relic <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lighthouse/lighthouse-original.svg" width="18" height="18" style="vertical-align:middle" /> Lighthouse <img src="https://skillicons.dev/icons?i=chrome" width="18" height="18" style="vertical-align:middle" /> Chrome DevTools
 
 ### التصميم والتخطيط (UI/UX & Design)
-- **مخططات الواجهات ورسم سير العمل:** Figma, Adobe XD, Miro, Lucidchart, PowerPoint, Google Drawings
+- **مخططات الواجهات ورسم سير العمل:** <img src="https://skillicons.dev/icons?i=figma" width="18" height="18" style="vertical-align:middle" /> Figma <img src="https://skillicons.dev/icons?i=xd" width="18" height="18" style="vertical-align:middle" /> Adobe XD <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/miro/miro-original.svg" width="18" height="18" style="vertical-align:middle" /> Miro <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lucidchart/lucidchart-original.svg" width="18" height="18" style="vertical-align:middle" /> Lucidchart <img src="https://skillicons.dev/icons?i=powerpoint" width="18" height="18" style="vertical-align:middle" /> PowerPoint <img src="https://skillicons.dev/icons?i=gcp" width="18" height="18" style="vertical-align:middle" /> Google Drawings
 - **التصميم الإعلاني:** تصميم صور الإعلانات الرقمية للمنصات المستقلة
 
 ### بيئات التطوير وأدوات المساعدة
-- **VS Code, Claude Code, Continue.dev, Google Antigravity, OpenCode, Zed, Fooocus**
+- <img src="https://skillicons.dev/icons?i=vscode" width="18" height="18" style="vertical-align:middle" /> **VS Code** <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/claude/claude-original.svg" width="18" height="18" style="vertical-align:middle" /> **Claude Code** **Continue.dev** <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="18" height="18" style="vertical-align:middle" /> **Google Antigravity** **OpenCode** <img src="https://skillicons.dev/icons?i=zed" width="18" height="18" style="vertical-align:middle" /> **Zed** **Fooocus**
 
 ### مهارات إضافية ولغات
 - **تطوير الألعاب:** أساسيات تصميم وتطوير الألعاب ثنائية وثلاثية الأبعاد (2D/3D Games) لاسيما ألعاب الرعب والـ RPG
@@ -416,55 +416,55 @@
 ## <div align="center">📚 تنسيق وتصنيف أشهر 39 لغة برمجة عالمية — حسب أنظمة التشغيل والبيئات</div>
 
 ### أنظمة الهواتف (Android & iOS)
-- **Kotlin:** اللغة الرسمية لتطوير تطبيقات Android الحديثة
-- **Java:** العصب التاريخي لتطبيقات Android وأنظمة المؤسسات
-- **Swift:** اللغة الرسمية لتطوير تطبيقات iOS و macOS
-- **Objective-C:** اللغة الكلاسيكية لأنظمة Apple (iOS / macOS)
-- **Dart:** لغة بناء التطبيقات متعددة المنصات (Flutter)
+- <img src="https://skillicons.dev/icons?i=kotlin" width="20" height="20" style="vertical-align:middle" /> **Kotlin:** اللغة الرسمية لتطوير تطبيقات Android الحديثة
+- <img src="https://skillicons.dev/icons?i=java" width="20" height="20" style="vertical-align:middle" /> **Java:** العصب التاريخي لتطبيقات Android وأنظمة المؤسسات
+- <img src="https://skillicons.dev/icons?i=swift" width="20" height="20" style="vertical-align:middle" /> **Swift:** اللغة الرسمية لتطوير تطبيقات iOS و macOS
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/objectivec/objectivec-plain.svg" width="20" height="20" style="vertical-align:middle" /> **Objective-C:** اللغة الكلاسيكية لأنظمة Apple (iOS / macOS)
+- <img src="https://skillicons.dev/icons?i=dart" width="20" height="20" style="vertical-align:middle" /> **Dart:** لغة بناء التطبيقات متعددة المنصات (Flutter)
 
 ### أنظمة سطح المكتب (Desktop: Windows & macOS)
-- **C#:** تطوير تطبيقات Windows والأنظمة المعتمدة على بيئة .NET
-- **C++:** تطبيقات البرامج عالية الأداء، الألعاب، والأدوات المتقدمة
-- **Visual Basic .NET:** بناء تطبيقات Windows المكتبية التقليدية
-- **Delphi / Object Pascal:** بناء برامج سطح المكتب السريعة والخفيفة
+- <img src="https://skillicons.dev/icons?i=cs" width="20" height="20" style="vertical-align:middle" /> **C#:** تطوير تطبيقات Windows والأنظمة المعتمدة على بيئة .NET
+- <img src="https://skillicons.dev/icons?i=cpp" width="20" height="20" style="vertical-align:middle" /> **C++:** تطبيقات البرامج عالية الأداء، الألعاب، والأدوات المتقدمة
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualbasic/visualbasic-original.svg" width="20" height="20" style="vertical-align:middle" /> **Visual Basic .NET:** بناء تطبيقات Windows المكتبية التقليدية
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/delphi/delphi-original.svg" width="20" height="20" style="vertical-align:middle" /> **Delphi / Object Pascal:** بناء برامج سطح المكتب السريعة والخفيفة
 
 ### أنظمة لينكس والبرمجة المنخفضة (Linux, Kernel & Embedded)
-- **C:** لغة بناء نواة نظام Linux والبرمجيات المباشرة للنظام
-- **Rust:** لغة آمنة للذاكرة تُستخدم في تطوير أجزاء من Linux Kernel والأنظمة الحديثة
-- **Bash / Shell:** لغة السكريبت لإدارة سيرفرات Linux وأتمتة المهام
-- **Assembly (x86/ARM):** البرمجة المباشرة للمعالجات والهندسة العكسية
-- **Zig:** لغة حديثة لتطوير أنظمة التشغيل وبديل كفء لـ C
-- **Nim:** لغة سريعة تُترجم إلى C/C++ وتعمل بكفاءة على أنظمة Linux
-- **D:** لغة تطوير أنظمة تجمع بين قوة C++ وسهولة اللغات الحديثة
+- <img src="https://skillicons.dev/icons?i=c" width="20" height="20" style="vertical-align:middle" /> **C:** لغة بناء نواة نظام Linux والبرمجيات المباشرة للنظام
+- <img src="https://skillicons.dev/icons?i=rust" width="20" height="20" style="vertical-align:middle" /> **Rust:** لغة آمنة للذاكرة تُستخدم في تطوير أجزاء من Linux Kernel والأنظمة الحديثة
+- <img src="https://skillicons.dev/icons?i=bash" width="20" height="20" style="vertical-align:middle" /> **Bash / Shell:** لغة السكريبت لإدارة سيرفرات Linux وأتمتة المهام
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aarch64/aarch64-original.svg" width="20" height="20" style="vertical-align:middle" /> **Assembly (x86/ARM):** البرمجة المباشرة للمعالجات والهندسة العكسية
+- <img src="https://skillicons.dev/icons?i=zig" width="20" height="20" style="vertical-align:middle" /> **Zig:** لغة حديثة لتطوير أنظمة التشغيل وبديل كفء لـ C
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nim/nim-original.svg" width="20" height="20" style="vertical-align:middle" /> **Nim:** لغة سريعة تُترجم إلى C/C++ وتعمل بكفاءة على أنظمة Linux
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d/d-original.svg" width="20" height="20" style="vertical-align:middle" /> **D:** لغة تطوير أنظمة تجمع بين قوة C++ وسهولة اللغات الحديثة
 
 ### تقنيات الويب والسحابة (Web, Cloud & Backend)
-- **JavaScript:** لغة التفاعلية الأساسية لجميع متصفحات الويب
-- **TypeScript:** النسخة المكتوبة بدقة (Typed) لبناء تطبيقات الويب الضخمة
-- **Python:** الذكاء الاصطناعي، أتمتة الأنظمة، والـ Backend
-- **PHP:** لغة تطوير أنظمة وتطبيقات الويب الديناميكية
-- **Go (Golang):** تطوير خدمات السحابة والـ Microservices وسيرفرات Google
-- **Ruby:** تطوير تطبيقات الويب السريعة عبر إطار Ruby on Rails
-- **Elixir:** بناء أنظمة الويب الموزعة وعالية التحمل (تعتمد على Erlang VM)
-- **Erlang:** أنظمة الاتصالات والخدمات ذات الاعتمادية المرتفعة
-- **Scala:** معالجة البيانات الضخمة وبناء أنظمة الـ Backend المتزامنة
+- <img src="https://skillicons.dev/icons?i=js" width="20" height="20" style="vertical-align:middle" /> **JavaScript:** لغة التفاعلية الأساسية لجميع متصفحات الويب
+- <img src="https://skillicons.dev/icons?i=ts" width="20" height="20" style="vertical-align:middle" /> **TypeScript:** النسخة المكتوبة بدقة (Typed) لبناء تطبيقات الويب الضخمة
+- <img src="https://skillicons.dev/icons?i=py" width="20" height="20" style="vertical-align:middle" /> **Python:** الذكاء الاصطناعي، أتمتة الأنظمة، والـ Backend
+- <img src="https://skillicons.dev/icons?i=php" width="20" height="20" style="vertical-align:middle" /> **PHP:** لغة تطوير أنظمة وتطبيقات الويب الديناميكية
+- <img src="https://skillicons.dev/icons?i=go" width="20" height="20" style="vertical-align:middle" /> **Go (Golang):** تطوير خدمات السحابة والـ Microservices وسيرفرات Google
+- <img src="https://skillicons.dev/icons?i=ruby" width="20" height="20" style="vertical-align:middle" /> **Ruby:** تطوير تطبيقات الويب السريعة عبر إطار Ruby on Rails
+- <img src="https://skillicons.dev/icons?i=elixir" width="20" height="20" style="vertical-align:middle" /> **Elixir:** بناء أنظمة الويب الموزعة وعالية التحمل (تعتمد على Erlang VM)
+- <img src="https://skillicons.dev/icons?i=erlang" width="20" height="20" style="vertical-align:middle" /> **Erlang:** أنظمة الاتصالات والخدمات ذات الاعتمادية المرتفعة
+- <img src="https://skillicons.dev/icons?i=scala" width="20" height="20" style="vertical-align:middle" /> **Scala:** معالجة البيانات الضخمة وبناء أنظمة الـ Backend المتزامنة
 
 ### قواعد البيانات وعلوم البيانات (Data & Analytics)
-- **SQL:** لغة الاستعلام عن قواعد البيانات العلاقاتية
-- **R:** لغة التحليل الإحصائي وعلوم البيانات
-- **Julia:** الحوسبة العلمية عالية الأداء وتحليل البيانات
-- **SAS:** لغة التحليل الإحصائي وإدارة البيانات للمؤسسات المالية
-- **MATLAB:** النمذجة الرياضية والهندسية الحسابية
+- <img src="https://skillicons.dev/icons?i=mysql" width="20" height="20" style="vertical-align:middle" /> **SQL:** لغة الاستعلام عن قواعد البيانات العلاقاتية
+- <img src="https://skillicons.dev/icons?i=r" width="20" height="20" style="vertical-align:middle" /> **R:** لغة التحليل الإحصائي وعلوم البيانات
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg" width="20" height="20" style="vertical-align:middle" /> **Julia:** الحوسبة العلمية عالية الأداء وتحليل البيانات
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sas/sas-original.svg" width="20" height="20" style="vertical-align:middle" /> **SAS:** لغة التحليل الإحصائي وإدارة البيانات للمؤسسات المالية
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" width="20" height="20" style="vertical-align:middle" /> **MATLAB:** النمذجة الرياضية والهندسية الحسابية
 
 ### لغات وظيفية ومتخصصة (Functional & Specialized)
-- **Haskell:** البرمجة الوظيفية النقية (Pure Functional Programming)
-- **Clojure:** لغة وظيفية تعتمد على Lisp وتعمل على بيئة Java (JVM)
-- **Lisp / Common Lisp:** لغة معالجة الرموز وبدايات الذكاء الاصطناعي
-- **Scheme:** لغة برمجية بسيطة من عائلة Lisp تُستخدم في الأبحاث
-- **Groovy:** لغة برمجية لبيئة JVM تُستخدم في أدوات البناء مثل Gradle
-- **Perl:** معالجة النصوص والنصوص البرمجية القديمة على Unix/Linux
-- **Lua:** لغة سكريبت خفيفة وسريعة لإضافات الألعاب وأنظمة Nginx
-- **Fortran:** الحوسبة العلمية والفيزيائية التاريخية
-- **COBOL:** الأنظمة المالية والبنوك القديمة التي لا زالت تعمل عالمياً
-- **Prolog:** البرمجة المنطقية وأنظمة القواعد الذكية
+- <img src="https://skillicons.dev/icons?i=haskell" width="20" height="20" style="vertical-align:middle" /> **Haskell:** البرمجة الوظيفية النقية (Pure Functional Programming)
+- <img src="https://skillicons.dev/icons?i=clojure" width="20" height="20" style="vertical-align:middle" /> **Clojure:** لغة وظيفية تعتمد على Lisp وتعمل على بيئة Java (JVM)
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lisp/lisp-original.svg" width="20" height="20" style="vertical-align:middle" /> **Lisp / Common Lisp:** لغة معالجة الرموز وبدايات الذكاء الاصطناعي
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scheme/scheme-original.svg" width="20" height="20" style="vertical-align:middle" /> **Scheme:** لغة برمجية بسيطة من عائلة Lisp تُستخدم في الأبحاث
+- <img src="https://skillicons.dev/icons?i=groovy" width="20" height="20" style="vertical-align:middle" /> **Groovy:** لغة برمجية لبيئة JVM تُستخدم في أدوات البناء مثل Gradle
+- <img src="https://skillicons.dev/icons?i=perl" width="20" height="20" style="vertical-align:middle" /> **Perl:** معالجة النصوص والنصوص البرمجية القديمة على Unix/Linux
+- <img src="https://skillicons.dev/icons?i=lua" width="20" height="20" style="vertical-align:middle" /> **Lua:** لغة سكريبت خفيفة وسريعة لإضافات الألعاب وأنظمة Nginx
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fortran/fortran-original.svg" width="20" height="20" style="vertical-align:middle" /> **Fortran:** الحوسبة العلمية والفيزيائية التاريخية
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cobol/cobol-original.svg" width="20" height="20" style="vertical-align:middle" /> **COBOL:** الأنظمة المالية والبنوك القديمة التي لا زالت تعمل عالمياً
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prolog/prolog-original.svg" width="20" height="20" style="vertical-align:middle" /> **Prolog:** البرمجة المنطقية وأنظمة القواعد الذكية
 
 <div align="center">
