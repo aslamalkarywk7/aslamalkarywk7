@@ -26,9 +26,36 @@
 ">aslamalkarywka@gmail.com</a>
 </p>
 
-<h3 align="center">🌐 My Social Media
-coming soon
-</h3>
+<h3 align="center">🌐 My Social Media & Profiles</h3>
+<p align="center">
+  <strong>Islam Al-Nashar</strong> — 20 years old — Egypt / Compound — Born 2006<br>
+  <strong>Full Stack & AI Engineer • Game Dev • Android & iOS App Dev</strong> — 8 years experience since age 11<br>
+  <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> • <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a>
+</p>
+<p align="center">
+  <a href="https://huggingface.co/ISLAM-PO"><strong>Hugging Face — ISLAM-PO</strong></a>
+</p>
+
+<h4 align="center">🤖 Projects (Hugging Face)</h4>
+<p align="center">
+  <a href="https://huggingface.co/ISLAM-PO/MasryGPT_chat_FINALLY">MasryGPT_chat_FINALLY</a> •
+  <a href="https://huggingface.co/ISLAM-PO/masrygpt-flash">masrygpt-flash</a>
+</p>
+
+<h4 align="center">📊 Training Datasets</h4>
+<p align="center">
+  <a href="https://huggingface.co/datasets/ISLAM-PO/arabic-history-and-dialects">arabic-history-and-dialects</a> •
+  <a href="https://huggingface.co/datasets/ISLAM-PO/arabic-to-code-8-langs-3m">arabic-to-code-8-langs-3m</a> •
+  <a href="https://huggingface.co/datasets/ISLAM-PO/documents-Egyptian-Arabic">documents-Egyptian-Arabic</a><br>
+  <a href="https://huggingface.co/datasets/ISLAM-PO/arab-dialects-20-countries-3m">arab-dialects-20-countries-3m</a> •
+  <a href="https://huggingface.co/datasets/ISLAM-PO/PLATFORM-DATASET-ARABIC-TOOLS">PLATFORM-DATASET-ARABIC-TOOLS</a>
+</p>
+
+<h4 align="center">💻 GitHub Projects</h4>
+<p align="center">
+  <a href="https://github.com/aslamalkarywk7/islam-elite-portfolio">islam-elite-portfolio — 17 Live Web Projects</a><br>
+  <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a> • <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a>
+</p>
 ## <div align="center">🖥️ Programming Languages</div>
 <div align="center">
 <table>
