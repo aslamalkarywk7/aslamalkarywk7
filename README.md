@@ -30,7 +30,8 @@
 <p align="center">
   <strong>Islam Al-Nashar</strong> — 20 years old — Egypt / Compound — Born 2006<br>
   <strong>Full Stack & AI Engineer • Game Dev • Android & iOS App Dev</strong> — 8 years experience since age 11<br>
-  <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> • <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a>
+  <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> • <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a><br>
+  🌐 Portfolio: <a href="https://aslamalkarywk7.github.io/aslamalkarywk7/"><strong>aslamalkarywk7.github.io/aslamalkarywk7</strong></a>
 </p>
 <p align="center">
   <a href="https://huggingface.co/ISLAM-PO"><strong>Hugging Face — ISLAM-PO</strong></a>
