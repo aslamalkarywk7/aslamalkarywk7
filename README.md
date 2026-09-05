@@ -56,6 +56,12 @@
   <a href="https://github.com/aslamalkarywk7/islam-elite-portfolio">islam-elite-portfolio — 17 Live Web Projects</a><br>
   <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a> • <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a>
 </p>
+
+<h4 align="center">🐧 Linux OS Contributions</h4>
+<p align="center">
+  Dedicated repository for Linux operating system contributions<br>
+  <a href="https://gitlab.com/aslamalkarywk7"><strong>gitlab.com/aslamalkarywk7</strong></a>
+</p>
 ## <div align="center">🖥️ Programming Languages</div>
 <div align="center">
 <table>
