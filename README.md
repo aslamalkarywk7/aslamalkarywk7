@@ -29,7 +29,7 @@
 <p align="center">
   <strong>Islam El-Nashar</strong> — 20 years old — Egypt — Born 2006<br>
   <strong>Freelance Web Developer • AI Integrations • Defensive Web Security</strong> — building since age 11<br>
-  <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> • <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a><br>
+  <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> • <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a> • <a href="https://www.linkedin.com/in/islam-elnashar/"><strong>LinkedIn</strong></a><br>
   🌐 Portfolio: <a href="https://aslamalkarywk7.github.io/aslamalkarywk7/"><strong>aslamalkarywk7.github.io/aslamalkarywk7</strong></a>
 </p>
 <p align="center">
