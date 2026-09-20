@@ -78,7 +78,8 @@
   <a href="https://github.com/genkit-ai/genkit">genkit-ai/genkit</a> •
   <a href="https://github.com/ollama/ollama">ollama/ollama</a> •
   <a href="https://github.com/mudler/LocalAI">mudler/LocalAI</a><br>
-  🎯 Goal: first merged PRs at Microsoft & Google — reviews in progress
+  🎯 Goal: first merged PRs at Microsoft & Google — reviews in progress<br>
+  📖 <a href="CONTRIBUTIONS.md"><strong>Read the full story: every contribution, how I solved it & Q&A</strong></a>
 </p>
 
 <h4 align="center">🐧 Linux OS Contributions</h4>
