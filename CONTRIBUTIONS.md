@@ -2,7 +2,9 @@
 
 > Every contribution below is a real pull request to a public project, with what broke,
 > how I thought about it, how I fixed it, and what reviewers said. Status is current
-> as of **20 Sep 2026**. I keep this file honest: open PRs are marked open.
+> as of **20 Sep 2026**. I keep this file honest: open PRs are marked open, and
+> every section below carries its own verified status line — flipped to `merged`
+> the day it merges.
 
 ## Index
 
@@ -21,6 +23,8 @@
 ---
 
 ## 1. markitdown#2538 — Excel keeps its currency labels ✅ Approved
+
+**Status (verified 20 Sep 2026).** ✅ Approved by reviewer — awaiting maintainer merge; flips to `merged` on merge.
 
 **Problem.** `pandas.read_excel` returns raw values and drops Excel number formats,
 so `$1199` became `1199` in the Markdown output (upstream issue #53).
@@ -41,6 +45,8 @@ cells. I added `_select_format_section()` following the Excel spec
 
 ## 2. markitdown#2539 — Arabic PDF presentation forms (RTL phase 1)
 
+**Status (verified 20 Sep 2026).** 🟡 Open — CLA passing, awaiting reviewer; flips to `merged` on merge.
+
 **Problem.** Some PDF producers emit Arabic Presentation Forms
 (U+FB50–U+FDFF, U+FE70–U+FEFF) instead of standard letters, breaking search
 matching and LLM extraction (related to #2336).
@@ -55,6 +61,8 @@ I stated openly what is *out of scope*: full BiDi reading-order reconstruction
 needs fixtures only the reporter can provide — proposed as Phase 2.
 
 ## 3. LocalAI#12136 — per-operation download throttling
+
+**Status (verified 20 Sep 2026).** 🟡 Open — all review rounds + DCO addressed, awaiting re-review; flips to `merged` on merge.
 
 **Problem.** No way to slow down an in-flight gallery download without restarting it.
 
@@ -77,6 +85,8 @@ DCO now passes; awaiting maintainer re-review and workflow approval
 
 ## 4. adk-python#7198 — partial-backed tools get the right name
 
+**Status (verified 20 Sep 2026).** 🟡 Open — checks green, awaiting reviewer; flips to `merged` on merge.
+
 **Problem** ([#7190](https://github.com/google/adk-python/issues/7190)).
 Every `functools.partial` was advertised as `'partial'` (partials carry no
 `__name__`), so only the last one survived; callable instances lost their
@@ -92,6 +102,8 @@ existing suite caught one intermediate regression of mine before I pushed.
 
 ## 5. genkit#6387 — don't re-register tools across parent/child registries
 
+**Status (verified 20 Sep 2026).** 🟡 Open — feedback addressed, checks green; flips to `merged` on merge.
+
 **Problem.** Plugin tools were re-registered on every `generate()`, tripping
 "already registered" errors.
 
@@ -105,6 +117,8 @@ pass; TypeScript compiles clean.
 
 ## 6. genkit#6386 — VertexAI location from `GOOGLE_CLOUD_LOCATION`
 
+**Status (verified 20 Sep 2026).** 🟡 Open — feedback addressed, checks green; flips to `merged` on merge.
+
 **Problem.** The VertexAI plugin ignored the standard `GOOGLE_CLOUD_LOCATION`
 environment variable.
 
@@ -113,6 +127,8 @@ review feedback: removed the now-unreachable `if (!location)` guard since the
 value always falls back to `'us-central1'`. All 57 tests in `utils_test.ts` pass.
 
 ## 7. ollama#16852 — CLI navigation, atomic manifests, model filtering
+
+**Status (verified 20 Sep 2026).** 🟡 Open — awaiting CI approval + reviewer; flips to `merged` on merge.
 
 **Problem.** Three papercuts: no word-by-word CLI navigation (Ctrl+Left/Right),
 manifest files written non-atomically (corruption risk on interruption), and no
@@ -124,6 +140,8 @@ manifests; a filter flag for local models. 3 commits, +61/−7, 5 files.
 
 ## 8. ollama#16851 — stop corrupting redirected output
 
+**Status (verified 20 Sep 2026).** 🟡 Open — awaiting CI approval + reviewer; flips to `merged` on merge.
+
 **Problem.** `ollama run <model> > output.txt` with no prompt opened the
 interactive REPL anyway, dumping ANSI codes and spinner characters into the file.
 
@@ -133,6 +151,8 @@ the user to pass the prompt directly, with a proper exit code. 2 commits,
 +58/−2, 2 files.
 
 ## 9. Fooocus#4187 — Arabic docs for Arab developers
+
+**Status (verified 20 Sep 2026).** 🟢 Open, mergeable (clean) — awaiting maintainer merge; flips to `merged` on merge.
 
 **Problem.** Zero Arabic documentation — Arab developers couldn't easily learn
 to contribute.
