@@ -1,35 +1,34 @@
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=zumrudu-anka.zumrudu-anka">
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=aslamalkarywk7.aslamalkarywk7">
 <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;This+is+Islam+El-Nashar....;💻Full-Stack+Developer+(Past);🎮+Game+Developer(now);:Nice+to+meet+you!&center=true&size=30">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;I'm+Islam+El-Nashar...;💻Freelance+Web+Developer;🤖AI+Integrations+•+🔒Web+Security;:Nice+to+meet+you!&center=true&size=30">
   </a>
 
-  Hi, I'm Islam El-Nashar , my nickname is aslamalkarywk7
+  Hi, I'm Islam El-Nashar, my nickname is aslamalkarywk7
 </h1>
 <p align="center">
-  Hi, I'm Islam El-Nashar, Web & Game Developer & AI Enthusiast from Egypt
+  Hi, I'm Islam El-Nashar, Freelance Web Developer from Egypt — I build websites & web apps, integrate AI (Arabic-first), and harden sites against attacks
   <br>
   <br>
-  💻 I'm currently working on small and medium-sized Karjoka projects and planning a large-scale AI project
+  💻 Currently open for freelance projects: business sites, stores, and custom web apps — plus planning a large-scale AI project
   <br>
-  🎓 I have experience in web development, game programming, and AI research
+  🎓 My curiosity drives me: web development, game programming, AI research, and defensive security
   <br>
-  🏫 I studied programming, game design, and software development through self-learning and projects
+  🏫 Self-taught through programming, game design, software development — and real open-source contributions
   <br>
   💻 I love coding, designing, and building innovative projects
   <br>
-  📚 I’m currently learning advanced AI and full-stack web development
+  📚 Currently deepening advanced AI and full-stack web development
   <br>
-  💬 Ask me anything about my projects or programming skills <a href="[https://github.com/yourusername](https://github.com/aslamalkarywk7/aslamalkarywk7-/issues)" title="GitHub Profile">Here</a>
+  💬 Ask me anything about my projects or programming skills <a href="https://github.com/aslamalkarywk7/aslamalkarywk7/issues" title="GitHub Profile">Here</a>
   <br>
-  📫 How to reach me: <a href="mailto: aslamalkarywka@gmail.com
-">aslamalkarywka@gmail.com</a>
+  📫 How to reach me: <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a>
 </p>
 
 <h3 align="center">🌐 My Social Media & Profiles</h3>
 <p align="center">
-  <strong>Islam Al-Nashar</strong> — 20 years old — Egypt / Compound — Born 2006<br>
-  <strong>Full Stack & AI Engineer • Game Dev • Android & iOS App Dev</strong> — 8 years experience since age 11<br>
+  <strong>Islam Al-Nashar</strong> — 20 years old — Egypt — Born 2006<br>
+  <strong>Freelance Web Developer • AI Integrations • Defensive Web Security</strong> — building since age 11<br>
   <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> • <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a><br>
   🌐 Portfolio: <a href="https://aslamalkarywk7.github.io/aslamalkarywk7/"><strong>aslamalkarywk7.github.io/aslamalkarywk7</strong></a>
 </p>
@@ -58,15 +57,39 @@
   <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a> • <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a>
 </p>
 
+<h4 align="center">🛠️ Freelance Services — what you can hire me for</h4>
+<p align="center">
+  🌐 Business websites, portfolios & stores (React / Next.js / Node.js)<br>
+  🤖 Arabic-first AI for your site: chat assistants, content & translation (see my Hugging Face models & datasets below)<br>
+  🔒 Website hardening & protection: audits, fixes, and monitoring against common attacks
+</p>
+
+<h4 align="center">⭐ Featured Work</h4>
+<p align="center">
+  <a href="https://github.com/aslamalkarywk7/islam-elite-portfolio"><strong>islam-elite-portfolio</strong></a> — 17 live web projects (demos included)<br>
+  <a href="https://github.com/aslamalkarywk7/AndroidReverseEngineering-Guide"><strong>AndroidReverseEngineering-Guide</strong></a> — ⭐ most-starred guide (defensive security research)<br>
+  <a href="https://github.com/aslamalkarywk7/TurboQuant"><strong>TurboQuant</strong></a> — lossless compression for every file type + web console
+</p>
+
+<h4 align="center">🌍 Open-Source Contributions (Big Tech)</h4>
+<p align="center">
+  Active pull requests to <a href="https://github.com/microsoft/markitdown">microsoft/markitdown</a> •
+  <a href="https://github.com/google/adk-python">google/adk-python</a> •
+  <a href="https://github.com/genkit-ai/genkit">genkit-ai/genkit</a> •
+  <a href="https://github.com/ollama/ollama">ollama/ollama</a> •
+  <a href="https://github.com/mudler/LocalAI">mudler/LocalAI</a><br>
+  🎯 Goal: first merged PRs at Microsoft & Google — reviews in progress
+</p>
+
 <h4 align="center">🐧 Linux OS Contributions</h4>
 <p align="center">
   Dedicated repository for Linux operating system contributions<br>
   <a href="https://gitlab.com/aslamalkarywk7"><strong>gitlab.com/aslamalkarywk7</strong></a>
 </p>
 
-<h4 align="center">🔒 Security Programs — Bitbucket</h4>
+<h4 align="center">🔒 Defensive Security Research — Bitbucket</h4>
 <p align="center">
-  Dedicated repository for publishing security programs and techniques to protect against vulnerabilities<br>
+  Researching attacks to build better defenses: audits and protection techniques against vulnerabilities (educational & defensive only)<br>
   <a href="https://bitbucket.org/islam-alnnashera-dev"><strong>bitbucket.org/islam-alnnashera-dev</strong></a>
 </p>
 
@@ -116,6 +139,13 @@
 ---
 
 ## <div align="center">📚 Top 39 Programming Languages — Classified by OS & Environment</div>
+
+<div align="center">
+
+**🚀 Daily drivers** (production work, repos & PRs): Python, TypeScript, JavaScript, Go, PHP, HTML/CSS
+<br>
+**🔭 Also explored** (curiosity & side experiments): everything below — I enjoy learning how each ecosystem thinks.
+</div>
 
 ### Mobile Systems (Android & iOS)
 - <img src="https://skillicons.dev/icons?i=kotlin" width="20" height="20" style="vertical-align:middle" /> **Kotlin:** Official language for modern Android development
@@ -178,15 +208,14 @@
   <tbody>
     <tr>
         <td>
-          <img title="Problem Solving" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/problemSolving.png">
           <br><strong>problemSolving</strong>
           </td>
                 <td>
-                  <img title="Git" height="25" src="images/git-original.svg">
+                  <img title="Git" height="25" src="https://skillicons.dev/icons?i=git">
                   <br><strong>git & github</strong>
                   </td>
       <td>
-      <img title="C" height="65" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/c.svg" width="65" alt="c"/><br><strong>c</strong>
+      <img title="C" height="65" src="https://skillicons.dev/icons?i=c" width="65" alt="c"/><br><strong>c</strong>
         </td>
       <td>
         <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" height="65" alt="Python"/><br><strong>Python</strong>
@@ -225,26 +254,26 @@
   <tbody>
     <tr>
               <td>
-  <img title="angularjs" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/angularjs.png">
+  <img title="angularjs" height="25" src="https://skillicons.dev/icons?i=angular">
   <br><strong>angularjs</strong>
         </td>
         <td>
-  <img title="JQuery" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/jquery-original.svg">
+  <img title="JQuery" height="25" src="https://skillicons.dev/icons?i=jquery">
   <br><strong>jquery</strong>
         </td>
           <td>
-   <img title="Django" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/django.png"><br><strong>django</strong>
+   <img title="Django" height="25" src="https://skillicons.dev/icons?i=django"><br><strong>django</strong>
         </td>
                <td>
- <img title="Flask" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/flask.png">
+ <img title="Flask" height="25" src="https://skillicons.dev/icons?i=flask">
  <br><strong>flask</strong>
                </td>
       <td>
- <img title="JSON" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/json.svg">
+ <img title="JSON" height="25" src="https://skillicons.dev/icons?i=json">
  <br><strong>json</strong>
 </td>
     <td>
-    <img title="SASS" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/sass.svg"><br><strong>sass</strong>
+    <img title="SASS" height="25" src="https://skillicons.dev/icons?i=sass"><br><strong>sass</strong>
               </td>
       <td>
         <img src="https://techstack-generator.vercel.app/react-icon.svg" width="65" height="65" alt="React"/><br><strong>React</strong>
@@ -256,10 +285,10 @@
         <img src="https://skillicons.dev/icons?i=svelte" width="65" height="65" alt="Svelte"/><br><strong>Svelte</strong>
       </td>
       <td>
-        <img src="https://private-user-images.githubusercontent.com/74038190/238200426-29fd6286-4e7b-4d6c-818f-c4765d5e39a9.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQxODUzNTMsIm5iZiI6MTczNDE4NTA1MywicGF0aCI6Ii83NDAzODE5MC8yMzgyMDA0MjYtMjlmZDYyODYtNGU3Yi00ZDZjLTgxOGYtYzQ3NjVkNWUzOWE5LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE0VDE0MDQxM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWEzMTE1YjY3MTQxYTgxZGE4ZmMwOGJiNzhiNGYzN2MzMGQ4NTBjZmJkMTgxM2M3YWEyNzMwNTVkMGI4YjBhZTYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.6c5IES4KFu9IsB1-ztrtn7nAQyK4p-cb0CIiY-kG3dg" width="65" height="65" alt="HTML"/><br><strong>HTML</strong>
+        <img src="https://skillicons.dev/icons?i=html" width="65" height="65" alt="HTML"/><br><strong>HTML</strong>
       </td>
       <td>
-        <img src="https://private-user-images.githubusercontent.com/74038190/238200428-67f477ed-6624-42da-99f0-1a7b1a16eecb.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQxODUzNTMsIm5iZiI6MTczNDE4NTA1MywicGF0aCI6Ii83NDAzODE5MC8yMzgyMDA0MjgtNjdmNDc3ZWQtNjYyNC00MmRhLTk5ZjAtMWE3YjFhMTZlZWNiLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE0VDE0MDQxM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRiMjI5MTdiMzg3MjQ1YTQxZDgzZGZjN2MwNTU3Mjg4MjI0YjZmZGJiNTUyYjFkNTY2NjNiOTVhMjhkYzFlYmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Rb6i-jkgQ2xoFyn4gOW62asAG2b0uLAkFpnVcq8J6Ws" width="65" height="65" alt="CSS"/><br><strong>CSS</strong>
+        <img src="https://skillicons.dev/icons?i=css" width="65" height="65" alt="CSS"/><br><strong>CSS</strong>
       </td>
       <td>
         <img src="https://skillicons.dev/icons?i=tailwind" width="65" height="65" alt="Tailwind CSS"/><br><strong>Tailwind</strong>
@@ -353,7 +382,7 @@
         <img src="https://skillicons.dev/icons?i=bitbucket" width="65" height="65" alt="Bitbucket"/><br><strong>Bitbucket</strong>
       </td>
       <td>
-        <img src="https://private-user-images.githubusercontent.com/74038190/238200431-3c16d4f2-b757-4c70-8f42-43d5dddd2c36.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQxODUzNTMsIm5iZiI6MTczNDE4NTA1MywicGF0aCI6Ii83NDAzODE5MC8yMzgyMDA0MzEtM2MxNmQ0ZjItYjc1Ny00YzcwLThmNDItNDNkNWRkZGQyYzM2LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE0VDE0MDQxM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZjNTk4MzQ1YWY5YTE0OTI4YTEzOTlhMjA0ZGZhMzcwYjY0ZThjNTU1NDRkOWQ0YTcwMWIxYmNjOGMzZDMwZTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.vEbkwMJvc7ME03_gNEzwmtJk86pjGpaAyF-DzicbDT0" width="65" height="65" alt="Firebase"/><br><strong>Firebase</strong>
+        <img src="https://skillicons.dev/icons?i=firebase" width="65" height="65" alt="Firebase"/><br><strong>Firebase</strong>
       </td>
       <td>
         <img src="https://skillicons.dev/icons?i=netlify" width="65" height="65" alt="Netlify"/><br><strong>Netlify</strong>
@@ -380,7 +409,7 @@
   <tbody>
     <tr>
       <td>
-        <img src="https://private-user-images.githubusercontent.com/74038190/238200620-398b19b1-9aae-4c1f-8bc0-d172a2c08d68.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQxODczNjYsIm5iZiI6MTczNDE4NzA2NiwicGF0aCI6Ii83NDAzODE5MC8yMzgyMDA2MjAtMzk4YjE5YjEtOWFhZS00YzFmLThiYzAtZDE3MmEyYzA4ZDY4LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE0VDE0Mzc0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY3YTc4ZTY5ODdkOGEyMWViMDg4ZjU4NDg2NzZmYWM2MzcyOWM2NTFmYTZhY2VmMmM0NGQ2ODA0ZDI4YzNhOGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.8x2xyP2iepJnG-mADewxO5Qr2hr1tuJVX6zVxo4klc4" width="65" height="65" alt="MongoDB"/><br><strong>MongoDB</strong>
+        <img src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" alt="MongoDB"/><br><strong>MongoDB</strong>
       </td>
     </tr>
   </tbody>
@@ -396,7 +425,7 @@
         <img src="https://i.postimg.cc/26BMT0Kf/download-8.png" width="65" height="65" alt="Hugging Face"/><br><strong>Hugging Face</strong>
       </td>
       <td>
-  <img src="Animation - 1734183175462.gif" width="65" height="65" alt="Gemini"/><br><strong>Gemini</strong>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="65" height="65" alt="Gemini"/><br><strong>Gemini</strong>
       </td>
       <td>
         <img src="https://github.com/user-attachments/assets/269ac516-f9a0-40a4-89ac-7040c765d213" width="65" height="65" alt="Llama"/><br><strong>Llama</strong>
