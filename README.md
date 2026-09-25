@@ -73,12 +73,13 @@
 
 <h4 align="center">🌍 Open-Source Contributions (Big Tech)</h4>
 <p align="center">
-  Active pull requests to <a href="https://github.com/microsoft/markitdown">microsoft/markitdown</a> •
-  <a href="https://github.com/google/adk-python">google/adk-python</a> •
-  <a href="https://github.com/genkit-ai/genkit">genkit-ai/genkit</a> •
-  <a href="https://github.com/ollama/ollama">ollama/ollama</a> •
-  <a href="https://github.com/mudler/LocalAI">mudler/LocalAI</a><br>
-  🎯 Goal: first merged PRs at Microsoft & Google — reviews in progress<br>
+  Active pull requests with reviews in progress:<br>
+  <a href="https://github.com/microsoft/markitdown/pull/2538"><strong>markitdown#2538</strong> — ✅ approved by maintainer</a> •
+  <a href="https://github.com/microsoft/markitdown/pull/2539"><strong>markitdown#2539</strong> — under review</a><br>
+  <a href="https://github.com/google/adk-python/pull/7198"><strong>adk-python#7198</strong></a> •
+  <a href="https://github.com/genkit-ai/genkit/pull/6386"><strong>genkit#6386</strong></a> •
+  <a href="https://github.com/genkit-ai/genkit/pull/6387"><strong>genkit#6387</strong></a><br>
+  🎯 Goal: first merged PRs at Microsoft & Google — one approval already secured<br>
   📖 <a href="CONTRIBUTIONS.md"><strong>Read the full story: every contribution, how I solved it & Q&A</strong></a>
 </p>
 
