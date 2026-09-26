@@ -1,13 +1,13 @@
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=aslamalkarywk7.aslamalkarywk7">
 <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;I'm+Islam+El-Nashar...;💻Freelance+Web+Developer+(Next.js/TS/Prisma);:Nice+to+meet+you!&center=true&size=30">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;I'm+Islam+El-Nashar...;💻Web+Developer+(Next.js/TS/Prisma);:Nice+to+meet+you!&center=true&size=30">
   </a>
 
   Hi, I'm Islam El-Nashar, my nickname is aslamalkarywk7
 </h1>
 <p align="center">
-  Hi, I'm Islam El-Nashar, Freelance Web Developer (Next.js/TS/Prisma) from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills
+  Hi, I'm Islam El-Nashar, Web Developer (Next.js/TS/Prisma) from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills
   <br>
   <br>
   💻 Currently open for freelance projects: business sites, stores, and custom web apps — plus planning a large-scale AI project
@@ -28,7 +28,7 @@
 <h3 align="center">🌐 My Social Media & Profiles</h3>
 <p align="center">
   <strong>Islam El-Nashar</strong> — 20 years old — Egypt — Born 2006<br>
-  <strong>Freelance Web Developer (Next.js/TS/Prisma)</strong> — AI integration & site hardening for web apps<br>
+  <strong>Web Developer (Next.js/TS/Prisma)</strong> — AI integration & site hardening for web apps<br>
   <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> • <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a> • <a href="https://www.linkedin.com/in/islam-elnashar/"><strong>LinkedIn</strong></a><br>
   🌐 Portfolio: <a href="https://aslamalkarywk7.github.io/aslamalkarywk7/"><strong>aslamalkarywk7.github.io/aslamalkarywk7</strong></a>
 </p>
