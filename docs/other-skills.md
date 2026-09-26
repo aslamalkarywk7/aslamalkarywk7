@@ -1,6 +1,6 @@
 # Other Skills — Moved Out of Main Profile
 
-> Docs: [README](../README.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Contributions](../CONTRIBUTIONS.md)
+> Docs: [README](../README.md) • [Stack](tech-stack.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Contributions](../CONTRIBUTIONS.md)
 
 > Everything here is curiosity / side experiments, not hiring claims.
 > Kept in a separate file so `README.md` stays: Web Developer first.
