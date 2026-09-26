@@ -36,10 +36,12 @@
   <a href="https://huggingface.co/ISLAM-PO"><strong>Hugging Face — ISLAM-PO</strong></a>
 </p>
 
-<h4 align="center">🤖 Projects (Hugging Face)</h4>
+<h4 align="center">🤖 Models (Hugging Face)</h4>
 <p align="center">
-  <a href="https://huggingface.co/ISLAM-PO/MasryGPT_chat_FINALLY">MasryGPT_chat_FINALLY</a> •
-  <a href="https://huggingface.co/ISLAM-PO/masrygpt-flash">masrygpt-flash</a>
+  <a href="https://huggingface.co/ISLAM-PO/MasryGPT-Chat-1.5B">MasryGPT-Chat-1.5B</a> •
+  <a href="https://huggingface.co/ISLAM-PO/MasryGPT-Flash-Adapter">MasryGPT-Flash-Adapter</a> •
+  <a href="https://huggingface.co/ISLAM-PO/Glitch-Img-1.0">Glitch-Img-1.0</a><br>
+  📖 Full details: <a href="docs/ai-integrations.md"><strong>docs/ai-integrations.md</strong></a>
 </p>
 
 <h4 align="center">📊 Training Datasets</h4>
@@ -47,8 +49,7 @@
   <a href="https://huggingface.co/datasets/ISLAM-PO/arabic-history-and-dialects">arabic-history-and-dialects</a> •
   <a href="https://huggingface.co/datasets/ISLAM-PO/arabic-to-code-8-langs-3m">arabic-to-code-8-langs-3m</a> •
   <a href="https://huggingface.co/datasets/ISLAM-PO/documents-Egyptian-Arabic">documents-Egyptian-Arabic</a><br>
-  <a href="https://huggingface.co/datasets/ISLAM-PO/arab-dialects-20-countries-3m">arab-dialects-20-countries-3m</a> •
-  <a href="https://huggingface.co/datasets/ISLAM-PO/PLATFORM-DATASET-ARABIC-TOOLS">PLATFORM-DATASET-ARABIC-TOOLS</a>
+  <a href="https://huggingface.co/datasets/ISLAM-PO/arab-dialects-20-countries-3m">arab-dialects-20-countries-3m</a>
 </p>
 
 <h4 align="center">💻 GitHub Projects</h4>
@@ -60,8 +61,8 @@
 <h4 align="center">🛠️ Freelance Services — what you can hire me for</h4>
 <p align="center">
   🌐 Business websites, portfolios & stores (React / Next.js / Node.js)<br>
-  🤖 Arabic-first AI for your site: chat assistants, content & translation (see my Hugging Face models & datasets below)<br>
-  🔒 Website hardening & protection: audits, fixes, and monitoring against common attacks
+  🤖 Arabic-first AI for your site: chat assistants, content & translation (details: <a href="docs/ai-integrations.md">docs/ai-integrations.md</a>)<br>
+  🔒 Website hardening & protection: audits, fixes, and monitoring against common attacks (details: <a href="docs/defensive-security.md">docs/defensive-security.md</a>)
 </p>
 
 <h4 align="center">⭐ Featured Work</h4>
@@ -74,7 +75,7 @@
 <h4 align="center">🌍 Open-Source Contributions (Big Tech)</h4>
 <p align="center">
   Active pull requests with reviews in progress:<br>
-  <a href="https://github.com/microsoft/markitdown/pull/2538"><strong>markitdown#2538</strong> — ✅ approved by maintainer</a> •
+  <a href="https://github.com/microsoft/markitdown/pull/2538"><strong>markitdown#2538</strong> — awaiting re-review</a> •
   <a href="https://github.com/microsoft/markitdown/pull/2539"><strong>markitdown#2539</strong> — under review</a><br>
   <a href="https://github.com/google/adk-python/pull/7198"><strong>adk-python#7198</strong></a> •
   <a href="https://github.com/genkit-ai/genkit/pull/6386"><strong>genkit#6386</strong></a> •
@@ -83,16 +84,16 @@
   📖 <a href="CONTRIBUTIONS.md"><strong>Read the full story: every contribution, how I solved it & Q&A</strong></a>
 </p>
 
-<h4 align="center">🐧 Linux OS Contributions</h4>
+<h4 align="center">🐧 Linux & Deploy</h4>
 <p align="center">
-  Dedicated repository for Linux operating system contributions<br>
-  <a href="https://gitlab.com/aslamalkarywk7"><strong>gitlab.com/aslamalkarywk7</strong></a>
+  Deploy and run web apps on Linux: Bash, Docker, GitHub Actions CI<br>
+  📖 Details: <a href="docs/linux-systems.md"><strong>docs/linux-systems.md</strong></a>
 </p>
 
-<h4 align="center">🔒 Defensive Security Research — Bitbucket</h4>
+<h4 align="center">🔒 Defensive Security Research</h4>
 <p align="center">
   Researching attacks to build better defenses: audits and protection techniques against vulnerabilities (educational & defensive only)<br>
-  <a href="https://bitbucket.org/islam-alnnashera-dev"><strong>bitbucket.org/islam-alnnashera-dev</strong></a>
+  📖 Details: <a href="docs/defensive-security.md"><strong>docs/defensive-security.md</strong></a>
 </p>
 
 ## <div align="center">🧩 Languages & Frameworks — Extended Stack</div>

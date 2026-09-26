@@ -1,5 +1,7 @@
 # Linux & Systems — Supporting Skill for Web Deployment
 
+> Docs: [README](../README.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md)
+
 > Kept out of the main README to keep hiring focus on web.
 > Position: deploy and run web apps on Linux, not OS development.
 

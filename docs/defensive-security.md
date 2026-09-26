@@ -1,5 +1,7 @@
 # Defensive Web Security — Supporting Skill for Web
 
+> Docs: [README](../README.md) • [AI](ai-integrations.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md)
+
 > Main profile stays web. This file holds security details so the README does not mix roles.
 > Position: web developer who hardens his own sites, not a pentester for hire.
 

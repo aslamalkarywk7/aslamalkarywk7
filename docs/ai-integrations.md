@@ -1,5 +1,7 @@
 # AI Integrations — Supporting Skill for Web (not a separate specialty)
 
+> Docs: [README](../README.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md)
+
 > This file keeps AI details out of the main profile to avoid noise.
 > Main focus stays: Freelance Web Developer. AI here = what I integrate into websites.
 
