@@ -8,7 +8,7 @@
 ## Hugging Face
 - Profile: https://huggingface.co/ISLAM-PO
 
-## Models (verified 26 Sep 2026)
+## Models (verified 29 Sep 2026)
 
 ### 1. MasryGPT-Chat-1.5B — Egyptian Arabic chat
 - Link: https://huggingface.co/ISLAM-PO/MasryGPT-Chat-1.5B
@@ -17,7 +17,7 @@
 - Languages: `ar` + `en`, tags: `egyptian-arabic`, `masry`, `conversational`, `chat`
 - Use in web: Arabic-first chat assistant endpoint for Next.js sites
 - Files: `model.safetensors`, `chat_template.jinja`, `inference_example.py`, `EVALUATION.md`, `eval_results.json`, `run_benchmark_v2.py`
-- Stats: ~1181 downloads — most used of the three
+- Stats: ~1235 downloads — most used of the three
 - Old URL `MasryGPT_chat_FINALLY` renamed — old link removed
 
 ### 2. MasryGPT-Flash-Adapter — lightweight LoRA adapter
@@ -26,7 +26,7 @@
 - Stack: `peft`, `gpt2` / `causal-lm`, license `other`
 - Use in web: cheap Arabic autocomplete / draft replies where full 1.5B is too heavy
 - Files: `USAGE.md`, `TOKENIZER.md`, `TESTING.md`, `ARCHITECTURE.md`, `chat_template.jinja`
-- Stats: ~129 downloads
+- Stats: ~131 downloads
 - Old URL `masrygpt-flash` renamed — old link removed
 
 ### 3. Glitch-Img-1.0 — image generation
@@ -35,7 +35,7 @@
 - Stack: `text-to-image` + `image-editing`, `rgba`, `safetensors`
 - Use in web: product art / OG images / avatar generation endpoint
 - Files: `model_index.json`, `scheduler/`, `text_encoder/`, `processor/`, `assets/logo.png`
-- Stats: ~4 downloads — experimental, newest of the three
+- Stats: ~6 downloads — experimental, newest of the three
 
 ## Datasets (verified working)
 - https://huggingface.co/datasets/ISLAM-PO/arabic-history-and-dialects
