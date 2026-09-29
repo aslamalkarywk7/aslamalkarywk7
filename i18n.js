@@ -13,16 +13,16 @@ const translations = {
 
         // ── Hero ─────────────────────────────────────────────────
         "hero.greeting":  "Hi, I'm",
-        "hero.headline":  "Web & Game Developer & AI Enthusiast from Egypt",
-        "hero.desc":      "-year-old developer crafting the future of web and gaming — blending clean code with creative vision to build innovative, complex platforms.",
+        "hero.headline":  "Web Developer (Next.js/TS/Prisma) from Egypt",
+        "hero.desc":      "-year-old Web Developer from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
         "hero.cta1":      "Explore My Projects",
         "hero.cta2":      "Let's Talk",
 
         // ── About ─────────────────────────────────────────────────
         "about.title":    "About Me",
-        "about.p1":       "I'm <strong>Islam El-Nashar</strong> (إسلام النشار), a passionate developer from Egypt with deep experience in <strong>web development</strong>, <strong>game programming</strong>, and <strong>AI research</strong> — all built through extensive self-learning and hands-on project building.",
-        "about.p2":       "Currently, I'm working on small and medium-sized <strong>AI</strong> projects while planning a large-scale AI initiative. I love coding, designing, and building innovative, complex technical platforms that push boundaries.",
-        "about.p3":       "Right now I'm focused on mastering <strong>advanced AI</strong> and <strong>full-stack web development</strong> to create tools and experiences that make a real impact.",
+        "about.p1":       "I'm <strong>Islam El-Nashar</strong> (إسلام النشار), a <strong>Web Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
+        "about.p2":       "Currently open for freelance: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI and website hardening.",
+        "about.p3":       "Focused on <strong>full-stack web</strong> and <strong>AI integration</strong>. Game dev, mobile/desktop and long language lists are curiosity only — see docs for honest scope.",
         "about.cv":       "View CV",
         "about.stat1":    "Years Old",
         "about.stat2":    "Languages",
@@ -40,8 +40,12 @@ const translations = {
 
         // ── Skills ──────────────────────────────────────────────
         "skills.title":    "Tech Stack",
-        "skills.subtitle": "Technologies I work with, organized by domain.",
+        "skills.subtitle": "Production web stack first. Explored tech is Familiar — full map in docs.",
         "skills.tab1":     "Languages",
+        "skills.tabFrontend": "Frontend",
+        "skills.tabBackend": "Backend",
+        "skills.tabDatabases": "Databases",
+        "skills.tabGame": "Game • Unity",
         "skills.tab2":     "Web & Backend",
         "skills.tab3":     "AI & DevOps",
         "skills.tab4":     "Design & Tools",
@@ -77,16 +81,16 @@ const translations = {
 
         // ── Hero ─────────────────────────────────────────────────
         "hero.greeting":  "مرحباً، أنا",
-        "hero.headline":  "مطوّر ويب وألعاب ومتحمّس للذكاء الاصطناعي من مصر",
-        "hero.desc":      "-سنة، أبني مستقبل الويب والألعاب — أمزج الكود النظيف بالرؤية الإبداعية لبناء منصات مبتكرة ومعقدة.",
+        "hero.headline":  "مطوّر ويب (Next.js/TS/Prisma) من مصر",
+        "hero.desc":      "-سنة، مطوّر ويب من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
         "hero.cta1":      "استعرض مشاريعي",
         "hero.cta2":      "لنتحدث",
 
         // ── About ─────────────────────────────────────────────────
         "about.title":    "عنّي",
-        "about.p1":       "أنا <strong>إسلام النشار</strong> (Islam El-Nashar)، مطوّر شغوف من مصر بخبرة واسعة في <strong>تطوير الويب</strong> و<strong>برمجة الألعاب</strong> و<strong>أبحاث الذكاء الاصطناعي</strong> — بُنيت كلها من خلال التعلم الذاتي المكثف والعمل المباشر على المشاريع.",
-        "about.p2":       "حاليًا أعمل على مشاريع <strong>ذكاء اصطناعي</strong> صغيرة ومتوسطة مع التخطيط لمبادرة AI واسعة النطاق. أحب البرمجة والتصميم وبناء منصات تقنية مبتكرة تتجاوز الحدود.",
-        "about.p3":       "أُركّز الآن على إتقان <strong>الذكاء الاصطناعي المتقدم</strong> و<strong>تطوير الويب الشامل</strong> لإنشاء أدوات وتجارب ذات تأثير حقيقي.",
+        "about.p1":       "أنا <strong>إسلام النشار</strong> (Islam El-Nashar)، <strong>مطوّر ويب (Next.js/TS/Prisma)</strong> من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
+        "about.p2":       "متاح للفريلانس: <strong>مواقع شركات ومتاجر وتطبيقات مخصصة</strong> — مع AI عربي أولاً وتقوية المواقع.",
+        "about.p3":       "أركّز على <strong>الويب الشامل</strong> و<strong>تكامل AI</strong>. تطوير الألعاب والموبايل وقوائم اللغات الطويلة فضول فقط — راجع docs للنطاق الصادق.",
         "about.cv":       "عرض السيرة الذاتية",
         "about.stat1":    "سنة عمر",
         "about.stat2":    "لغات برمجية",
@@ -104,8 +108,12 @@ const translations = {
 
         // ── Skills ──────────────────────────────────────────────
         "skills.title":    "مجموعة التقنيات",
-        "skills.subtitle": "التقنيات التي أعمل بها، منظمة حسب المجال.",
+        "skills.subtitle": "الويب الإنتاجي أولاً. التقنيات المستكشفة Familiar — الخريطة الكاملة في docs.",
         "skills.tab1":     "اللغات",
+        "skills.tabFrontend": "واجهة أمامية",
+        "skills.tabBackend": "خلفية",
+        "skills.tabDatabases": "قواعد بيانات",
+        "skills.tabGame": "ألعاب • يونتي",
         "skills.tab2":     "الويب والخوادم",
         "skills.tab3":     "AI وDevOps",
         "skills.tab4":     "التصميم والأدوات",
