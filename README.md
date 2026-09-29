@@ -282,9 +282,6 @@ Extended stack and the Top-39 language map moved out of this README to avoid dup
         <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" height="65" alt="GitHub"/><br><strong>GitHub</strong>
       </td>
       <td>
-        <img src="https://skillicons.dev/icons?i=bitbucket" width="65" height="65" alt="Bitbucket"/><br><strong>Bitbucket</strong>
-      </td>
-      <td>
         <img src="https://skillicons.dev/icons?i=firebase" width="65" height="65" alt="Firebase"/><br><strong>Firebase</strong>
       </td>
       <td>
@@ -312,7 +309,19 @@ Extended stack and the Top-39 language map moved out of this README to avoid dup
   <tbody>
     <tr>
       <td>
+        <img src="https://skillicons.dev/icons?i=postgres" width="65" height="65" alt="PostgreSQL"/><br><strong>PostgreSQL</strong>
+      </td>
+      <td>
+        <img src="https://skillicons.dev/icons?i=mysql" width="65" height="65" alt="MySQL"/><br><strong>MySQL</strong>
+      </td>
+      <td>
         <img src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" alt="MongoDB"/><br><strong>MongoDB</strong>
+      </td>
+      <td>
+        <img src="https://skillicons.dev/icons?i=redis" width="65" height="65" alt="Redis"/><br><strong>Redis</strong>
+      </td>
+      <td>
+        <img src="https://skillicons.dev/icons?i=sqlite" width="65" height="65" alt="SQLite"/><br><strong>SQLite</strong>
       </td>
     </tr>
   </tbody>
