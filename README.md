@@ -4,10 +4,10 @@
     <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;I'm+Islam+El-Nashar...;💻Web+Developer+(Next.js/TS/Prisma);:Nice+to+meet+you!&center=true&size=30">
   </a>
 
-  Hi, I'm Islam El-Nashar, my nickname is aslamalkarywk7
+  Hi, I'm Islam El-Nashar
 </h1>
 <p align="center">
-  Hi, I'm Islam El-Nashar, Web Developer (Next.js/TS/Prisma) from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills
+  Web Developer (Next.js/TS/Prisma) from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills
   <br>
   <br>
   💻 Currently open for freelance projects: business sites, stores, and custom web apps — plus planning a large-scale AI project
@@ -27,8 +27,6 @@
 
 <h3 align="center">🌐 My Social Media & Profiles</h3>
 <p align="center">
-  <strong>Islam El-Nashar</strong> — 20 years old — Egypt — Born 2006<br>
-  <strong>Web Developer (Next.js/TS/Prisma)</strong> — AI integration & site hardening for web apps<br>
   <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> • <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a> • <a href="https://www.linkedin.com/in/islam-elnashar/"><strong>LinkedIn</strong></a><br>
   🌐 Portfolio: <a href="https://aslamalkarywk7.github.io/aslamalkarywk7/"><strong>aslamalkarywk7.github.io/aslamalkarywk7</strong></a>
 </p>
@@ -54,7 +52,7 @@
 
 <h4 align="center">💻 GitHub Projects</h4>
 <p align="center">
-  <a href="https://github.com/aslamalkarywk7/islam-elite-portfolio">islam-elite-portfolio — 17 Live Web Projects</a><br>
+  <a href="https://github.com/aslamalkarywk7/islam-elite-portfolio">islam-elite-portfolio — 18 Live Web Projects</a><br>
   <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a> • <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a>
 </p>
 
@@ -67,7 +65,7 @@
 
 <h4 align="center">⭐ Featured Work</h4>
 <p align="center">
-  <a href="https://github.com/aslamalkarywk7/islam-elite-portfolio"><strong>islam-elite-portfolio</strong></a> — 17 live web projects (demos included)<br>
+  <a href="https://github.com/aslamalkarywk7/islam-elite-portfolio"><strong>islam-elite-portfolio</strong></a> — 18 live web projects (demos included)<br>
   <a href="https://github.com/aslamalkarywk7/AndroidReverseEngineering-Guide"><strong>AndroidReverseEngineering-Guide</strong></a> — ⭐ most-starred guide (defensive security research)<br>
   <a href="https://github.com/aslamalkarywk7/TurboQuant"><strong>TurboQuant</strong></a> — lossless compression for every file type + web console
 </p>
