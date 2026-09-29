@@ -7,7 +7,7 @@
 
 ## What I actually use
 - Bash / Shell scripting for server tasks and automation
-- Docker for local dev and deploy, GitHub Actions CI (see `ecommerce-store` and `saas-starter` workflows)
+- Docker for local dev and deploy, GitHub Actions CI (patterns applied in current web repos)
 - Basic deploy: Nginx / Node / SQLite-to-Postgres (Supabase) path
 
 ## Repos and links

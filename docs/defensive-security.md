@@ -8,7 +8,7 @@
 ## What I do in web projects
 - Auth: JWT HttpOnly cookies, bcrypt hashing, middleware-protected routes
 - Hardening: XSS escaping, CSRF SameSite, Zod validation, rate-limit, secure headers
-- Applied in: `ecommerce-store` and `saas-starter` (see their READMEs for Security sections)
+- Applied as patterns in current web work (see `islam-elite-portfolio` and `TurboQuant` for live code)
 
 ## Research (defensive only)
 - Guide: https://github.com/aslamalkarywk7/AndroidReverseEngineering-Guide (6 stars, most-starred among my repos — small scale, educational)
