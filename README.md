@@ -69,6 +69,9 @@
   <a href="https://github.com/aslamalkarywk7/AndroidReverseEngineering-Guide"><strong>AndroidReverseEngineering-Guide</strong></a> — ⭐ most-starred guide (defensive security research)<br>
   <a href="https://github.com/aslamalkarywk7/TurboQuant"><strong>TurboQuant</strong></a> — lossless compression for every file type + web console
 </p>
+<p align="center">
+  <a href="docs/full-stack.md"><strong>📄 Full-Stack proof page</strong></a> — backend + 18 sites + 65 designs with screenshots, live demos, pinned versions
+</p>
 
 <h4 align="center">🌍 Open-Source Contributions (Big Tech)</h4>
 <p align="center">
