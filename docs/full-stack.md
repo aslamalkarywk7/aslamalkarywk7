@@ -105,9 +105,8 @@ ADMIN team panel — users, request metrics, full audit trail (Live DB / Demo ba
 <div align="center">
 
 8 domains (Healthcare, Finance, E-commerce, Education, Logistics, Real Estate,
-SaaS Analytics, Hospitality) × 10 layouts · pure SVG images, filterable
-<a href="../gallery/index.html"><strong>gallery</strong></a> (HTML/CSS/JS only,
-no build step) · <a href="https://github.com/aslamalkarywk7/aslamalkarywk7/tree/main/gallery"><strong>source folder</strong></a>
+SaaS Analytics, Hospitality) × 10 layouts · pure SVG images in
+<a href="https://github.com/aslamalkarywk7/aslamalkarywk7/tree/main/gallery/img"><strong>gallery/img</strong></a> (open any file directly as an image)
 
 <br><br>
 
