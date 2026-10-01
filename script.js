@@ -529,21 +529,23 @@
       btn.disabled = true;
       btnText.textContent = "Sending…";
 
-      // Wire to a real endpoint (Formspree, EmailJS, Netlify Forms…) here.
-      // This timeout simulates the network delay for UI demonstration.
-      setTimeout(() => {
-        contactForm.hidden = true;
-        formSuccess.hidden = false;
+      // No backend: compose a real email via the visitor's own mail app.
+      // Honest by design - never pretend a message was delivered.
+      const name = contactForm.querySelector("#cf-name").value.trim();
+      const email = contactForm.querySelector("#cf-email").value.trim();
+      const message = contactForm.querySelector("#cf-message").value.trim();
+      const subject = encodeURIComponent("Portfolio contact from " + name);
+      const body = encodeURIComponent(message + "\n\n— " + name + " (" + email + ")");
+      window.location.href = "mailto:aslamalkarywka@gmail.com?subject=" + subject + "&body=" + body;
+      formSuccess.hidden = false;
+      btn.disabled = false;
+      btnText.textContent = originalText;
 
-        // Auto-reset so the user can send another message after 8 s
-        setTimeout(() => {
-          contactForm.reset();
-          contactForm.hidden = false;
-          formSuccess.hidden = true;
-          btn.disabled = false;
-          btnText.textContent = originalText;
-        }, 8000);
-      }, 1100);
+      // Auto-reset so the visitor can compose another message after 8 s
+      setTimeout(() => {
+        contactForm.reset();
+        formSuccess.hidden = true;
+      }, 8000);
     });
   }
 

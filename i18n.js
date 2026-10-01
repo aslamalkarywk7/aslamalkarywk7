@@ -65,7 +65,7 @@ const translations = {
         "contact.form.email":  "Email",
         "contact.form.msg":    "Message",
         "contact.form.btn":    "Send Message",
-        "contact.success":     "Message received — I'll get back to you very soon!",
+        "contact.success":     "Opening your email app — message addressed to me, just press send!",
         "footer.rights":       "Islam El-Nashar. All rights reserved.",
 
         // ── Lang button ─────────────────────────────────────────
@@ -133,7 +133,7 @@ const translations = {
         "contact.form.email":  "البريد الإلكتروني",
         "contact.form.msg":    "الرسالة",
         "contact.form.btn":    "إرسال الرسالة",
-        "contact.success":     "تم استلام رسالتك — سأرد عليك قريبًا جدًا!",
+        "contact.success":     "جاري فتح تطبيق البريد — الرسالة موجهة إليّ، اضغط إرسال!",
         "footer.rights":       "إسلام النشار. جميع الحقوق محفوظة.",
 
         // ── Lang button ─────────────────────────────────────────
