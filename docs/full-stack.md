@@ -23,7 +23,8 @@
   <a href="defensive-security.md"><strong>Security</strong></a> •
   <a href="linux-systems.md"><strong>Linux</strong></a> •
   <a href="other-skills.md"><strong>Other</strong></a> •
-  <a href="../CONTRIBUTIONS.md"><strong>Contributions</strong></a>
+  <a href="../CONTRIBUTIONS.md"><strong>Contributions</strong></a> •
+  <a href="qa.md"><strong>Q&amp;A</strong></a>
 </p>
 
 <h2 align="center">🖥️ Backend — APIs, Auth, Database</h2>
@@ -97,6 +98,24 @@ ADMIN team panel — users, request metrics, full audit trail (Live DB / Demo ba
 <br>
 
 <img src="https://raw.githubusercontent.com/aslamalkarywk7/opsdesk/main/public/screenshots/designs/all.png" width="800" alt="65 dashboard variants">
+
+</div>
+
+<h2 align="center">🖼️ Static Gallery — 80 Global Dashboard Mockups</h2>
+<div align="center">
+
+8 domains (Healthcare, Finance, E-commerce, Education, Logistics, Real Estate,
+SaaS Analytics, Hospitality) × 10 layouts · pure SVG images, filterable
+<a href="../gallery/index.html"><strong>gallery</strong></a> (HTML/CSS/JS only,
+no build step) · <a href="https://github.com/aslamalkarywk7/aslamalkarywk7/tree/main/gallery"><strong>source folder</strong></a>
+
+<br><br>
+
+<img src="https://raw.githubusercontent.com/aslamalkarywk7/aslamalkarywk7/main/gallery/img/d-01.svg" width="800" alt="Healthcare Executive dashboard mockup">
+
+<br><br>
+
+<img src="https://raw.githubusercontent.com/aslamalkarywk7/aslamalkarywk7/main/gallery/img/d-33.svg" width="800" alt="Education Night Shift dashboard mockup">
 
 </div>
 
