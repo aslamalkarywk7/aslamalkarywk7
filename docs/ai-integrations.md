@@ -3,7 +3,7 @@
 > Docs: [README](../README.md) • [Stack](tech-stack.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md)
 
 > This file keeps AI details out of the main profile to avoid noise.
-> Main focus stays: Freelance Web Developer. AI here = what I integrate into websites.
+> Main focus stays: Full-Stack Web Developer. AI here = what I integrate into websites.
 
 ## Hugging Face
 - Profile: https://huggingface.co/ISLAM-PO

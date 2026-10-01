@@ -1,16 +1,16 @@
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=aslamalkarywk7.aslamalkarywk7">
 <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;I'm+Islam+El-Nashar...;💻Web+Developer+(Next.js/TS/Prisma);:Nice+to+meet+you!&center=true&size=30">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;I'm+Islam+El-Nashar...;💻Full-Stack+Developer+(Next.js/TS/Prisma);:Nice+to+meet+you!&center=true&size=30">
   </a>
 
   Hi, I'm Islam El-Nashar
 </h1>
 <p align="center">
-  Web Developer (Next.js/TS/Prisma) from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills
+  Full-Stack Developer (Next.js/TS/Prisma) from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills
   <br>
   <br>
-  💻 Currently open for freelance projects: business sites, stores, and custom web apps — plus planning a large-scale AI project
+  💻 Full-Stack Developer — open to full-time roles & freelance projects: business sites, stores, and custom web apps — plus planning a large-scale AI project
   <br>
   🎓 My curiosity drives me: web development, game programming, AI research, and defensive security
   <br>
@@ -56,7 +56,7 @@
   <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a> • <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a>
 </p>
 
-<h4 align="center">🛠️ Freelance Services — what you can hire me for</h4>
+<h4 align="center">🛠️ Full-Stack Services — what you can hire me for</h4>
 <p align="center">
   🌐 Business websites, portfolios & stores (React / Next.js / Node.js)<br>
   🤖 Arabic-first AI for your site: chat assistants, content & translation (details: <a href="docs/ai-integrations.md">docs/ai-integrations.md</a>)<br>

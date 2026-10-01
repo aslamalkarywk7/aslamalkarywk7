@@ -13,15 +13,15 @@ const translations = {
 
         // ── Hero ─────────────────────────────────────────────────
         "hero.greeting":  "Hi, I'm",
-        "hero.headline":  "Web Developer (Next.js/TS/Prisma) from Egypt",
+        "hero.headline":  "Full-Stack Developer (Next.js/TS/Prisma) from Egypt",
         "hero.desc":      "-year-old Web Developer from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
         "hero.cta1":      "Explore My Projects",
         "hero.cta2":      "Let's Talk",
 
         // ── About ─────────────────────────────────────────────────
         "about.title":    "About Me",
-        "about.p1":       "I'm <strong>Islam El-Nashar</strong> (إسلام النشار), a <strong>Web Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
-        "about.p2":       "Freelance Web Developer <strong>2023 - Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI and website hardening.",
+        "about.p1":       "I'm <strong>Islam El-Nashar</strong> (إسلام النشار), a <strong>Full-Stack Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
+        "about.p2":       "Full-Stack Web Developer <strong>2023 - Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI and website hardening. Open to full-time roles & freelance projects.",
         "about.p3":       "Focused on <strong>full-stack web</strong> and <strong>AI integration</strong>. Game dev, mobile/desktop and long language lists are curiosity only — see docs for honest scope.",
         "about.cv":       "View CV",
         "about.stat1":    "Years Old",
@@ -57,7 +57,7 @@ const translations = {
 
         // ── Contact / Footer ─────────────────────────────────────
         "contact.title":       "Get In Touch",
-        "contact.subtitle":    "Open to collaborations, freelance projects, and interesting conversations — let's build something great together.",
+        "contact.subtitle":    "Open to full-time Full-Stack roles, collaborations, and freelance projects — let's build something great together.",
         "contact.email.label": "Drop an Email",
         "contact.socials":     "Social Hubs",
         "contact.soon":        "Coming Soon",
@@ -81,15 +81,15 @@ const translations = {
 
         // ── Hero ─────────────────────────────────────────────────
         "hero.greeting":  "مرحباً، أنا",
-        "hero.headline":  "مطوّر ويب (Next.js/TS/Prisma) من مصر",
+        "hero.headline":  "مطوّر Full-Stack (Next.js/TS/Prisma) من مصر",
         "hero.desc":      "-سنة، مطوّر ويب من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
         "hero.cta1":      "استعرض مشاريعي",
         "hero.cta2":      "لنتحدث",
 
         // ── About ─────────────────────────────────────────────────
         "about.title":    "عنّي",
-        "about.p1":       "أنا <strong>إسلام النشار</strong> (Islam El-Nashar)، <strong>مطوّر ويب (Next.js/TS/Prisma)</strong> من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
-        "about.p2":       "مطور ويب حر <strong>2023 - الحاضر (3 سنوات)</strong>: <strong>مواقع شركات ومتاجر وتطبيقات مخصصة</strong> — مع AI عربي أولاً وتقوية المواقع.",
+        "about.p1":       "أنا <strong>إسلام النشار</strong> (Islam El-Nashar)، <strong>مطوّر Full-Stack (Next.js/TS/Prisma)</strong> من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
+        "about.p2":       "مطور Full-Stack <strong>2023 - الحاضر (3 سنوات)</strong>: <strong>مواقع شركات ومتاجر وتطبيقات مخصصة</strong> — مع AI عربي أولاً وتقوية المواقع. متاح للوظائف بدوام كامل والمشاريع الحرة.",
         "about.p3":       "أركّز على <strong>الويب الشامل</strong> و<strong>تكامل AI</strong>. تطوير الألعاب والموبايل وقوائم اللغات الطويلة فضول فقط — راجع docs للنطاق الصادق.",
         "about.cv":       "عرض السيرة الذاتية",
         "about.stat1":    "سنة عمر",
@@ -125,7 +125,7 @@ const translations = {
 
         // ── Contact / Footer ─────────────────────────────────────
         "contact.title":       "تواصل معي",
-        "contact.subtitle":    "مفتوح للتعاون، والمشاريع الحرة، والمحادثات الشيّقة — لنبني شيئًا رائعًا معًا.",
+        "contact.subtitle":    "مفتوح لوظائف Full-Stack بدوام كامل، والتعاون، والمشاريع الحرة — لنبني شيئًا رائعًا معًا.",
         "contact.email.label": "أرسل بريدًا إلكترونيًا",
         "contact.socials":     "مراكز التواصل الاجتماعي",
         "contact.soon":        "قريبًا",
