@@ -421,6 +421,8 @@ Extended stack and the Top-39 language map moved out of this README to avoid dup
 
 Web stays in this README. Details moved to separate docs so the profile stays organized:<br>
 <a href="docs/tech-stack.md"><strong>Tech stack & 39 languages</strong></a> •
+<a href="docs/full-stack.md"><strong>Full-Stack proof (screenshots + demos)</strong></a> •
+<a href="docs/qa.md"><strong>Q&A: method, standards, education</strong></a> •
 <a href="docs/ai-integrations.md"><strong>AI integrations</strong></a> •
 <a href="docs/defensive-security.md"><strong>Defensive security</strong></a> •
 <a href="docs/linux-systems.md"><strong>Linux & deploy</strong></a> •

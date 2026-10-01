@@ -118,6 +118,22 @@ SaaS Analytics, Hospitality) × 10 layouts · pure SVG images in
 
 </div>
 
+<h2 align="center">🖼️ More Galleries — Art · Fashion · Games</h2>
+<div align="center">
+
+Static SVG mockups (open any file directly as an image):
+<a href="https://github.com/aslamalkarywk7/aslamalkarywk7/tree/main/gallery/art/img"><strong>45 art panels</strong></a> (9 styles × 5 colorways) •
+<a href="https://github.com/aslamalkarywk7/aslamalkarywk7/tree/main/gallery/fashion/img"><strong>25 fashion posters</strong></a> (5 collections × 5 looks) •
+<a href="https://github.com/aslamalkarywk7/aslamalkarywk7/tree/main/gallery/games/img"><strong>35 game covers</strong></a> (7 genres × 5 editions)
+
+<br><br>
+
+<img src="https://raw.githubusercontent.com/aslamalkarywk7/aslamalkarywk7/main/gallery/art/img/a-01.svg" width="260" alt="Orbits art panel">
+<img src="https://raw.githubusercontent.com/aslamalkarywk7/aslamalkarywk7/main/gallery/fashion/img/f-01.svg" width="260" alt="Noir Luxe fashion poster">
+<img src="https://raw.githubusercontent.com/aslamalkarywk7/aslamalkarywk7/main/gallery/games/img/g-01.svg" width="260" alt="RPG Quest game cover">
+
+</div>
+
 <h2 align="center">🧰 Stack — Languages & Libraries (pinned versions)</h2>
 <div align="center">
 
