@@ -105,25 +105,66 @@ ADMIN team panel — users, request metrics, full audit trail (Live DB / Demo ba
 
 <img src="https://skillicons.dev/icons?i=ts,react,nextjs,nodejs,express,prisma,postgres,py,docker,tailwind,jest,github,vercel" alt="stack icons">
 
+<br>
+
+<strong>Legend:</strong> ✅ shipped in my repos (file proof) • 📋 declared stack
+(<a href="tech-stack.md"><strong>tech-stack.md</strong></a> / site), no shipped repo yet
+
+<h3>Frontend languages</h3>
+
 <table>
   <tbody>
-    <tr><td><strong>Layer</strong></td><td><strong>Tech</strong></td><td><strong>Version</strong></td><td><strong>Used in</strong></td></tr>
-    <tr><td>Frontend</td><td>React / Next.js</td><td>18.3.1 / 14.2.35</td><td>OpsDesk, portfolio, chat, clinics</td></tr>
-    <tr><td>Styling</td><td>Tailwind CSS (+ Radix UI, Recharts)</td><td>3.4.6</td><td>OpsDesk, portfolio</td></tr>
-    <tr><td>Language</td><td>TypeScript / JavaScript</td><td>5.5 / ESNext</td><td>all web repos</td></tr>
-    <tr><td>Backend</td><td>Node.js / Express</td><td>22 / 4</td><td>portfolio server, TurboQuant console</td></tr>
-    <tr><td>Auth</td><td>Auth.js v5 (JWT HttpOnly) + bcryptjs</td><td>5 beta / 3</td><td>OpsDesk</td></tr>
-    <tr><td>Validation</td><td>Zod</td><td>3.23.8</td><td>OpsDesk APIs</td></tr>
-    <tr><td>ORM / DB</td><td>Prisma / PostgreSQL (Neon), SQLite</td><td>5.22.0</td><td>OpsDesk</td></tr>
-    <tr><td>Python tooling</td><td>Pillow, zstandard, brotli, FastAPI/Flask</td><td>pinned in requirements</td><td>TurboQuant (<code>tqz</code> on PyPI)</td></tr>
-    <tr><td>Testing</td><td>Playwright, pytest, node:test, Lighthouse</td><td>CI-pinned</td><td>all repos</td></tr>
-    <tr><td>DevOps</td><td>Docker, GitHub Actions, Vercel</td><td>—</td><td>all repos</td></tr>
+    <tr><td><strong>Language</strong></td><td><strong>Role</strong></td><td><strong>Version</strong></td><td><strong>Proof</strong></td></tr>
+    <tr><td>TypeScript ✅</td><td>Large web apps • type-safe</td><td>5.5</td><td>OpsDesk <code>tsconfig</code>, all app code</td></tr>
+    <tr><td>JavaScript ✅</td><td>Interactive UI</td><td>ESNext</td><td>portfolio <code>script.js</code>, bindings</td></tr>
+    <tr><td>HTML ✅</td><td>Structure</td><td>5</td><td>portfolio <code>index.html</code>, OpsDesk pages</td></tr>
+    <tr><td>CSS ✅</td><td>Styling (+ Tailwind/Sass)</td><td>3</td><td>portfolio <code>style.css</code>, <code>globals.css</code></td></tr>
   </tbody>
 </table>
 
-Backend Python frameworks (Django, FastAPI, Flask) and PHP (Laravel, Symfony)
-are production-stack per <a href="tech-stack.md"><strong>tech-stack.md</strong></a>;
-the shipped proof above is Next.js/Node + Python tooling.
+<h3>Frontend libraries</h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>Library</strong></td><td><strong>Role</strong></td><td><strong>Version</strong></td><td><strong>Proof</strong></td></tr>
+    <tr><td>React ✅</td><td>UI library</td><td>18.3.1</td><td>OpsDesk, portfolio Vite apps</td></tr>
+    <tr><td>Next.js ✅</td><td>Full-stack React</td><td>14.2.35</td><td>OpsDesk, clinics/chat portfolio apps</td></tr>
+    <tr><td>Tailwind CSS ✅</td><td>Utility CSS</td><td>3.4.6</td><td>OpsDesk <code>tailwind.config.ts</code></td></tr>
+    <tr><td>Radix UI ✅</td><td>Components</td><td>pinned</td><td>Ajmas marketplace (portfolio)</td></tr>
+    <tr><td>Recharts ✅</td><td>Charts</td><td>pinned</td><td>Oman Luxury Dash (portfolio)</td></tr>
+    <tr><td>Sass 📋</td><td>Preprocessor</td><td>—</td><td>declared stack, no shipped repo</td></tr>
+    <tr><td>Svelte / AngularJS / jQuery 📋</td><td>Site-listed frontend</td><td>—</td><td>site tabs only, no shipped repo</td></tr>
+  </tbody>
+</table>
+
+<h3>Backend languages & frameworks</h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>Tech</strong></td><td><strong>Role</strong></td><td><strong>Version</strong></td><td><strong>Proof</strong></td></tr>
+    <tr><td>Node.js ✅</td><td>JS/TS runtime</td><td>22 (CI)</td><td>portfolio <code>server.js</code>, all tooling</td></tr>
+    <tr><td>Express ✅</td><td>Node framework</td><td>4</td><td>portfolio server + TurboQuant console</td></tr>
+    <tr><td>Python ✅</td><td>Backend • AI integration</td><td>≥3.10</td><td>TurboQuant package (<code>tqz</code> on PyPI)</td></tr>
+    <tr><td>Go ✅</td><td>Native decoder port</td><td>pinned</td><td><code>bindings/tqzdecode.go</code> + example (port, not a service)</td></tr>
+    <tr><td>Java / C# ✅</td><td>Native decoder ports</td><td>pinned</td><td><code>bindings/TqzDecode.java</code>, <code>TqzDecode.cs</code> (ports, not services)</td></tr>
+    <tr><td>Django / Flask / FastAPI 📋</td><td>Python frameworks</td><td>—</td><td>declared stack, no shipped repo</td></tr>
+    <tr><td>PHP / Laravel 📋</td><td>Backend web • stores</td><td>—</td><td>declared stack, no shipped repo</td></tr>
+    <tr><td>Bun / tRPC / Directus / Logto / WordPress 📋</td><td>Site-listed backend</td><td>—</td><td>site tabs only, no shipped repo</td></tr>
+  </tbody>
+</table>
+
+<h3>Databases</h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>Tech</strong></td><td><strong>Role</strong></td><td><strong>Proof</strong></td></tr>
+    <tr><td>PostgreSQL ✅</td><td>Primary SQL (Neon serverless)</td><td>OpsDesk <code>prisma/schema.prisma</code> + live <code>/api/health</code> <code>db</code> flag</td></tr>
+    <tr><td>Prisma ✅</td><td>ORM + migrations + seed</td><td>5.22.0 — <code>db:push</code> / <code>db:seed</code></td></tr>
+    <tr><td>SQLite ✅</td><td>Local apps + chunk index</td><td>TurboQuant <code>chunkstore.py</code>, local-dev path</td></tr>
+    <tr><td>Redis 📋</td><td>Cache / sessions (planned)</td><td>OpsDesk code comments mark it as the production upgrade, not implemented</td></tr>
+    <tr><td>MySQL / MongoDB / Firebase 📋</td><td>Site-listed databases</td><td>declared stack, no shipped repo</td></tr>
+  </tbody>
+</table>
 
 </div>
 
