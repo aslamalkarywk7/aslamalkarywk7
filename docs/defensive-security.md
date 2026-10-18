@@ -1,7 +1,19 @@
-# Defensive Security
+# Defensive Web Security — Supporting Skill for Web
 
-> This document has been merged into the main profile for a single, complete reference.
+> Docs: [README](../README.md) • [Full-Stack](full-stack.md) • [Stack](tech-stack.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md) • [Q&A](qa.md)
 
-**Canonical location:** [`README.md#defensive-security`](../README.md#defensive-security) if inside `docs/`, else [`README.md#defensive-security`](README.md#defensive-security).
+> Main profile stays web. This file holds security details so the README does not mix roles.
+> Position: web developer who hardens his own sites, not a pentester for hire.
 
-See the README section: **Defensive Security**.
+## What I do in web projects
+- Auth: JWT HttpOnly cookies, bcrypt hashing, middleware-protected routes
+- Hardening: XSS escaping, CSRF SameSite, Zod validation, rate-limit, secure headers
+- Applied as patterns in current web work (see `islam-elite-portfolio` and `TurboQuant` for live code)
+
+## Research (defensive only)
+- Guide: https://github.com/aslamalkarywk7/AndroidReverseEngineering-Guide (6 stars, most-starred among my repos — small scale, educational)
+- Removed: Bitbucket workspace link (returns 404) — skill text kept, link deleted.
+
+## Honest scope
+- No pentest client work, no CTF rank, no security certificate to claim.
+- For hiring: hire me to build a hardened website, not for a Security Engineer role.
