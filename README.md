@@ -6,6 +6,19 @@
 
   Hi, I'm Islam El-Nashar
 </h1>
+
+## <div align="center">🎓 Certificates</div>
+<p align="center">
+  <a href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/8adba106796fd6c41b4136dc41ecc601">
+    <img src="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/8adba106796fd6c41b4136dc41ecc601" alt="Full Stack Open certificate — University of Helsinki" width="600" />
+  </a>
+</p>
+<p align="center">
+  <strong>Full Stack Open</strong> — University of Helsinki
+  (ID: <code>8adba106796fd6c41b4136dc41ecc601</code>)
+</p>
+
+
 <p align="center">
   Full-Stack Developer (Next.js/TS/Prisma) from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills
   <br>
@@ -415,17 +428,6 @@ Extended stack and the Top-39 language map moved out of this README to avoid dup
   </tbody>
 </table>
 </div>
-
-## <div align="center">🎓 Certificates</div>
-<p align="center">
-  <a href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/8adba106796fd6c41b4136dc41ecc601">
-    <img src="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/8adba106796fd6c41b4136dc41ecc601" alt="Full Stack Open certificate — University of Helsinki" width="600" />
-  </a>
-</p>
-<p align="center">
-  <strong>Full Stack Open</strong> — University of Helsinki
-  (ID: <code>8adba106796fd6c41b4136dc41ecc601</code>)
-</p>
 
 ## <div align="center">📁 Supporting Docs</div>
 <div align="center">
