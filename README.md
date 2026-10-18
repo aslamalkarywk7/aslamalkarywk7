@@ -75,6 +75,14 @@
 | 15 | [Pandas](certificates/Eslam%20Al-Nasher%20-%20Pandas.png) |
 | 16 | [Python](certificates/Eslam%20Al-Nasher%20-%20Python.png) |
 | 17 | [Time Series](certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png) |
+
+### Badges (PDF)
+
+| # | Badge | File |
+|---|---|---|
+| 1 | Badge (PDF) | [66.pdf](certificates/66.pdf) |
+| 2 | Badge (PDF) | [668554.pdf](certificates/668554.pdf) |
+| 3 | Badge (PDF) | [Badges.pdf](certificates/Badges.pdf) |
 ## 👋 About Me
 
 **Full-Stack Developer (Next.js / TypeScript / Prisma)** from Egypt. I build websites & web apps, with AI integration and site hardening as supporting skills.
