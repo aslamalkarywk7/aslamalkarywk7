@@ -469,6 +469,7 @@ Web stays in this README. Details moved to separate docs so the profile stays or
 <a href="docs/ai-integrations.md"><strong>AI integrations</strong></a> •
 <a href="docs/defensive-security.md"><strong>Defensive security</strong></a> •
 <a href="docs/linux-systems.md"><strong>Linux & deploy</strong></a> •
-<a href="docs/other-skills.md"><strong>Other / explored</strong></a>
+<a href="docs/other-skills.md"><strong>Other / explored</strong></a> •
+<a href="docs/certificates.md"><strong>Certificates</strong></a>
 
 </div>
