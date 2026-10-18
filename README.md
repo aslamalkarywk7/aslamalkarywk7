@@ -31,103 +31,69 @@
 </p>
 
 
-<p align="center">
-  Full-Stack Developer (Next.js/TS/Prisma) from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills
-  <br>
-  <br>
-  💻 Full-Stack Developer — open to full-time roles & freelance projects: business sites, stores, and custom web apps — plus planning a large-scale AI project
-  <br>
-  🎓 My curiosity drives me: web development, game programming, AI research, and defensive security
-  <br>
-  🏫 Self-taught through programming, game design, software development — and real open-source contributions
-  <br>
-  💻 I love coding, designing, and building innovative projects
-  <br>
-  📚 Currently deepening advanced AI and full-stack web development
-  <br>
-  💬 Ask me anything about my projects or programming skills <a href="https://github.com/aslamalkarywk7/aslamalkarywk7/issues" title="GitHub Profile">Here</a>
-  <br>
-  📫 How to reach me: <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a>
-</p>
+## 👋 About Me
 
-<h3 align="center">🌐 My Social Media & Profiles</h3>
-<p align="center">
-  <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> • <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a> • <a href="https://www.linkedin.com/in/islam-elnashar/"><strong>LinkedIn</strong></a><br>
-  🌐 Portfolio: <a href="https://aslamalkarywk7.github.io/aslamalkarywk7/"><strong>aslamalkarywk7.github.io/aslamalkarywk7</strong></a>
-</p>
-<p align="center">
-  <a href="https://huggingface.co/ISLAM-PO"><strong>Hugging Face — ISLAM-PO</strong></a>
-</p>
+**Full-Stack Developer (Next.js / TypeScript / Prisma)** from Egypt. I build websites & web apps, with AI integration and site hardening as supporting skills.
 
-<h4 align="center">🤖 Models (Hugging Face)</h4>
-<p align="center">
-  <a href="https://huggingface.co/ISLAM-PO/MasryGPT-Chat-1.5B">MasryGPT-Chat-1.5B</a> •
-  <a href="https://huggingface.co/ISLAM-PO/MasryGPT-Flash-Adapter">MasryGPT-Flash-Adapter</a> •
-  <a href="https://huggingface.co/ISLAM-PO/Glitch-Img-1.0">Glitch-Img-1.0</a><br>
-  📖 Full details: <a href="docs/ai-integrations.md"><strong>docs/ai-integrations.md</strong></a>
-</p>
+- 💼 **Open to:** full-time roles & freelance projects — business sites, stores, custom web apps (plus a large-scale AI project in progress).
+- 🎓 **Curiosity:** web development, game programming, AI research, defensive security.
+- 🏫 **Background:** self-taught programmer alongside formal study (MIS, 3rd year, expected 2029).
+- 📚 **Currently:** deepening advanced AI and full-stack web development.
+- 💬 **Ask me anything** about my projects → [GitHub Issues](https://github.com/aslamalkarywk7/aslamalkarywk7/issues)
+- 📫 **Contact:** [aslamalkarywka@gmail.com](mailto:aslamalkarywka@gmail.com)
 
-<h4 align="center">📊 Training Datasets</h4>
-<p align="center">
-  <a href="https://huggingface.co/datasets/ISLAM-PO/arabic-history-and-dialects">arabic-history-and-dialects</a> •
-  <a href="https://huggingface.co/datasets/ISLAM-PO/arabic-to-code-8-langs-3m">arabic-to-code-8-langs-3m</a> •
-  <a href="https://huggingface.co/datasets/ISLAM-PO/documents-Egyptian-Arabic">documents-Egyptian-Arabic</a><br>
-  <a href="https://huggingface.co/datasets/ISLAM-PO/arab-dialects-20-countries-3m">arab-dialects-20-countries-3m</a>
-</p>
+### 🌐 Connect
 
-<h4 align="center">💻 GitHub Projects</h4>
-<p align="center">
-  <a href="https://github.com/aslamalkarywk7/islam-elite-portfolio">islam-elite-portfolio — 18 Live Web Projects</a><br>
-  <a href="https://github.com/aslamalkarywk7">github.com/aslamalkarywk7</a> • <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a>
-</p>
+| Platform | Link |
+|---|---|
+| Email | [aslamalkarywka@gmail.com](mailto:aslamalkarywka@gmail.com) |
+| GitHub | [github.com/aslamalkarywk7](https://github.com/aslamalkarywk7) |
+| LinkedIn | [linkedin.com/in/islam-elnashar](https://www.linkedin.com/in/islam-elnashar/) |
+| Portfolio | [aslamalkarywk7.github.io/aslamalkarywk7](https://aslamalkarywk7.github.io/aslamalkarywk7/) |
+| Hugging Face | [huggingface.co/ISLAM-PO](https://huggingface.co/ISLAM-PO) |
 
-<h4 align="center">🛠️ Full-Stack Services — what you can hire me for</h4>
-<p align="center">
-  🌐 Business websites, portfolios & stores (React / Next.js / Node.js)<br>
-  🤖 Arabic-first AI for your site: chat assistants, content & translation (details: <a href="docs/ai-integrations.md">docs/ai-integrations.md</a>)<br>
-  🔒 Website hardening & protection: audits, fixes, and monitoring against common attacks (details: <a href="docs/defensive-security.md">docs/defensive-security.md</a>)
-</p>
+### 🤖 AI — Hugging Face
 
-<h4 align="center">⭐ Featured Work</h4>
-<p align="center">
-  <a href="https://github.com/aslamalkarywk7/islam-elite-portfolio"><strong>islam-elite-portfolio</strong></a> — 18 live web projects (demos included)<br>
-  <a href="https://github.com/aslamalkarywk7/AndroidReverseEngineering-Guide"><strong>AndroidReverseEngineering-Guide</strong></a> — ⭐ most-starred guide (defensive security research)<br>
-  <a href="https://github.com/aslamalkarywk7/TurboQuant"><strong>TurboQuant</strong></a> — lossless compression for every file type + web console
-</p>
-<p align="center">
-  <a href="docs/full-stack.md"><strong>📄 Full-Stack proof page</strong></a> — backend + 18 sites + 65 designs with screenshots, live demos, pinned versions
-</p>
+Models: [MasryGPT-Chat-1.5B](https://huggingface.co/ISLAM-PO/MasryGPT-Chat-1.5B) • [MasryGPT-Flash-Adapter](https://huggingface.co/ISLAM-PO/MasryGPT-Flash-Adapter) • [Glitch-Img-1.0](https://huggingface.co/ISLAM-PO/Glitch-Img-1.0)
+Datasets: arabic-history-and-dialects • arabic-to-code-8-langs-3m • documents-Egyptian-Arabic • arab-dialects-20-countries-3m
+📖 Full details: [docs/ai-integrations.md](docs/ai-integrations.md)
 
-<h4 align="center">🌍 Open-Source Contributions (Big Tech)</h4>
-<p align="center">
-  Active pull requests with reviews in progress:<br>
-  <a href="https://github.com/microsoft/markitdown/pull/2538"><strong>markitdown#2538</strong> — ✅ Approved, awaiting merge</a> •
-  <a href="https://github.com/microsoft/markitdown/pull/2539"><strong>markitdown#2539</strong> — 🟡 Open, awaiting review</a><br>
-  <a href="https://github.com/google/adk-python/pull/7198"><strong>adk-python#7198</strong> — 🟡 Open</a> •
-  <a href="https://github.com/genkit-ai/genkit/pull/6386"><strong>genkit#6386</strong> — 🟡 feedback addressed</a> •
-  <a href="https://github.com/genkit-ai/genkit/pull/6387"><strong>genkit#6387</strong> — 🟡 feedback addressed</a><br>
-  🎯 Goal: first merged PRs at Microsoft & Google — one approval already secured<br>
-  📖 <a href="CONTRIBUTIONS.md"><strong>Read the full story: every contribution, how I solved it & Q&A</strong></a>
-</p>
+### 🛠️ Services — what you can hire me for
 
-<h4 align="center">🐧 Linux & Deploy</h4>
-<p align="center">
-  Deploy and run web apps on Linux: Bash, Docker, GitHub Actions CI<br>
-  📖 Details: <a href="docs/linux-systems.md"><strong>docs/linux-systems.md</strong></a>
-</p>
+- 🌐 Business websites, portfolios & stores (React / Next.js / Node.js)
+- 🤖 Arabic-first AI for your site: chat assistants, content & translation → [docs/ai-integrations.md](docs/ai-integrations.md)
+- 🔒 Website hardening & protection: audits, fixes, monitoring → [docs/defensive-security.md](docs/defensive-security.md)
 
-<h4 align="center">🔒 Defensive Security Research</h4>
-<p align="center">
-  Researching attacks to build better defenses: audits and protection techniques against vulnerabilities (educational & defensive only)<br>
-  📖 Details: <a href="docs/defensive-security.md"><strong>docs/defensive-security.md</strong></a>
-</p>
+### ⭐ Featured Work
+
+- [islam-elite-portfolio](https://github.com/aslamalkarywk7/islam-elite-portfolio) — 18 live web projects (demos included)
+- [AndroidReverseEngineering-Guide](https://github.com/aslamalkarywk7/AndroidReverseEngineering-Guide) — ⭐ most-starred guide (defensive security research)
+- [TurboQuant](https://github.com/aslamalkarywk7/TurboQuant) — lossless compression for every file type + web console
+- 📄 [Full-Stack proof page](docs/full-stack.md) — backend + 18 sites + 65 designs (screenshots, live demos, pinned versions)
+
+### 🌍 Open-Source Contributions (Big Tech)
+
+Active PRs with reviews in progress:
+- [markitdown#2538](https://github.com/microsoft/markitdown/pull/2538) — ✅ Approved, awaiting merge
+- [markitdown#2539](https://github.com/microsoft/markitdown/pull/2539) — 🟡 Open, awaiting review
+- [adk-python#7198](https://github.com/google/adk-python/pull/7198) — 🟡 Open
+- [genkit#6386](https://github.com/genkit-ai/genkit/pull/6386) — 🟡 feedback addressed
+- [genkit#6387](https://github.com/genkit-ai/genkit/pull/6387) — 🟡 feedback addressed
+
+🎯 Goal: first merged PRs at Microsoft & Google — one approval already secured
+📖 [Read the full story](CONTRIBUTIONS.md)
+
+### 🐧 Linux & Deploy / 🔒 Defensive Security
+
+- Deploy and run web apps on Linux: Bash, Docker, GitHub Actions CI → [docs/linux-systems.md](docs/linux-systems.md)
+- Researching attacks to build better defenses (educational & defensive only) → [docs/defensive-security.md](docs/defensive-security.md)
 
 ## <div align="center">Tech Stack — Full Details Moved</div>
 
 <div align="center">
 
 Extended stack and the Top-39 language map moved out of this README to avoid duplication:<br>
-<a href="docs/tech-stack.md"><strong>docs/tech-stack.md</strong></a> — production vs explored, backend, frontend, AI, testing, design, and all 39 languages.
+<a href="docs/tech-stack.md"><strong>docs/tech-stack.md</strong></a> — production vs explored, backend, frontend, AI, testing, design, and all 40 languages.
 
 </div>
 <div align="center">
@@ -445,7 +411,7 @@ Extended stack and the Top-39 language map moved out of this README to avoid dup
 <div align="center">
 
 Web stays in this README. Details moved to separate docs so the profile stays organized:<br>
-<a href="docs/tech-stack.md"><strong>Tech stack & 39 languages</strong></a> •
+<a href="docs/tech-stack.md"><strong>Tech stack & 40 languages</strong></a> •
 <a href="docs/full-stack.md"><strong>Full-Stack proof (screenshots + demos)</strong></a> •
 <a href="docs/qa.md"><strong>Q&A: method, standards, education</strong></a> •
 <a href="docs/ai-integrations.md"><strong>AI integrations</strong></a> •
