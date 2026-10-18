@@ -27,6 +27,8 @@
   <a href="../CONTRIBUTIONS.md"><strong>Contributions</strong></a> •
   <a href="qa.md"><strong>Q&amp;A</strong></a>
 
+> **Document control** — Owner: Islam El-Nashar • Last verified: 18 Oct 2026 • Scope: full-stack proof (backend + 18 sites + 65 designs + galleries).
+
 <h2 align="center">🖥️ Backend — APIs, Auth, Database</h2>
 <div align="center">
 

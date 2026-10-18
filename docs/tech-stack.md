@@ -1,17 +1,23 @@
-# 🧩 Languages & Frameworks — Extended Stack
+# 🧩 Tech Stack — Extended
 
 > Docs: [README](../README.md) • [Full-Stack](full-stack.md) • [Stack](tech-stack.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md) • [Q&A](qa.md)
 
-> Moved out of `README.md` so the main profile stays web-focused.
+> **Document control** — Owner: Islam El-Nashar • Last verified: 18 Oct 2026 • Scope: extended stack & language map.
 > Rule: **Production** = what I ship in web repos. **Explored** = curiosity only.
 
-## Production web stack (hire me for this)
-- Backend: Node.js, Express, NestJS — Python (Django, FastAPI, Flask) — PHP (Laravel, Symfony)
-- Databases & Storage: PostgreSQL, Redis, Prisma, Cloudflare R2
-- Frontend: React.js, Next.js, Vue.js — Tailwind CSS, SASS/SCSS, Shadcn/ui, Radix UI, MUI
-- Testing & Monitoring: Jest, Cypress, Playwright — Sentry, Lighthouse, Chrome DevTools
+---
 
-## Supporting (used inside web projects)
+## 1. Production web stack (hire me for this)
+
+| Area | Technologies |
+|---|---|
+| Backend | Node.js, Express, NestJS — Python (Django, FastAPI, Flask) — PHP (Laravel, Symfony) |
+| Databases & Storage | PostgreSQL, Redis, Prisma, Cloudflare R2 |
+| Frontend | React.js, Next.js, Vue.js — Tailwind CSS, SASS/SCSS, Shadcn/ui, Radix UI, MUI |
+| Testing & Monitoring | Jest, Cypress, Playwright — Sentry, Lighthouse, Chrome DevTools |
+
+## 2. Supporting (used inside web projects)
+
 ### Networking, Containers & Media
 - Docker, WireGuard, Tailscale, FFmpeg — SaaS deploys and video/HLS pipelines
 
@@ -29,7 +35,7 @@
 
 ---
 
-## 📚 Top 40 Programming Languages — by OS & Environment
+## 3. Top 40 Programming Languages — by OS & Environment
 
 **🚀 Daily drivers** (production work, repos & PRs): Python, TypeScript, JavaScript, Go, PHP, HTML/CSS
 **🔭 Also explored** (curiosity & side experiments): everything below.
@@ -85,3 +91,11 @@
 - **Fortran:** Historic scientific computing
 - **COBOL:** Legacy financial/banking systems still running globally
 - **Prolog:** Logic programming and rule-based AI
+
+---
+
+## 4. Honest scope
+
+- Production claims are limited to technologies with shipped repos (see ✅ markers in [full-stack.md](full-stack.md)).
+- Items marked 📋 are declared stack only — no shipped repo yet.
+- Long language list = learning map, not production claim.
