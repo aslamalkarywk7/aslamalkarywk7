@@ -86,6 +86,4 @@
 
 ## Badges (PDF)
 
-- [66.pdf](../certificates/66.pdf)
-- [668554.pdf](../certificates/668554.pdf)
-- [Badges.pdf](../certificates/Badges.pdf)
+[66.pdf](../certificates/66.pdf) • [668554.pdf](../certificates/668554.pdf) • [Badges.pdf](../certificates/Badges.pdf)
