@@ -49,29 +49,13 @@
 <p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Python.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Python.png" alt="Python" width="600" /></a></p>
 <p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png" alt="Time Series" width="600" /></a></p>
 
-| 1 | [Advanced SQL](certificates/Eslam%20Al-Nasher%20-%20Advanced%20SQL.png) |
-| 2 | [Computer Vision](certificates/Eslam%20Al-Nasher%20-%20Computer%20Vision.png) |
-| 3 | [Data Cleaning](certificates/Eslam%20Al-Nasher%20-%20Data%20Cleaning.png) |
-| 4 | [Data Visualization](certificates/Eslam%20Al-Nasher%20-%20Data%20Visualization.png) |
-| 5 | [Feature Engineering](certificates/Eslam%20Al-Nasher%20-%20Feature%20Engineering.png) |
-| 6 | [Geospatial Analysis](certificates/Eslam%20Al-Nasher%20-%20Geospatial%20Analysis.png) |
-| 7 | [Intermediate Machine Learning](certificates/Eslam%20Al-Nasher%20-%20Intermediate%20Machine%20Learning.png) |
-| 8 | [Intro to AI Ethics](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20AI%20Ethics.png) |
-| 9 | [Intro to Deep Learning](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Deep%20Learning.png) |
-| 10 | [Intro to Game AI and Reinforcement Learning](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Game%20AI%20and%20Reinforcement%20Learning.png) |
-| 11 | [Intro to Machine Learning](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Machine%20Learning.png) |
-| 12 | [Intro to Programming (1)](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Programming%20%281%29.png) |
-| 13 | [Intro to SQL](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20SQL.png) |
-| 14 | [Machine Learning Explainability](certificates/Eslam%20Al-Nasher%20-%20Machine%20Learning%20Explainability.png) |
-| 15 | [Pandas](certificates/Eslam%20Al-Nasher%20-%20Pandas.png) |
-| 16 | [Python](certificates/Eslam%20Al-Nasher%20-%20Python.png) |
-| 17 | [Time Series](certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png) |
+### OPEN MOOCs (Online Professional English Network)
 
-### Badges (PNG)
+<p align="center"><img src="certificates/open-mooc-english-business-entrepreneurship.png" alt="English for Business and Entrepreneurship MOOC" width="600" /></p>
 
-<p align="center"><img src="certificates/66.png" alt="Badge 66" width="600" /></p>
-<p align="center"><img src="certificates/668554.png" alt="Badge 668554" width="600" /></p>
-<p align="center"><img src="certificates/Badges.png" alt="Badges" width="600" /></p>
+<p align="center"><img src="certificates/open-mooc-english-career-development.png" alt="English for Career Development MOOC" width="600" /></p>
+
+<p align="center"><img src="certificates/open-mooc-english-tourism-professionals.png" alt="English for Tourism Professionals MOOC" width="600" /></p>
 ## 👋 About Me
 
 **Full-Stack Developer (Next.js / TypeScript / Prisma)** from Egypt. I build websites & web apps, with AI integration and site hardening as supporting skills.

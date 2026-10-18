@@ -84,8 +84,10 @@
   <img src="../certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png" alt="Time Series" width="600" />
 </p>
 
-## Badges (PNG)
+### OPEN MOOCs (Online Professional English Network)
 
-<p align="center"><img src="../certificates/66.png" alt="Badge 66" width="600" /></p>
-<p align="center"><img src="../certificates/668554.png" alt="Badge 668554" width="600" /></p>
-<p align="center"><img src="../certificates/Badges.png" alt="Badges" width="600" /></p>
+<p align="center"><img src="../certificates/open-mooc-english-business-entrepreneurship.png" alt="English for Business and Entrepreneurship MOOC" width="600" /></p>
+
+<p align="center"><img src="../certificates/open-mooc-english-career-development.png" alt="English for Career Development MOOC" width="600" /></p>
+
+<p align="center"><img src="../certificates/open-mooc-english-tourism-professionals.png" alt="English for Tourism Professionals MOOC" width="600" /></p>
