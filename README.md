@@ -34,25 +34,39 @@
 <details>
 <summary>Click to expand all 17 certificates</summary>
 
-<p align="center">
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Advanced%20SQL.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Advanced%20SQL.png" alt="Advanced SQL" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Computer%20Vision.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Computer%20Vision.png" alt="Computer Vision" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Data%20Cleaning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Data%20Cleaning.png" alt="Data Cleaning" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Data%20Visualization.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Data%20Visualization.png" alt="Data Visualization" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Feature%20Engineering.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Feature%20Engineering.png" alt="Feature Engineering" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Geospatial%20Analysis.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Geospatial%20Analysis.png" alt="Geospatial Analysis" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Intermediate%20Machine%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intermediate%20Machine%20Learning.png" alt="Intermediate Machine Learning" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20AI%20Ethics.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20AI%20Ethics.png" alt="Intro to AI Ethics" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Deep%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Deep%20Learning.png" alt="Intro to Deep Learning" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Game%20AI%20and%20Reinforcement%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Game%20AI%20and%20Reinforcement%20Learning.png" alt="Intro to Game AI and Reinforcement Learning" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Machine%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Machine%20Learning.png" alt="Intro to Machine Learning" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Programming%20%281%29.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Programming%20%281%29.png" alt="Intro to Programming (1)" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20SQL.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20SQL.png" alt="Intro to SQL" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Machine%20Learning%20Explainability.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Machine%20Learning%20Explainability.png" alt="Machine Learning Explainability" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Pandas.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Pandas.png" alt="Pandas" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Python.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Python.png" alt="Python" width="200" /></a>
-  <a href="certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png" alt="Time Series" width="200" /></a>
-</p>
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Advanced%20SQL.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Advanced%20SQL.png" alt="Advanced SQL" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Computer%20Vision.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Computer%20Vision.png" alt="Computer Vision" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Data%20Cleaning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Data%20Cleaning.png" alt="Data Cleaning" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Data%20Visualization.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Data%20Visualization.png" alt="Data Visualization" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Feature%20Engineering.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Feature%20Engineering.png" alt="Feature Engineering" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Geospatial%20Analysis.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Geospatial%20Analysis.png" alt="Geospatial Analysis" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Intermediate%20Machine%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intermediate%20Machine%20Learning.png" alt="Intermediate Machine Learning" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20AI%20Ethics.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20AI%20Ethics.png" alt="Intro to AI Ethics" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Deep%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Deep%20Learning.png" alt="Intro to Deep Learning" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Game%20AI%20and%20Reinforcement%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Game%20AI%20and%20Reinforcement%20Learning.png" alt="Intro to Game AI and Reinforcement Learning" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Machine%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Machine%20Learning.png" alt="Intro to Machine Learning" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Programming%20%281%29.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Programming%20%281%29.png" alt="Intro to Programming (1)" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20SQL.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20SQL.png" alt="Intro to SQL" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Machine%20Learning%20Explainability.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Machine%20Learning%20Explainability.png" alt="Machine Learning Explainability" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Pandas.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Pandas.png" alt="Pandas" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Python.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Python.png" alt="Python" width="400" /></a></p>
+
+<p align="center"><a href="certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png" alt="Time Series" width="400" /></a></p>
 
 </details>
 
