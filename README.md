@@ -19,18 +19,62 @@
   <a href="https://huggingface.co/ISLAM-PO"><img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face"/></a>
 </p>
 
-## <div align="center">🎓 Certificates</div>
+## 🎓 Certificates
+
+### Full Stack Open — University of Helsinki
+
 <p align="center">
   <a href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/8adba106796fd6c41b4136dc41ecc601">
-    <img src="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/8adba106796fd6c41b4136dc41ecc601" alt="Full Stack Open certificate — University of Helsinki" width="600" />
+    <img src="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/8adba106796fd6c41b4136dc41ecc601" alt="Full Stack Open certificate" width="500" />
   </a>
 </p>
+
+### Kaggle — Micro-Courses (17 certificates)
+
+<details>
+<summary>Click to expand all 17 certificates</summary>
+
 <p align="center">
-  <strong>Full Stack Open</strong> — University of Helsinki
-  (ID: <code>8adba106796fd6c41b4136dc41ecc601</code>)
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Advanced%20SQL.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Advanced%20SQL.png" alt="Advanced SQL" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Computer%20Vision.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Computer%20Vision.png" alt="Computer Vision" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Data%20Cleaning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Data%20Cleaning.png" alt="Data Cleaning" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Data%20Visualization.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Data%20Visualization.png" alt="Data Visualization" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Feature%20Engineering.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Feature%20Engineering.png" alt="Feature Engineering" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Geospatial%20Analysis.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Geospatial%20Analysis.png" alt="Geospatial Analysis" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Intermediate%20Machine%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intermediate%20Machine%20Learning.png" alt="Intermediate Machine Learning" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20AI%20Ethics.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20AI%20Ethics.png" alt="Intro to AI Ethics" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Deep%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Deep%20Learning.png" alt="Intro to Deep Learning" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Game%20AI%20and%20Reinforcement%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Game%20AI%20and%20Reinforcement%20Learning.png" alt="Intro to Game AI and Reinforcement Learning" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Machine%20Learning.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Machine%20Learning.png" alt="Intro to Machine Learning" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Programming%20%281%29.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Programming%20%281%29.png" alt="Intro to Programming (1)" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20SQL.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20SQL.png" alt="Intro to SQL" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Machine%20Learning%20Explainability.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Machine%20Learning%20Explainability.png" alt="Machine Learning Explainability" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Pandas.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Pandas.png" alt="Pandas" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Python.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Python.png" alt="Python" width="200" /></a>
+  <a href="certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png"><img src="certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png" alt="Time Series" width="200" /></a>
 </p>
 
+</details>
 
+| # | Certificate |
+|---|---|
+| 1 | [Advanced SQL](certificates/Eslam%20Al-Nasher%20-%20Advanced%20SQL.png) |
+| 2 | [Computer Vision](certificates/Eslam%20Al-Nasher%20-%20Computer%20Vision.png) |
+| 3 | [Data Cleaning](certificates/Eslam%20Al-Nasher%20-%20Data%20Cleaning.png) |
+| 4 | [Data Visualization](certificates/Eslam%20Al-Nasher%20-%20Data%20Visualization.png) |
+| 5 | [Feature Engineering](certificates/Eslam%20Al-Nasher%20-%20Feature%20Engineering.png) |
+| 6 | [Geospatial Analysis](certificates/Eslam%20Al-Nasher%20-%20Geospatial%20Analysis.png) |
+| 7 | [Intermediate Machine Learning](certificates/Eslam%20Al-Nasher%20-%20Intermediate%20Machine%20Learning.png) |
+| 8 | [Intro to AI Ethics](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20AI%20Ethics.png) |
+| 9 | [Intro to Deep Learning](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Deep%20Learning.png) |
+| 10 | [Intro to Game AI and Reinforcement Learning](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Game%20AI%20and%20Reinforcement%20Learning.png) |
+| 11 | [Intro to Machine Learning](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Machine%20Learning.png) |
+| 12 | [Intro to Programming (1)](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20Programming%20%281%29.png) |
+| 13 | [Intro to SQL](certificates/Eslam%20Al-Nasher%20-%20Intro%20to%20SQL.png) |
+| 14 | [Machine Learning Explainability](certificates/Eslam%20Al-Nasher%20-%20Machine%20Learning%20Explainability.png) |
+| 15 | [Pandas](certificates/Eslam%20Al-Nasher%20-%20Pandas.png) |
+| 16 | [Python](certificates/Eslam%20Al-Nasher%20-%20Python.png) |
+| 17 | [Time Series](certificates/Eslam%20Al-Nasher%20-%20Time%20Series.png) |
 ## 👋 About Me
 
 **Full-Stack Developer (Next.js / TypeScript / Prisma)** from Egypt. I build websites & web apps, with AI integration and site hardening as supporting skills.
