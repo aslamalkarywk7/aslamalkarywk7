@@ -1,11 +1,23 @@
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=aslamalkarywk7.aslamalkarywk7">
-<h1 align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;I'm+Islam+El-Nashar...;💻Full-Stack+Developer+(Next.js/TS/Prisma);:Nice+to+meet+you!&center=true&size=30">
-  </a>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=700&size=34&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=720&lines=Hi%2C+I'm+Islam+El-Nashar;Full-Stack+Developer+%7C+Next.js+%2F+TypeScript+%2F+Prisma;Building+web+apps+with+AI+%26+site+hardening" alt="Typing SVG" />
+</p>
 
-  Hi, I'm Islam El-Nashar
-</h1>
+<p align="center">
+  <a href="https://visitor-badge.laobi.icu/badge?page_id=aslamalkarywk7.aslamalkarywk7">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=aslamalkarywk7.aslamalkarywk7" alt="visitors" />
+  </a>
+</p>
+
+<h2 align="center">Islam El-Nashar</h2>
+<h4 align="center">Full-Stack Developer from Egypt — websites & web apps,<br/>AI integration and site hardening as supporting skills</h4>
+
+<p align="center">
+  <a href="mailto:aslamalkarywka@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://github.com/aslamalkarywk7"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/islam-elnashar/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://aslamalkarywk7.github.io/aslamalkarywk7/"><img src="https://img.shields.io/badge/Portfolio-2ea44f?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://huggingface.co/ISLAM-PO"><img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face"/></a>
+</p>
 
 ## <div align="center">🎓 Certificates</div>
 <p align="center">
