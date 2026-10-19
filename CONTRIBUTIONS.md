@@ -1,4 +1,4 @@
-# Open-Source Contributions — Islam El-Nashar (`aslamalkarywk7`)
+# Open-Source Contributions — Islam Al-Nashar (`aslamalkarywk7`)
 
 > Every contribution below is a real, open pull request to a public project,
 > with what broke, how I thought about it, how I fixed it, and what reviewers

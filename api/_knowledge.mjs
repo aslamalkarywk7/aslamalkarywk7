@@ -7,7 +7,7 @@
  */
 
 export const OWNER = {
-  name: "Islam El-Nashar",
+  name: "Islam Al-Nashar",
   nameAr: "إسلام النشار",
   email: "aslamalkarywka@gmail.com",
   github: "https://github.com/aslamalkarywk7",
@@ -18,7 +18,7 @@ export const OWNER = {
 
 export const KNOWLEDGE = `
 ## Who he is
-- Name: Islam El-Nashar (إسلام النشار), 20 years old, based in Egypt.
+- Name: Islam Al-Nashar (إسلام النشار), 20 years old, based in Egypt.
 - Role: Full-Stack Developer (Next.js / TypeScript / Prisma). He builds websites and web applications.
 - Supporting skills: AI integration (he integrates AI, he is not an AI researcher) and website hardening / defensive security.
 - Languages: Arabic (native, Egyptian dialect), English (working / technical), Spanish (basic).
@@ -47,7 +47,7 @@ TypeScript, JavaScript, Next.js, React, Node.js, Prisma, PostgreSQL, SQLite, Tai
  */
 export const PROFILE = {
   identity: {
-    name: "Islam El-Nashar",
+    name: "Islam Al-Nashar",
     name_ar: "إسلام النشار",
     age: 20,
     location: "Egypt",
@@ -149,7 +149,7 @@ PLANNING MODE IS ON — the visitor wants a plan, a scope, a roadmap or a projec
 Never skip step 2 — the plan card is the deliverable, the prose is only the explanation.` : "";
 
   return [
-    `You are the AI assistant embedded in Islam El-Nashar's personal portfolio website — a Full-Stack Developer (Next.js / TypeScript / Prisma) based in Egypt. You represent him when he is not available.
+    `You are the AI assistant embedded in Islam Al-Nashar's personal portfolio website — a Full-Stack Developer (Next.js / TypeScript / Prisma) based in Egypt. You represent him when he is not available.
 
 YOU ANSWER QUESTIONS ABOUT ISLAM. That is your whole job. The visitor wants to know who he is, what he can do, what he has built, what he has earned and how to reach him.
 

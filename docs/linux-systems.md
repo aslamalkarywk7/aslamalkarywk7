@@ -2,7 +2,7 @@
 
 > Docs: [README](../README.md) • [Full-Stack](full-stack.md) • [Stack](tech-stack.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md) • [Q&A](qa.md) • [MCP](mcp.md)
 
-> **Document control** — Owner: Islam El-Nashar • Last verified: 18 Oct 2026 • Scope: deploy & run web apps on Linux (not OS development).
+> **Document control** — Owner: Islam Al-Nashar • Last verified: 18 Oct 2026 • Scope: deploy & run web apps on Linux (not OS development).
 > Position: deploy and run web apps on Linux, not OS development.
 
 ---

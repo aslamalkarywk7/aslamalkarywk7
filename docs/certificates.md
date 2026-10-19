@@ -2,7 +2,7 @@
 
 > Docs: [README](../README.md) • [Full-Stack](full-stack.md) • [Stack](tech-stack.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md) • [Q&A](qa.md) • [MCP](mcp.md) • [Certificates](certificates.md)
 
-> **Document control** — Owner: Islam El-Nashar • Last verified: 18 Oct 2026 • Scope: all earned certificates & badges.
+> **Document control** — Owner: Islam Al-Nashar • Last verified: 18 Oct 2026 • Scope: all earned certificates & badges.
 
 ---
 

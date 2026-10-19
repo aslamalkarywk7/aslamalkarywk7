@@ -2,7 +2,7 @@
 
 > Docs: [README](../README.md) • [Full-Stack](full-stack.md) • [Stack](tech-stack.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md) • [Q&A](qa.md) • [MCP](mcp.md)
 
-> **Document control** — Owner: Islam El-Nashar • Last verified: 29 Sep 2026 • Scope: AI I integrate into websites (not a separate specialty).
+> **Document control** — Owner: Islam Al-Nashar • Last verified: 29 Sep 2026 • Scope: AI I integrate into websites (not a separate specialty).
 > Main focus stays: Full-Stack Web Developer. AI here = what I integrate into websites.
 
 ---

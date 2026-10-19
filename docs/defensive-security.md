@@ -2,7 +2,7 @@
 
 > Docs: [README](../README.md) • [Full-Stack](full-stack.md) • [Stack](tech-stack.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md) • [Q&A](qa.md) • [MCP](mcp.md)
 
-> **Document control** — Owner: Islam El-Nashar • Last verified: 18 Oct 2026 • Scope: defensive hardening I apply to my own sites.
+> **Document control** — Owner: Islam Al-Nashar • Last verified: 18 Oct 2026 • Scope: defensive hardening I apply to my own sites.
 > Main profile stays web. This file holds security details so the README does not mix roles.
 > Position: web developer who hardens his own sites, not a pentester for hire.
 

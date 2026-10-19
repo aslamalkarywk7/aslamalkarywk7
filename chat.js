@@ -23,7 +23,7 @@
       planGoal: "Plan",
       planEffort: { small: "Small", medium: "Medium", large: "Large" },
       welcome:
-        "Hi — I'm the AI assistant for Islam El-Nashar, a Full-Stack Developer from Egypt. Ask me about his services, his stack, his certificates, or tell me what you want to build and I'll suggest how he can help.",
+        "Hi — I'm the AI assistant for Islam Al-Nashar, a Full-Stack Developer from Egypt. Ask me about his services, his stack, his certificates, or tell me what you want to build and I'll suggest how he can help.",
       placeholder: "Ask about services, ideas, or Islam's background…",
       send: "Send",
       thinking: "Thinking…",

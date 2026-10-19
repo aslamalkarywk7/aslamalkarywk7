@@ -21,7 +21,7 @@ const translations = {
 
         // ── About ─────────────────────────────────────────────────
         "about.title":    "About Me",
-        "about.p1":       "I'm <strong>Islam El-Nashar</strong> (إسلام النشار), a <strong>Full-Stack Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
+        "about.p1":       "I'm <strong>Islam Al-Nashar</strong> (إسلام النشار), a <strong>Full-Stack Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
         "about.p2":       "Full-Stack Web Developer <strong>2023 - Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI and website hardening. Open to full-time roles & freelance projects.",
         "about.p3":       "Focused on <strong>full-stack web</strong> and <strong>AI integration</strong>. Game dev, mobile/desktop and long language lists are curiosity only — see docs for honest scope.",
         "about.cv":       "View CV",
@@ -87,7 +87,7 @@ const translations = {
         "contact.form.msg":    "Message",
         "contact.form.btn":    "Send Message",
         "contact.success":     "Opening your email app — message addressed to me, just press send!",
-        "footer.rights":       "Islam El-Nashar. All rights reserved.",
+        "footer.rights":       "Islam Al-Nashar. All rights reserved.",
 
         // ── Lang button ─────────────────────────────────────────
         "lang.btn": "عربي",
@@ -110,7 +110,7 @@ const translations = {
 
         // ── About ─────────────────────────────────────────────────
         "about.title":    "عنّي",
-        "about.p1":       "أنا <strong>إسلام النشار</strong> (Islam El-Nashar)، <strong>مطوّر Full-Stack (Next.js/TS/Prisma)</strong> من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
+        "about.p1":       "أنا <strong>إسلام النشار</strong> (Islam Al-Nashar)، <strong>مطوّر Full-Stack (Next.js/TS/Prisma)</strong> من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
         "about.p2":       "مطور Full-Stack <strong>2023 - الحاضر (3 سنوات)</strong>: <strong>مواقع شركات ومتاجر وتطبيقات مخصصة</strong> — مع AI عربي أولاً وتقوية المواقع. متاح للوظائف بدوام كامل والمشاريع الحرة.",
         "about.p3":       "أركّز على <strong>الويب الشامل</strong> و<strong>تكامل AI</strong>. تطوير الألعاب والموبايل وقوائم اللغات الطويلة فضول فقط — راجع docs للنطاق الصادق.",
         "about.cv":       "عرض السيرة الذاتية",

@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════
-   Islam El-Nashar — Portfolio Script
+   Islam Al-Nashar — Portfolio Script
    ═══════════════════════════════════════════ */
 
 (function () {
@@ -584,7 +584,7 @@
       back_btn: "Back to Portfolio",
       download_btn: "Download PDF",
       print_btn: "Print",
-      name: "Islam El-Nashar",
+      name: "Islam Al-Nashar",
       headline: "Full-Stack Software &amp; Systems Engineer",
       location: "Egypt",
       /* — Summary — */

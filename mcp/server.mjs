@@ -41,7 +41,7 @@ const SUPPORTED_VERSIONS = ["2024-11-05", "2025-03-26", "2025-06-18"];
 const SERVER_INFO = {
   name: "aslamalkarywk7-portfolio",
   version: "1.0.0",
-  title: "Islam El-Nashar — Portfolio Knowledge Base",
+  title: "Islam Al-Nashar — Portfolio Knowledge Base",
 };
 
 /* ── stdout writer (one JSON object per line) ───────────────────────────── */
@@ -79,7 +79,7 @@ async function handle(msg) {
         capabilities: { tools: { listChanged: false } },
         serverInfo: SERVER_INFO,
         instructions:
-          "Verified facts about Islam El-Nashar (Full-Stack Developer, Egypt): " +
+          "Verified facts about Islam Al-Nashar (Full-Stack Developer, Egypt): " +
           "profile, production stack, work history, education, AI work, " +
           "certificates, services, project shapes, live GitHub stats, and " +
           "retrieval over the portfolio's own documentation.",

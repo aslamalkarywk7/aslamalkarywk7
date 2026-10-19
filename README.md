@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="img/typing.svg" alt="Islam El-Nashar — Full-Stack Developer (Next.js / TypeScript / Prisma), building web apps with AI and site hardening" width="900" />
+<img src="img/typing.svg" alt="Islam Al-Nashar — Full-Stack Developer (Next.js / TypeScript / Prisma), building web apps with AI and site hardening" width="900" />
 
 <br/>
 
@@ -390,5 +390,5 @@ Some parts of this repository are generated so the site and the documentation ca
 ---
 
 <div align="center">
-<sub>© 2026 Islam El-Nashar · Built from scratch · <a href="LICENSE">MIT License</a></sub>
+<sub>© 2026 Islam Al-Nashar · Built from scratch · <a href="LICENSE">MIT License</a></sub>
 </div>

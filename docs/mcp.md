@@ -2,7 +2,7 @@
 
 > Docs: [README](../README.md) • [AI](ai-integrations.md) • [Stack](tech-stack.md) • [Full-Stack](full-stack.md) • [Security](defensive-security.md) • [Q&A](qa.md) • [MCP](mcp.md)
 
-> **Document control** — Owner: Islam El-Nashar • Scope: the Model Context Protocol server that exposes this portfolio's verified facts to any MCP client.
+> **Document control** — Owner: Islam Al-Nashar • Scope: the Model Context Protocol server that exposes this portfolio's verified facts to any MCP client.
 
 ---
 

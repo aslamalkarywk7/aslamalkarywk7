@@ -2,14 +2,14 @@
 
 > Docs: [README](../README.md) • [Full-Stack](full-stack.md) • [Stack](tech-stack.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md) • [Q&A](qa.md) • [MCP](mcp.md)
 
-> **Document control** — Owner: Islam El-Nashar • Last verified: 18 Oct 2026 • Scope: personal, method, standards, education.
+> **Document control** — Owner: Islam Al-Nashar • Last verified: 18 Oct 2026 • Scope: personal, method, standards, education.
 
 ---
 
 ## Personal
 
 **Who are you?**
-Islam El-Nashar, a Full-Stack Web Developer (Next.js / TypeScript / Prisma) from Egypt, working with clients since 2023.
+Islam Al-Nashar, a Full-Stack Web Developer (Next.js / TypeScript / Prisma) from Egypt, working with clients since 2023.
 
 **What is your education?**
 Undergraduate at the Higher Institute of Computer Science and Business Administration, Zarqa — Management Information Systems, 3rd year, expected graduation 2029. Self-taught programmer alongside formal study.
