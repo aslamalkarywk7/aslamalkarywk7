@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=30&duration=3500&pause=1200&color=58A6FF&center=true&vCenter=true&width=720&lines=Hi%2C+I%27m+Islam+El-Nashar;Full-Stack+Developer+%7C+Next.js+%2F+TypeScript+%2F+Prisma;Building+web+apps+with+AI+%26+site+hardening;From+Egypt+-+open+to+work" alt="Islam El-Nashar — Full-Stack Developer" />
+<img src="img/typing.svg" alt="Islam El-Nashar — Full-Stack Developer (Next.js / TypeScript / Prisma), building web apps with AI and site hardening" width="900" />
 
 <br/>
 

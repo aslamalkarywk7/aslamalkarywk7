@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Custom animated hero for the README — a terminal card in the site palette.
+  Hand-built with SMIL so it animates even when loaded through <img>.
+
+  EDITING
+  • text      → the three <text> elements; keep the character count in sync
+  • widths    → each clipPath mask width = (characters x 13.2) + 6
+                (13.2 = the advance of the monospace font at font-size 22)
+  • timing    → keyTimes drive the typing windows inside the 12s loop
+  • colours   → #722f37 / #8c3a44 = the site accent, #e8e8e8 = body text
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 210" width="900" height="210"
+     role="img" aria-label="Hi, I'm Islam El-Nashar. Full-Stack Developer - Next.js / TypeScript / Prisma. Building web apps with AI and site hardening.">
+  <title>Islam El-Nashar — Full-Stack Developer</title>
+
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#121214"/>
+      <stop offset="55%"  stop-color="#0b0b0d"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#8c3a44" stop-opacity="0.55"/>
+      <stop offset="60%"  stop-color="#722f37" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#722f37" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="core" cx="42%" cy="38%" r="65%">
+      <stop offset="0%"   stop-color="#c96a72"/>
+      <stop offset="55%"  stop-color="#8c3a44"/>
+      <stop offset="100%" stop-color="#722f37"/>
+    </radialGradient>
+
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+
+    <!-- one reveal window per line: 0 → hidden, W → fully typed -->
+    <clipPath id="m1">
+      <rect x="50" y="58" height="32" width="0">
+        <animate attributeName="width" dur="12s" repeatCount="indefinite"
+                 values="0;0;322;322" keyTimes="0;0.02;0.16;1"/>
+      </rect>
+    </clipPath>
+    <clipPath id="m2">
+      <rect x="50" y="98" height="32" width="0">
+        <animate attributeName="width" dur="12s" repeatCount="indefinite"
+                 values="0;0;745;745" keyTimes="0;0.42;0.58;1"/>
+      </rect>
+    </clipPath>
+    <clipPath id="m3">
+      <rect x="50" y="138" height="32" width="0">
+        <animate attributeName="width" dur="12s" repeatCount="indefinite"
+                 values="0;0;586;586" keyTimes="0;0.84;0.99;1"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- ── card ──────────────────────────────────────────────────────────── -->
+  <rect x="1" y="1" width="898" height="208" rx="16"
+        fill="url(#card)" stroke="#1f1f1f" stroke-width="1.5"/>
+  <rect x="1" y="1" width="898" height="208" rx="16" fill="url(#glow)" opacity="0.5"/>
+
+  <!-- title bar -->
+  <line x1="1" y1="36" x2="899" y2="36" stroke="#1f1f1f" stroke-width="1.5"/>
+  <circle cx="24" cy="19" r="5.5" fill="#722f37"/>
+  <circle cx="42" cy="19" r="5.5" fill="#5b262c"/>
+  <circle cx="60" cy="19" r="5.5" fill="#33333a"/>
+  <text x="80" y="24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"
+        font-size="12.5" fill="#8a8a92" letter-spacing="0.4">islam@portfolio — ~/projects</text>
+
+  <!-- ── hexagon mark (the site logo), rotating ────────────────────────── -->
+  <g transform="translate(806, 4)">
+    <circle cx="36" cy="16" r="26" fill="url(#glow)" filter="url(#soft)"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        from="0 36 16" to="360 36 16" dur="14s" repeatCount="indefinite"/>
+      <polygon points="36,5 56,16 56,38 36,49 16,38 16,16"
+               fill="none" stroke="#8c3a44" stroke-width="1.6" opacity="0.85"/>
+      <circle cx="36" cy="16" r="4.5" fill="#8c3a44"/>
+    </g>
+    <polygon points="36,5 56,16 56,38 36,49 16,38 16,16"
+             fill="none" stroke="#5b262c" stroke-width="1.2" opacity="0.6"/>
+    <circle cx="36" cy="27" r="6.5" fill="url(#core)"/>
+  </g>
+
+  <!-- ── lines ─────────────────────────────────────────────────────────── -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"
+     font-size="22" fill="#e8e8e8">
+
+    <g>
+      <text x="24" y="82" fill="#8c3a44" font-weight="700">&gt;</text>
+      <g clip-path="url(#m1)">
+        <text x="50" y="82"><tspan fill="#ffffff" font-weight="700">Hi, I'm Islam El-Nashar</tspan></text>
+        <rect x="368" y="64" width="11" height="21" fill="#8c3a44">
+          <animate attributeName="opacity" dur="1.05s" repeatCount="indefinite"
+                   values="1;1;0;0" keyTimes="0;0.5;0.5;1"/>
+        </rect>
+      </g>
+    </g>
+
+    <g>
+      <text x="24" y="122" fill="#8c3a44" font-weight="700">&gt;</text>
+      <g clip-path="url(#m2)">
+        <text x="50" y="122" fill="#e8e8e8">Full-Stack Developer — Next.js / TypeScript / Prisma</text>
+        <rect x="797" y="104" width="11" height="21" fill="#8c3a44">
+          <animate attributeName="opacity" dur="1.05s" repeatCount="indefinite"
+                   values="1;1;0;0" keyTimes="0;0.5;0.5;1"/>
+        </rect>
+      </g>
+    </g>
+
+    <g>
+      <text x="24" y="162" fill="#8c3a44" font-weight="700">&gt;</text>
+      <g clip-path="url(#m3)">
+        <text x="50" y="162" fill="#e8e8e8">Building web apps with AI &amp; site hardening</text>
+        <rect x="638" y="144" width="11" height="21" fill="#8c3a44">
+          <animate attributeName="opacity" dur="1.05s" repeatCount="indefinite"
+                   values="1;1;0;0" keyTimes="0;0.5;0.5;1"/>
+        </rect>
+      </g>
+    </g>
+  </g>
+
+  <!-- status bar -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5">
+    <text x="24" y="194" fill="#5b5b62">Full-Stack Developer</text>
+    <circle cx="188" cy="190" r="2.5" fill="#722f37"/>
+    <text x="198" y="194" fill="#5b5b62">Egypt</text>
+    <circle cx="262" cy="190" r="2.5" fill="#722f37"/>
+    <text x="272" y="194" fill="#5b5b62">Open to work</text>
+    <text x="875" y="194" fill="#5b5b62" text-anchor="end">aslamalkarywk7</text>
+  </g>
+</svg>
