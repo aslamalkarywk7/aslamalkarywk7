@@ -58,6 +58,7 @@
             <nav class="nav__links" role="navigation" aria-label="Main navigation">
                 <a href="#about" class="nav__link" data-i18n="nav.about">About</a>
                 <a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a>
+                <a href="#certificates" class="nav__link" data-i18n="nav.certificates">Certificates</a>
                 <a href="#services" class="nav__link">Services</a>
                 <a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a>
                 <a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a>
@@ -691,6 +692,47 @@
                     </div>
                 </div>
 
+        <!-- ═══════════════ CERTIFICATES ═══════════════ -->
+        <!-- Cards are rendered by certificates.js from its catalogue -->
+        <section class="certs section" id="certificates" aria-label="Certificates">
+            <div class="container">
+                <h2 class="section__title reveal" data-i18n="certs.title">Certificates</h2>
+                <p class="section__subtitle reveal" data-i18n="certs.subtitle">Verified certificates from universities and training providers — open any card to view the full document.</p>
+
+                <div class="certs__filters reveal" role="tablist" aria-label="Certificate categories">
+                    <button class="certs__filter is-active" type="button" role="tab" aria-selected="true"
+                        data-filter="all" data-i18n="certs.filter.all">All</button>
+                    <button class="certs__filter" type="button" role="tab" aria-selected="false"
+                        data-filter="fullstack" data-i18n="certs.filter.fullstack">Full-Stack</button>
+                    <button class="certs__filter" type="button" role="tab" aria-selected="false"
+                        data-filter="ai" data-i18n="certs.filter.ai">AI &amp; Machine Learning</button>
+                    <button class="certs__filter" type="button" role="tab" aria-selected="false"
+                        data-filter="data" data-i18n="certs.filter.data">Data &amp; Analytics</button>
+                    <button class="certs__filter" type="button" role="tab" aria-selected="false"
+                        data-filter="english" data-i18n="certs.filter.english">English</button>
+                </div>
+
+                <div class="certs__grid" id="certs-grid" aria-live="polite">
+                    <!-- ── Skeleton placeholders (replaced by JS) ──── -->
+                    <div class="cert-card cert-card--skel" aria-hidden="true">
+                        <div class="cert-skel cert-skel--media"></div>
+                        <div class="cert-skel cert-skel--title"></div>
+                        <div class="cert-skel cert-skel--note"></div>
+                    </div>
+                    <div class="cert-card cert-card--skel" aria-hidden="true">
+                        <div class="cert-skel cert-skel--media"></div>
+                        <div class="cert-skel cert-skel--title"></div>
+                        <div class="cert-skel cert-skel--note"></div>
+                    </div>
+                    <div class="cert-card cert-card--skel" aria-hidden="true">
+                        <div class="cert-skel cert-skel--media"></div>
+                        <div class="cert-skel cert-skel--title"></div>
+                        <div class="cert-skel cert-skel--note"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ═══════════════ SERVICES (same as README + docs) ═══════════════ -->
         <section class="profiles section" id="services" aria-label="Full-Stack services">
             <div class="container">
@@ -704,6 +746,12 @@
                     <div style="border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--card)">
                         <h3 style="margin:0 0 8px">🤖 Arabic-first AI for your site</h3>
                         <p style="margin:0;color:var(--muted);font-size:14px">Chat assistants, content & translation — integrator not researcher — details: <a href="docs/ai-integrations.md">docs/ai-integrations.md</a></p>
+                    </div>
+                    <div style="border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--card)">
+                        <h3 style="margin:0 0 8px">💬 Try the assistant on this site</h3>
+                        <p style="margin:0;color:var(--muted);font-size:14px">Ask about my services, stack and certificates, or get a project idea — bottom-right corner.
+                            <button type="button" class="btn btn--primary" style="margin-top:10px" onclick="window.openPortfolioChat &amp;&amp; window.openPortfolioChat()">Open the AI assistant</button>
+                        </p>
                     </div>
                     <div style="border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--card)">
                         <h3 style="margin:0 0 8px">🔒 Website hardening & protection</h3>
@@ -918,6 +966,10 @@
     <script src="script.js" defer></script>
     <script src="animations.js" defer></script>
     <script src="i18n.js" defer></script>
+    <script type="module" src="certificates.js"></script>
+    <!-- AI assistant: set window.PORTFOLIO_CHAT_ENDPOINT when the API is hosted
+         on another origin (e.g. GitHub Pages + Vercel). Default: same origin. -->
+    <script src="chat.js" defer></script>
 </body>
 
 </html>

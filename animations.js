@@ -497,7 +497,9 @@
           }
         });
       },
-      { threshold: 0.1 }
+      // threshold 0 + a small bottom margin: a tall section can never reach a
+      // 10% ratio (it would be unreachable → the section stayed invisible).
+      { threshold: 0, rootMargin: "0px 0px -80px 0px" }
     );
 
     sectionsForFade.forEach((section) => {

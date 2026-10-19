@@ -8,6 +8,7 @@ const translations = {
         // ── Navigation ──────────────────────────────────────────
         "nav.about":    "About",
         "nav.skills":   "Skills",
+        "nav.certificates": "Certificates",
         "nav.projects": "Projects",
         "nav.contact":  "Contact",
 
@@ -50,6 +51,26 @@ const translations = {
         "skills.tab3":     "AI & DevOps",
         "skills.tab4":     "Design & Tools",
 
+        // ── Certificates ─────────────────────────────────────────
+        "certs.title":       "Certificates",
+        "certs.subtitle":    "Verified certificates from universities and training providers — open any card to view the full document.",
+        "certs.filter.all":       "All",
+        "certs.filter.fullstack": "Full-Stack",
+        "certs.filter.ai":        "AI & Machine Learning",
+        "certs.filter.data":      "Data & Analytics",
+        "certs.filter.english":   "English",
+        "certs.cat.fullstack": "Full-Stack",
+        "certs.cat.ai":      "AI & ML",
+        "certs.cat.data":    "Data & Analytics",
+        "certs.cat.english": "English",
+        "certs.verify":  "Verify",
+        "certs.pdf":     "PDF",
+        "certs.open":    "Open",
+        "certs.close":   "Close",
+        "certs.prev":    "Previous",
+        "certs.next":    "Next",
+        "certs.empty":   "No certificates in this category yet.",
+
         // ── Projects ────────────────────────────────────────────
         "projects.title":    "Projects",
         "projects.subtitle": "Pulled live from my GitHub — always up to date.",
@@ -76,6 +97,7 @@ const translations = {
         // ── Navigation ──────────────────────────────────────────
         "nav.about":    "عني",
         "nav.skills":   "المهارات",
+        "nav.certificates": "الشهادات",
         "nav.projects": "المشاريع",
         "nav.contact":  "تواصل",
 
@@ -117,6 +139,26 @@ const translations = {
         "skills.tab2":     "الويب والخوادم",
         "skills.tab3":     "AI وDevOps",
         "skills.tab4":     "التصميم والأدوات",
+
+        // ── Certificates ─────────────────────────────────────────
+        "certs.title":       "الشهادات",
+        "certs.subtitle":    "شهادات موثّقة من جامعات ومزوّدي تدريب — اضغط أي بطاقة لعرض المستند كاملًا.",
+        "certs.filter.all":       "الكل",
+        "certs.filter.fullstack": "Full-Stack",
+        "certs.filter.ai":        "الذكاء الاصطناعي وتعلّم الآلة",
+        "certs.filter.data":      "البيانات والتحليلات",
+        "certs.filter.english":   "اللغة الإنجليزية",
+        "certs.cat.fullstack": "Full-Stack",
+        "certs.cat.ai":      "ذكاء اصطناعي",
+        "certs.cat.data":    "بيانات وتحليلات",
+        "certs.cat.english": "إنجليزي",
+        "certs.verify":  "تحقّق",
+        "certs.pdf":     "PDF",
+        "certs.open":    "فتح",
+        "certs.close":   "إغلاق",
+        "certs.prev":    "السابق",
+        "certs.next":    "التالي",
+        "certs.empty":   "لا توجد شهادات في هذا التصنيف بعد.",
 
         // ── Projects ────────────────────────────────────────────
         "projects.title":    "المشاريع",
@@ -187,7 +229,26 @@ function applyLanguage(lang) {
     // Persist
     currentLang = lang;
     localStorage.setItem("portfolio-lang", lang);
+
+    // Notify listeners (e.g. the certificates grid, which re-renders on switch)
+    document.dispatchEvent(
+        new CustomEvent("portfolio:langchange", { detail: { lang: lang } })
+    );
 }
+
+/* ── Public API ──────────────────────────────────────────────────────────────
+   Lets other scripts read the active language / a single key without
+   reaching into this module's internals.
+   ─────────────────────────────────────────────────────────────────────────── */
+window.portfolioI18n = {
+    get lang() {
+        return currentLang;
+    },
+    t(key) {
+        const dict = translations[currentLang];
+        return dict && dict[key] ? dict[key] : null;
+    },
+};
 
 // ── Toggle ─────────────────────────────────────────────────────────────────
 function toggleLanguage() {
