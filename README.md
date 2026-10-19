@@ -94,6 +94,66 @@ Shipping Next.js apps: pipelines, containers, servers, TLS, logs and rollback.<b
 
 ---
 
+## 💪 Skills, proven
+
+**Every claim below links to its evidence.** Nothing here is a self-assessment.
+
+<div align="center">
+
+[![GitHub followers](https://img.shields.io/github/followers/aslamalkarywk7?style=for-the-badge&logo=github&logoColor=white&color=722f37)](https://github.com/aslamalkarywk7?tab=followers)
+[![Stars across all repos](https://img.shields.io/github/stars/aslamalkarywk7?style=for-the-badge&logo=github&logoColor=white&color=722f37)](https://github.com/aslamalkarywk7?tab=repositories)
+[![Last commit](https://img.shields.io/github/last-commit/aslamalkarywk7/aslamalkarywk7?style=for-the-badge&logo=github&logoColor=white&color=722f37)](https://github.com/aslamalkarywk7/aslamalkarywk7/commits/main)
+[![License](https://img.shields.io/github/license/aslamalkarywk7/aslamalkarywk7?style=for-the-badge&logo=open%20source%20initiative&logoColor=white&color=722f37)](LICENSE)
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<strong>🖥️ Full-stack engineering</strong><br/>
+Next.js 14 App Router · TypeScript · Prisma · PostgreSQL · Tailwind — shipped in production, not tutorial exercises.<br/>
+<em>Evidence</em> → <a href="docs/full-stack.md">18 live web apps, screenshots &amp; pinned versions</a> · <a href="https://github.com/aslamalkarywk7/islam-elite-portfolio">islam-elite-portfolio</a><br/><br/>
+
+<strong>🤖 AI integration (Arabic-first)</strong><br/>
+Three models and four datasets published on Hugging Face; LLMs wired into real product features — chat, content, translation.<br/>
+<em>Evidence</em> → <a href="https://huggingface.co/ISLAM-PO">huggingface.co/ISLAM-PO</a> · <a href="docs/ai-integrations.md">docs/ai-integrations.md</a><br/><br/>
+
+<strong>🌍 Open source at scale</strong><br/>
+Pull requests opened into codebases owned by Microsoft and Google, with maintainer reviews.<br/>
+<em>Evidence</em> → <a href="https://github.com/microsoft/markitdown/pull/2538">microsoft/markitdown#2538 ✅ approved</a> · <a href="https://github.com/google/adk-python/pull/7198">google/adk-python#7198</a> · <a href="https://github.com/genkit-ai/genkit/pull/6386">genkit-ai/genkit#6386</a>
+
+</td>
+<td width="50%" valign="top">
+
+<strong>🔒 Security engineering</strong><br/>
+OWASP-aware hardening applied to my own production apps — server-side validation, HttpOnly sessions, rate limiting, least privilege, dependency audits.<br/>
+<em>Evidence</em> → <a href="docs/defensive-security.md">docs/defensive-security.md</a> · <a href="https://github.com/aslamalkarywk7/AndroidReverseEngineering-Guide">AndroidReverseEngineering-Guide</a> (most-starred)<br/><br/>
+
+<strong>🐧 DevOps &amp; delivery</strong><br/>
+Docker · GitHub Actions · Nginx · Vercel — pipelines, container images, TLS, logs and rollback.<br/>
+<em>Evidence</em> → <a href="docs/linux-systems.md">docs/linux-systems.md</a><br/><br/>
+
+<strong>🎓 Verified, documented learning</strong><br/>
+25 certificates — Full Stack Open (University of Helsinki, 5 ECTS, grade 1), OneRoadmap, Google Cloud, Simplilearn, and 17 Kaggle micro-courses.<br/>
+<em>Evidence</em> → <a href="docs/certificates.md">docs/certificates.md</a> (with PDF originals)
+
+</td>
+</tr>
+</table>
+
+### 🧭 How I work — the professional part
+
+| | |
+|---|---|
+| **Method** | Reproduce → isolate → read the source, not guesses → smallest fix → regression test → document. Evidence before synthesis, always. |
+| **Standards** | Conventional Commits · semantic versioning · MIT licensing with attribution · CI green before merge · docs-as-code · WCAG basics (labels carry meaning, never colour alone) · OWASP awareness |
+| **AI policy** | AI-assisted, human-reviewed: the AI drafts, **I** verify, test, and take responsibility for every merged line. No unreviewed generated code in production. |
+| **Honesty** | Production stack vs. explored stack are labelled separately — including in the AI assistant on this site, which is told to say "not documented" rather than guess. |
+| **Openness** | Ask me anything → [GitHub Issues](https://github.com/aslamalkarywk7/aslamalkarywk7/issues) · full detail in [docs/qa.md](docs/qa.md) |
+
+---
+
 ## ⚡ Tech Stack
 
 <table>
