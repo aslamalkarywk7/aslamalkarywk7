@@ -94,20 +94,6 @@ Shipping Next.js apps: pipelines, containers, servers, TLS, logs and rollback.<b
 
 ---
 
-## 📄 Curriculum Vitae
-
-**[`Islam-Al-Nashar-CV.pdf`](Islam-Al-Nashar-CV.pdf)** — 3 pages, A4, print-ready. Professional summary · core competencies · experience · selected projects & open-source work · all 25 certificates with visual proof · education.
-
-Rebuild it after editing the content:
-
-```bash
-node cv/build-cv.mjs    # → Islam-Al-Nashar-CV.pdf
-```
-
-The certificate grid inside the CV is rendered from the same catalogue the website uses (`data/certificates.mjs`), so the PDF can never drift from the site.
-
----
-
 ## 💪 Skills, proven
 
 **Every claim below links to its evidence.** Nothing here is a self-assessment.
@@ -389,7 +375,6 @@ Tell me what you need — scope, timeline and price are all open.
 | [docs/linux-systems.md](docs/linux-systems.md) | Linux, containers, CI/CD |
 | [docs/other-skills.md](docs/other-skills.md) | Explored but not production |
 | [docs/certificates.md](docs/certificates.md) | All 25 certificates, with PDF originals |
-| [`Islam-Al-Nashar-CV.pdf`](Islam-Al-Nashar-CV.pdf) | Printable CV (A4, 3 pages) |
 | [CONTRIBUTIONS.md](CONTRIBUTIONS.md) | The open-source story |
 
 ### 🛠️ Keeping the docs in sync
