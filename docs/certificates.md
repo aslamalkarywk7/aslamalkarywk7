@@ -26,7 +26,19 @@
 <p align="center"><sub><i><a href="../certificates/simplilearn-full-stack-development-101.pdf">PDF original</a></i></sub></p>
 <p align="center"><sub><i>Simplilearn SkillUP · Building modern web applications from front-end to back-end.</i></sub></p>
 
+<p align="center"><a href="https://www.freecodecamp.org/certification/aslamalkarywk7/responsive-web-design-v9"><img src="../certificates/freecodecamp-responsive-web-design.png" alt="Responsive Web Design" width="600" /></a></p>
+<p align="center"><sub><i>freeCodeCamp · Developer Certification — approximately 300 hours of HTML, CSS, Flexbox, Grid and responsive design, issued 20 October 2026.</i></sub></p>
+
+<p align="center"><a href="https://www.freecodecamp.org/certification/aslamalkarywk7/python-v9"><img src="../certificates/freecodecamp-python.png" alt="Python" width="600" /></a></p>
+<p align="center"><sub><i>freeCodeCamp · Developer Certification — approximately 300 hours of Python programming, issued 25 October 2026.</i></sub></p>
+
 ### AI &amp; Machine Learning
+
+<p align="center"><img src="../certificates/huggingface-agents-course.png" alt="Hugging Face Agents Course" width="600" /></p>
+<p align="center"><sub><i>Hugging Face · Certificate of Excellence — the Agents Course, completed 24 October 2026.</i></sub></p>
+
+<p align="center"><img src="../certificates/huggingface-mcp-course-unit-3.png" alt="The MCP Course — Unit 3" width="600" /></p>
+<p align="center"><sub><i>Hugging Face · Certificate of Achievement — MCP for Production Automation (Unit 3), completed 26 October 2026.</i></sub></p>
 
 <p align="center"><img src="../certificates/simplilearn-tensorflow-for-beginners.png" alt="TensorFlow for Beginners" width="600" /></p>
 <p align="center"><sub><i><a href="../certificates/simplilearn-tensorflow-for-beginners.pdf">PDF original</a></i></sub></p>

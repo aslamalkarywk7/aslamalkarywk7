@@ -32,6 +32,10 @@ const VERIFY = {
     "https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/8adba106796fd6c41b4136dc41ecc601",
   "oneroadmap-full-stack-developer.png":
     "https://www.oneroadmap.io/skills/fs/certificate/CERT-90CAE102",
+  "freecodecamp-responsive-web-design.png":
+    "https://www.freecodecamp.org/certification/aslamalkarywk7/responsive-web-design-v9",
+  "freecodecamp-python.png":
+    "https://www.freecodecamp.org/certification/aslamalkarywk7/python-v9",
 };
 
 function assertFiles() {
@@ -108,7 +112,7 @@ const readmePath = path.join(REPO, "README.md");
 let readme = fs.readFileSync(readmePath, "utf8");
 const readmeBlock = block(
   "",
-  "> All 25 certificates below are generated from the same catalogue the website renders (`data/certificates.mjs`) — the docs and the site can never drift apart. Regenerate with `node scripts/build-cert-docs.mjs`."
+  "> All " + CERTIFICATES.length + " certificates below are generated from the same catalogue the website renders (`data/certificates.mjs`) — the docs and the site can never drift apart. Regenerate with `node scripts/build-cert-docs.mjs`."
 );
 
 /* Explicit markers are preferred; the heading form is kept as a fallback

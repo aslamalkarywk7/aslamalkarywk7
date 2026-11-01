@@ -17,7 +17,7 @@ It is the same tool layer the website assistant uses (`api/_tools.mjs`), so both
 | Tool | What it returns |
 |---|---|
 | `get_profile` | Identity, production stack, work history, education, AI & open-source work |
-| `list_certificates` | The 25 certificates, optionally filtered by category (`fullstack` / `ai` / `data` / `english`) |
+| `list_certificates` | The full certificate catalogue, optionally filtered by category (`fullstack` / `ai` / `data` / `english`) |
 | `get_services` | The four services Islam can be hired for, with the stack behind each |
 | `get_project_templates` | Deliverable project shapes (scope, stack, size) — keeps AI suggestions realistic |
 | `get_featured_work` | Featured repositories and projects with links |

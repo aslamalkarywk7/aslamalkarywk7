@@ -7,7 +7,7 @@
  * Claude Desktop, Cursor, Windsurf, an IDE — can query them:
  *
  *   • get_profile            → identity, stack, experience, education, AI work
- *   • list_certificates      → the 25 certificates
+ *   • list_certificates      → the certificate catalogue
  *   • get_services           → the four services
  *   • get_project_templates  → deliverable project shapes
  *   • get_featured_work      → featured repos with links

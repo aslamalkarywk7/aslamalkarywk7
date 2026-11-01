@@ -135,7 +135,7 @@ Docker · GitHub Actions · Nginx · Vercel — pipelines, container images, TLS
 <em>Evidence</em> → <a href="docs/linux-systems.md">docs/linux-systems.md</a><br/><br/>
 
 <strong>🎓 Verified, documented learning</strong><br/>
-25 certificates — Full Stack Open (University of Helsinki, 5 ECTS, grade 1), OneRoadmap, Google Cloud, Simplilearn, and 17 Kaggle micro-courses.<br/>
+29 certificates — Full Stack Open (University of Helsinki, 5 ECTS, grade 1), OneRoadmap, Google Cloud, Simplilearn, freeCodeCamp, Hugging Face, and 17 Kaggle micro-courses.<br/>
 <em>Evidence</em> → <a href="docs/certificates.md">docs/certificates.md</a> (with PDF originals)
 
 </td>
@@ -249,7 +249,7 @@ Bottom-right corner of the portfolio — English / العربية. It is **not**
 ## 🎓 Certificates
 
 <!-- CERTS:START -->
-> All 25 certificates below are generated from the same catalogue the website renders (`data/certificates.mjs`) — the docs and the site can never drift apart. Regenerate with `node scripts/build-cert-docs.mjs`.
+> All 29 certificates below are generated from the same catalogue the website renders (`data/certificates.mjs`) — the docs and the site can never drift apart. Regenerate with `node scripts/build-cert-docs.mjs`.
 
 ### Full-Stack Development
 
@@ -264,7 +264,19 @@ Bottom-right corner of the portfolio — English / العربية. It is **not**
 <p align="center"><sub><i><a href="certificates/simplilearn-full-stack-development-101.pdf">PDF original</a></i></sub></p>
 <p align="center"><sub><i>Simplilearn SkillUP · Building modern web applications from front-end to back-end.</i></sub></p>
 
+<p align="center"><a href="https://www.freecodecamp.org/certification/aslamalkarywk7/responsive-web-design-v9"><img src="certificates/freecodecamp-responsive-web-design.png" alt="Responsive Web Design" width="600" /></a></p>
+<p align="center"><sub><i>freeCodeCamp · Developer Certification — approximately 300 hours of HTML, CSS, Flexbox, Grid and responsive design, issued 20 October 2026.</i></sub></p>
+
+<p align="center"><a href="https://www.freecodecamp.org/certification/aslamalkarywk7/python-v9"><img src="certificates/freecodecamp-python.png" alt="Python" width="600" /></a></p>
+<p align="center"><sub><i>freeCodeCamp · Developer Certification — approximately 300 hours of Python programming, issued 25 October 2026.</i></sub></p>
+
 ### AI &amp; Machine Learning
+
+<p align="center"><img src="certificates/huggingface-agents-course.png" alt="Hugging Face Agents Course" width="600" /></p>
+<p align="center"><sub><i>Hugging Face · Certificate of Excellence — the Agents Course, completed 24 October 2026.</i></sub></p>
+
+<p align="center"><img src="certificates/huggingface-mcp-course-unit-3.png" alt="The MCP Course — Unit 3" width="600" /></p>
+<p align="center"><sub><i>Hugging Face · Certificate of Achievement — MCP for Production Automation (Unit 3), completed 26 October 2026.</i></sub></p>
 
 <p align="center"><img src="certificates/simplilearn-tensorflow-for-beginners.png" alt="TensorFlow for Beginners" width="600" /></p>
 <p align="center"><sub><i><a href="certificates/simplilearn-tensorflow-for-beginners.pdf">PDF original</a></i></sub></p>
@@ -374,7 +386,7 @@ Tell me what you need — scope, timeline and price are all open.
 | [docs/defensive-security.md](docs/defensive-security.md) | Defensive security notes |
 | [docs/linux-systems.md](docs/linux-systems.md) | Linux, containers, CI/CD |
 | [docs/other-skills.md](docs/other-skills.md) | Explored but not production |
-| [docs/certificates.md](docs/certificates.md) | All 25 certificates, with PDF originals |
+| [docs/certificates.md](docs/certificates.md) | All 29 certificates, with PDF originals |
 | [CONTRIBUTIONS.md](CONTRIBUTIONS.md) | The open-source story |
 
 ### 🛠️ Keeping the docs in sync

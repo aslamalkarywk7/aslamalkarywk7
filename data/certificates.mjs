@@ -61,6 +61,48 @@ export const CERTIFICATES = [
     },
   },
   {
+    id: "fcc-rwd",
+    cat: "fullstack",
+    file: "freecodecamp-responsive-web-design.png",
+    w: 1140,
+    h: 739,
+    verify:
+      "https://www.freecodecamp.org/certification/aslamalkarywk7/responsive-web-design-v9",
+    en: { title: "Responsive Web Design", note: "freeCodeCamp · Developer Certification — approximately 300 hours of HTML, CSS, Flexbox, Grid and responsive design, issued 20 October 2026." },
+    ar: { title: "Responsive Web Design", note: "freeCodeCamp · شهادة مطوّر — نحو 300 ساعة في HTML وCSS وFlexbox وGrid والتصميم المتجاوب، صادرة في 20 أكتوبر 2026." },
+  },
+  {
+    id: "fcc-python",
+    cat: "fullstack",
+    file: "freecodecamp-python.png",
+    w: 1140,
+    h: 739,
+    verify:
+      "https://www.freecodecamp.org/certification/aslamalkarywk7/python-v9",
+    en: { title: "Python", note: "freeCodeCamp · Developer Certification — approximately 300 hours of Python programming, issued 25 October 2026." },
+    ar: { title: "Python", note: "freeCodeCamp · شهادة مطوّر — نحو 300 ساعة في برمجة لغة Python، صادرة في 25 أكتوبر 2026." },
+  },
+
+  {
+    id: "hf-agents",
+    cat: "ai",
+    file: "huggingface-agents-course.png",
+    w: 1600,
+    h: 1131,
+    en: { title: "Hugging Face Agents Course", note: "Hugging Face · Certificate of Excellence — the Agents Course, completed 24 October 2026." },
+    ar: { title: "Hugging Face Agents Course", note: "Hugging Face · شهادة تميّز — دورة وكلاء Hugging Face، أُنجزت في 24 أكتوبر 2026." },
+  },
+  {
+    id: "hf-mcp-unit3",
+    cat: "ai",
+    file: "huggingface-mcp-course-unit-3.png",
+    w: 1600,
+    h: 1131,
+    en: { title: "The MCP Course — Unit 3", note: "Hugging Face · Certificate of Achievement — MCP for Production Automation (Unit 3), completed 26 October 2026." },
+    ar: { title: "The MCP Course — الوحدة 3", note: "Hugging Face · شهادة إنجاز — أتمتة الإنتاج عبر MCP (الوحدة 3)، أُنجزت في 26 أكتوبر 2026." },
+  },
+
+  {
     id: "simplilearn-tensorflow",
     cat: "ai",
     file: "simplilearn-tensorflow-for-beginners.png",
