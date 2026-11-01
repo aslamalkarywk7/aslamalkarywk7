@@ -297,7 +297,7 @@ export const TOOLS = [
     type: "function",
     function: {
       name: "get_contact_channels",
-      description: "How to reach Islam: email, GitHub, LinkedIn, Hugging Face, site.",
+      description: "How to reach Islam: email, GitHub, LinkedIn, Hugging Face, dev.to, site.",
       parameters: { type: "object", properties: {} },
     },
   },
@@ -446,6 +446,7 @@ const CONTACT = {
   github: "https://github.com/aslamalkarywk7",
   linkedin: "https://www.linkedin.com/in/islam-elnashar/",
   huggingface: "https://huggingface.co/ISLAM-PO",
+  devto: "https://dev.to/islam_alnashera_19f64a4e",
   portfolio: "https://aslamalkarywk7.github.io/aslamalkarywk7/",
   response_note:
     "Free to talk about scope, timeline and price. Full-time roles and freelance both on the table.",

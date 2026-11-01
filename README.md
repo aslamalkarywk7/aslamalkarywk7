@@ -13,6 +13,7 @@ Currently deepening advanced AI integration and full-stack engineering.
 [![GitHub](https://img.shields.io/badge/GitHub-722f37?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aslamalkarywk7)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-722f37?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/islam-elnashar/)
 [![Hugging%20Face](https://img.shields.io/badge/Hugging%20Face-722f37?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/ISLAM-PO)
+[![dev.to](https://img.shields.io/badge/dev.to-722f37?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/islam_alnashera_19f64a4e)
 [![Email](https://img.shields.io/badge/Email-722f37?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aslamalkarywka@gmail.com)
 
 [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=aslamalkarywk7.aslamalkarywk7)](https://aslamalkarywk7.github.io/aslamalkarywk7/)
@@ -39,7 +40,8 @@ Arabic (native) · English (technical) · Spanish (basic)<br/><br/>
 <strong>📬 Reach me</strong><br/>
 <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> ·
 <a href="https://github.com/aslamalkarywk7">GitHub</a> ·
-<a href="https://www.linkedin.com/in/islam-elnashar/">LinkedIn</a>
+<a href="https://www.linkedin.com/in/islam-elnashar/">LinkedIn</a> ·
+<a href="https://dev.to/islam_alnashera_19f64a4e">dev.to</a>
 
 </td>
 <td width="48%" valign="top">

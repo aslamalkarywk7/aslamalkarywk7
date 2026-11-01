@@ -13,6 +13,7 @@ export const OWNER = {
   github: "https://github.com/aslamalkarywk7",
   linkedin: "https://www.linkedin.com/in/islam-elnashar/",
   huggingface: "https://huggingface.co/ISLAM-PO",
+  devto: "https://dev.to/islam_alnashera_19f64a4e",
   site: "https://aslamalkarywk7.github.io/aslamalkarywk7/",
 };
 
