@@ -21,7 +21,7 @@ It is the same tool layer the website assistant uses (`api/_tools.mjs`), so both
 | `get_services` | The four services Islam can be hired for, with the stack behind each |
 | `get_project_templates` | Deliverable project shapes (scope, stack, size) — keeps AI suggestions realistic |
 | `get_featured_work` | Featured repositories and projects with links |
-| `get_contact_channels` | Email, GitHub, LinkedIn, Hugging Face, portfolio site |
+| `get_contact_channels` | Email, GitHub, LinkedIn, Hugging Face, dev.to, portfolio site |
 | `get_live_github_stats` | Live followers, repo count, total stars, top repos (hits the GitHub API) |
 | `record_plan` | Records a structured plan (goal + 3 to 6 steps, each with title, detail, stack, effort and the tool that informed it). The same tool the website assistant uses in plan mode. |
 | `search_portfolio_docs` | Retrieval over `README.md` + `docs/*.md` — the authoritative source for details |
