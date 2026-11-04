@@ -50,6 +50,7 @@ const translations = {
         "skills.tab2":     "Web & Backend",
         "skills.tab3":     "AI & DevOps",
         "skills.tab4":     "Design & Tools",
+        "skills.tabEditors": "Code Editors",
 
         // ── Certificates ─────────────────────────────────────────
         "certs.title":       "Certificates",
@@ -139,6 +140,7 @@ const translations = {
         "skills.tab2":     "الويب والخوادم",
         "skills.tab3":     "AI وDevOps",
         "skills.tab4":     "التصميم والأدوات",
+        "skills.tabEditors": "محررات الكود",
 
         // ── Certificates ─────────────────────────────────────────
         "certs.title":       "الشهادات",
