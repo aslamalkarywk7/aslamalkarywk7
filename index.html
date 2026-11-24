@@ -187,7 +187,7 @@
         <section class="profiles section" id="profiles" aria-label="Profiles and datasets">
             <div class="container">
                 <h2 class="section__title reveal">Profiles & Datasets</h2>
-                <p class="section__subtitle reveal">My public work, models and datasets — all in one place.</p>
+                <p class="section__subtitle reveal">My AI work on Hugging Face — Arabic-first models and datasets, loaded live from the source.</p>
                 <div class="reveal" style="display:grid;gap:16px">
                     <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
                         <a href="https://huggingface.co/ISLAM-PO" target="_blank" rel="noopener" class="btn btn--primary">Hugging Face — ISLAM-PO</a>
@@ -196,14 +196,29 @@
                     </div>
                     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
                         <div style="border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--card)">
-                            <h3 style="margin:0 0 8px">🤖 Models <span style="font-weight:400;font-size:12px;color:var(--muted)">(verified 29 Sep 2026)</span></h3>
-                            <p style="margin:0;display:flex;flex-wrap:wrap;gap:8px"><a href="https://huggingface.co/ISLAM-PO/MasryGPT-Chat-1.5B" target="_blank" rel="noopener">MasryGPT-Chat-1.5B (~1235)</a> • <a href="https://huggingface.co/ISLAM-PO/MasryGPT-Flash-Adapter" target="_blank" rel="noopener">Flash-Adapter (~131)</a> • <a href="https://huggingface.co/ISLAM-PO/Glitch-Img-1.0" target="_blank" rel="noopener">Glitch-Img-1.0 (~6)</a></p>
+                            <h3 style="margin:0 0 8px">🤖 Models <span id="hf-models-count" style="font-weight:400;font-size:12px;color:var(--muted)">8 public models</span></h3>
+                            <p id="hf-models" class="hf-list" style="margin:0;display:flex;flex-wrap:wrap;gap:8px">
+                                <a class="hf-item" href="https://huggingface.co/ISLAM-PO/MasryGPT-Chat-1.5B" target="_blank" rel="noopener"><span>MasryGPT-Chat-1.5B</span><span class="hf-stat">↓ 579</span></a>
+                                <a class="hf-item" href="https://huggingface.co/ISLAM-PO/MasryGPT-Flash-Adapter" target="_blank" rel="noopener"><span>MasryGPT-Flash-Adapter</span><span class="hf-stat">↓ 15</span></a>
+                                <a class="hf-item" href="https://huggingface.co/ISLAM-PO/Glitch-Img-1.0" target="_blank" rel="noopener"><span>Glitch-Img-1.0</span><span class="hf-stat">↓ 82</span></a>
+                                <a class="hf-item" href="https://huggingface.co/ISLAM-PO/unit4-agent-code" target="_blank" rel="noopener"><span>unit4-agent-code</span></a>
+                                <a class="hf-item" href="https://huggingface.co/ISLAM-PO/alfred-gala-agent" target="_blank" rel="noopener"><span>alfred-gala-agent</span></a>
+                                <a class="hf-item" href="https://huggingface.co/ISLAM-PO/context-engineering-toolkit" target="_blank" rel="noopener"><span>context-engineering-toolkit</span></a>
+                                <a class="hf-item" href="https://huggingface.co/ISLAM-PO/mcp-pr-agent" target="_blank" rel="noopener"><span>mcp-pr-agent</span></a>
+                                <a class="hf-item" href="https://huggingface.co/ISLAM-PO/LGM" target="_blank" rel="noopener"><span>LGM</span></a>
+                            </p>
                         </div>
                         <div style="border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--card)">
-                            <h3 style="margin:0 0 8px">📊 Datasets</h3>
-                            <p style="margin:0;display:flex;flex-wrap:wrap;gap:8px"><a href="https://huggingface.co/datasets/ISLAM-PO/arabic-history-and-dialects" target="_blank" rel="noopener">arabic-history-and-dialects</a> • <a href="https://huggingface.co/datasets/ISLAM-PO/arabic-to-code-8-langs-3m" target="_blank" rel="noopener">arabic-to-code-8-langs-3m</a> • <a href="https://huggingface.co/datasets/ISLAM-PO/documents-Egyptian-Arabic" target="_blank" rel="noopener">documents-Egyptian</a> • <a href="https://huggingface.co/datasets/ISLAM-PO/arab-dialects-20-countries-3m" target="_blank" rel="noopener">arab-dialects-20</a></p>
+                            <h3 style="margin:0 0 8px">📊 Datasets <span id="hf-datasets-count" style="font-weight:400;font-size:12px;color:var(--muted)">4 public datasets</span></h3>
+                            <p id="hf-datasets" class="hf-list" style="margin:0;display:flex;flex-wrap:wrap;gap:8px">
+                                <a class="hf-item" href="https://huggingface.co/datasets/ISLAM-PO/arabic-history-and-dialects" target="_blank" rel="noopener"><span>arabic-history-and-dialects</span><span class="hf-stat">↓ 285</span></a>
+                                <a class="hf-item" href="https://huggingface.co/datasets/ISLAM-PO/documents-Egyptian-Arabic" target="_blank" rel="noopener"><span>documents-Egyptian-Arabic</span><span class="hf-stat">↓ 482</span></a>
+                                <a class="hf-item" href="https://huggingface.co/datasets/ISLAM-PO/arab-dialects-20-countries-3m" target="_blank" rel="noopener"><span>arab-dialects-20-countries-3m</span><span class="hf-stat">↓ 3,273</span></a>
+                                <a class="hf-item" href="https://huggingface.co/datasets/ISLAM-PO/arabic-to-code-8-langs-3m" target="_blank" rel="noopener"><span>arabic-to-code-8-langs-3m</span><span class="hf-stat">↓ 1,432</span></a>
+                            </p>
                         </div>
                     </div>
+                    <p id="hf-summary" style="text-align:center;color:var(--muted);font-size:13px;margin:0">6,148 downloads across 12 public models and datasets — Arabic-first NLP and generative AI.</p>
                     <p style="text-align:center;color:var(--muted);font-size:13px">Full-Stack Developer (Next.js/TS/Prisma) • AI integration & site hardening as supporting skills • Egypt • <a href="mailto:aslamalkarywka@gmail.com">aslamalkarywka@gmail.com</a> • <a href="https://github.com/aslamalkarywk7/aslamalkarywk7">More on GitHub ↗</a></p>
                 </div>
             </div>

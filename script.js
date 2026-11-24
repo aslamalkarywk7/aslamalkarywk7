@@ -369,6 +369,75 @@
   }
 
   /* ───────────────────────────────────────
+     7b. HUGGING FACE MODELS & DATASETS
+     ─────────────────────────────────────── */
+  const HF_AUTHOR = "ISLAM-PO";
+
+  function hfChip(item, kind) {
+    const a = document.createElement("a");
+    a.className = "hf-item";
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.href =
+      kind === "datasets"
+        ? `https://huggingface.co/datasets/${item.id}`
+        : `https://huggingface.co/${item.id}`;
+
+    const name = document.createElement("span");
+    name.textContent = item.id.split("/").pop();
+    a.appendChild(name);
+
+    const downloads = Number(item.downloads) || 0;
+    if (downloads > 0) {
+      const stat = document.createElement("span");
+      stat.className = "hf-stat";
+      stat.textContent = "↓ " + downloads.toLocaleString("en-US");
+      a.appendChild(stat);
+    }
+    return a;
+  }
+
+  async function fetchHFProjects() {
+    const groups = [
+      { key: "models", list: document.getElementById("hf-models"), count: document.getElementById("hf-models-count") },
+      { key: "datasets", list: document.getElementById("hf-datasets"), count: document.getElementById("hf-datasets-count") },
+    ];
+    let totalItems = 0;
+    let totalDownloads = 0;
+
+    await Promise.all(
+      groups.map(async ({ key, list, count }) => {
+        if (!list) return;
+        try {
+          const res = await fetch(
+            `https://huggingface.co/api/${key}?author=${HF_AUTHOR}&limit=50`
+          );
+          if (!res.ok) throw new Error(`HF ${key}: ${res.status}`);
+          const items = await res.json();
+          if (!Array.isArray(items) || items.length === 0) throw new Error("HF empty");
+
+          list.innerHTML = "";
+          items.forEach((item) => list.appendChild(hfChip(item, key)));
+          if (count) count.textContent = `${items.length} public ${key}`;
+          totalItems += items.length;
+          items.forEach((item) => {
+            totalDownloads += Number(item.downloads) || 0;
+          });
+        } catch (err) {
+          console.warn("Hugging Face fetch failed:", err.message);
+        }
+      })
+    );
+
+    const summary = document.getElementById("hf-summary");
+    if (summary && totalItems) {
+      summary.textContent =
+        `${totalDownloads.toLocaleString("en-US")} downloads across ${totalItems} public models and datasets — Arabic-first NLP and generative AI.`;
+    }
+  }
+  fetchHFProjects();
+
+  /* ───────────────────────────────────────
      8. OPEN SOURCE IMPACT — GitHub PR Search
      ─────────────────────────────────────── */
   const ossContainer = document.getElementById("oss-cards");
