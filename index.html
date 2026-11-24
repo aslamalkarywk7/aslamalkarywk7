@@ -90,9 +90,7 @@
                     <p class="hero__greeting reveal" data-i18n="hero.greeting">Hi, I'm</p>
                     <h1 class="hero__name reveal">Islam Al-Nasher</h1>
                     <p class="hero__headline reveal" data-i18n="hero.headline">Full-Stack Developer (Next.js/TS/Prisma) from Egypt</p>
-                    <p class="hero__desc reveal" id="hero-desc-text">
-                        A <span id="age" class="hero__age" aria-label="Dynamic age">20</span>-year-old <strong>Web Developer</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills — blending clean code with creative vision.
-                    </p>
+                    <p class="hero__desc reveal" id="hero-desc-text">I build websites and web applications end to end — from databases and APIs to polished interfaces — with a focus on AI integration and site hardening.</p>
                     <div class="hero__actions reveal">
                         <a href="#projects" class="btn btn--primary" data-i18n="hero.cta1">Explore My Projects</a>
                         <a href="#contact" class="btn btn--secondary" data-i18n="hero.cta2">Let's Talk</a>
@@ -125,7 +123,7 @@
                 <div class="about__grid">
                     <div class="about__text reveal">
                         <p data-i18n="about.p1" data-i18n-html>I'm <strong>Islam Al-Nasher</strong> (إسلام الناشر), a <strong>Full-Stack Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.</p>
-                        <p data-i18n="about.p2" data-i18n-html>Full-Stack Web Developer <strong>2023 — Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI for sites (chat assistants, content & translation) and website hardening. Open to full-time roles & freelance projects.</p>
+                        <p data-i18n="about.p2" data-i18n-html>Full-Stack Web Developer <strong>2023 — Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI for sites (chat assistants, content & translation) and website hardening. Open to full-time roles & freelance projects. MIS undergraduate, expected 2029.</p>
                         <p data-i18n="about.p3" data-i18n-html>My focus is <strong>full-stack web development</strong> and <strong>practical AI integration</strong>. Game dev, mobile and extra languages are side interests — the work I take on is web products built to last.</p>
                         <div class="about__actions" style="margin-top: 24px;">
                             <a href="https://github.com/aslamalkarywk7" class="btn btn--secondary" data-i18n="about.cv" target="_blank" rel="noopener">View CV</a>
@@ -171,14 +169,6 @@
                     <img src="https://github-readme-activity-graph.vercel.app/graph?username=aslamalkarywk7&theme=tokyo-night&hide_border=true&area=true"
                         alt="Islam Al-Nasher's GitHub Activity Graph" class="github-activity-chart__graph"
                         loading="lazy" onerror="this.onerror=null;this.src='https://ghchart.rshah.org/aslamalkarywk7'; this.style.background='white'; this.style.padding='12px'; this.style.borderRadius='12px'; this.onerror=function(){this.style.display='none';}" />
-                    <!-- ── Trophies row ───────────────────────── -->
-                    <div class="github-trophies">
-                        <p class="github-trophies__heading" data-i18n="github.trophies">Collaboration &amp; Badges</p>
-                        <img src="https://github-profile-trophy.vercel.app/?username=aslamalkarywk7&theme=darkhub&no-bg=true&no-frame=true&margin-w=15"
-                            alt="Islam Al-Nasher's GitHub Profile Trophies" class="github-trophies__img"
-                            loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-                        <div style="display:none;padding:16px;border:1px solid var(--border);border-radius:12px;background:var(--card);text-align:center;color:var(--muted)">Trophies temporarily unavailable</div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -827,7 +817,7 @@
                         <h3 style="margin:0 0 8px">🤖 Arabic-first AI for your site</h3>
                         <p style="margin:0;color:var(--muted);font-size:14px">Chat assistants, content and translation — built for real users, not experiments.</p>
                     </div>
-                    <div style="border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--card)">
+                    <div data-ai-chat-cta style="border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--card)">
                         <h3 style="margin:0 0 8px">💬 Try the assistant on this site</h3>
                         <p style="margin:0;color:var(--muted);font-size:14px">Ask about my services, stack and certificates, or get a project idea — bottom-right corner.
                             <button type="button" class="btn btn--primary" style="margin-top:10px" onclick="window.openPortfolioChat &amp;&amp; window.openPortfolioChat()">Open the AI assistant</button>
@@ -885,6 +875,44 @@
                 </div>
                 <div class="projects__load-more" id="load-more-wrapper" style="display: none">
                     <button id="load-more-btn" class="btn btn--primary" data-i18n="projects.loadmore">Load More Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ SELECTED WORK ═══════════════ -->
+        <section class="work section" id="selected-work" aria-label="Selected work">
+            <div class="container">
+                <h2 class="section__title reveal" data-i18n="work.title">Selected Work</h2>
+                <p class="section__subtitle reveal" data-i18n="work.subtitle">Four projects that show how I think — the problem, what I built, and the result.</p>
+                <div class="work__grid">
+                    <article class="work-card reveal">
+                        <span class="work-card__tag" data-i18n="work.c1.tag">LANGUAGE ENGINE</span>
+                        <h3 class="work-card__title" data-i18n="work.c1.title">Yakout</h3>
+                        <p class="work-card__body" data-i18n="work.c1.body">Arabic speakers couldn't write code in their own language. I built a Lua-based interpreter with Arabic keywords, variables and a localised standard library.</p>
+                        <p class="work-card__metric" data-i18n="work.c1.metric">C · open source · 1★</p>
+                        <a class="work-card__link" href="https://github.com/aslamalkarywk7/yaqout-langar" target="_blank" rel="noopener noreferrer" data-i18n="work.link">View project ↗</a>
+                    </article>
+                    <article class="work-card reveal">
+                        <span class="work-card__tag" data-i18n="work.c2.tag">SAAS PLATFORM</span>
+                        <h3 class="work-card__title" data-i18n="work.c2.title">OpsDesk</h3>
+                        <p class="work-card__body" data-i18n="work.c2.body">Teams juggle roles, permissions and audit trails across tools. I built one Next.js 14 + Prisma platform with role-aware dashboards, team management and audit logs.</p>
+                        <p class="work-card__metric" data-i18n="work.c2.metric">Next.js · Prisma · RBAC</p>
+                        <a class="work-card__link" href="https://github.com/aslamalkarywk7/opsdesk" target="_blank" rel="noopener noreferrer" data-i18n="work.link">View project ↗</a>
+                    </article>
+                    <article class="work-card reveal">
+                        <span class="work-card__tag" data-i18n="work.c3.tag">COMPRESSION</span>
+                        <h3 class="work-card__title" data-i18n="work.c3.title">TurboQuant</h3>
+                        <p class="work-card__body" data-i18n="work.c3.body">Files need to shrink without losing a single byte. I built a lossless compressor with a web console that verifies every round-trip is identical.</p>
+                        <p class="work-card__metric" data-i18n="work.c3.metric">Python · web console · 1★</p>
+                        <a class="work-card__link" href="https://github.com/aslamalkarywk7/TurboQuant" target="_blank" rel="noopener noreferrer" data-i18n="work.link">View project ↗</a>
+                    </article>
+                    <article class="work-card reveal">
+                        <span class="work-card__tag" data-i18n="work.c4.tag">ARABIC AI</span>
+                        <h3 class="work-card__title" data-i18n="work.c4.title">MasryGPT</h3>
+                        <p class="work-card__body" data-i18n="work.c4.body">General models miss the nuances of Egyptian Arabic. I trained a 1.5B chat model and adapter on Arabic datasets so the dialect is treated as a first-class language.</p>
+                        <p class="work-card__metric" data-i18n="work.c4.metric">579 downloads · 4 datasets</p>
+                        <a class="work-card__link" href="https://huggingface.co/ISLAM-PO/MasryGPT-Chat-1.5B" target="_blank" rel="noopener noreferrer" data-i18n="work.link">View project ↗</a>
+                    </article>
                 </div>
             </div>
         </section>

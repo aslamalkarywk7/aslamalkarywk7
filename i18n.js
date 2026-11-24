@@ -15,17 +15,38 @@ const translations = {
         // ── Hero ─────────────────────────────────────────────────
         "hero.greeting":  "Hi, I'm",
         "hero.headline":  "Full-Stack Developer (Next.js/TS/Prisma) from Egypt",
-        "hero.desc":      "-year-old Web Developer from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
+        "hero.desc":      "I build websites and web applications end to end — from databases and APIs to polished interfaces — with a focus on AI integration and site hardening.",
         "hero.cta1":      "Explore My Projects",
         "hero.cta2":      "Let's Talk",
         "hero.watchIntro": "Watch intro",
         "video.title":    "Introduction — Islam Al-Nasher",
         "video.hint":     "2:09 · English subtitles burned in",
 
+        // ── Selected work ─────────────────────────────────────────────
+        "work.title":    "Selected Work",
+        "work.subtitle": "Four projects that show how I think — the problem, what I built, and the result.",
+        "work.link":     "View project ↗",
+        "work.c1.tag":   "LANGUAGE ENGINE",
+        "work.c1.title": "Yakout",
+        "work.c1.body":  "Arabic speakers couldn't write code in their own language. I built a Lua-based interpreter with Arabic keywords, variables and a localised standard library.",
+        "work.c1.metric":"C · open source · 1★",
+        "work.c2.tag":   "SAAS PLATFORM",
+        "work.c2.title": "OpsDesk",
+        "work.c2.body":  "Teams juggle roles, permissions and audit trails across tools. I built one Next.js 14 + Prisma platform with role-aware dashboards, team management and audit logs.",
+        "work.c2.metric":"Next.js · Prisma · RBAC",
+        "work.c3.tag":   "COMPRESSION",
+        "work.c3.title": "TurboQuant",
+        "work.c3.body":  "Files need to shrink without losing a single byte. I built a lossless compressor with a web console that verifies every round-trip is identical.",
+        "work.c3.metric":"Python · web console · 1★",
+        "work.c4.tag":   "ARABIC AI",
+        "work.c4.title": "MasryGPT",
+        "work.c4.body":  "General models miss the nuances of Egyptian Arabic. I trained a 1.5B chat model and adapter on Arabic datasets so the dialect is treated as a first-class language.",
+        "work.c4.metric":"579 downloads · 4 datasets",
+
         // ── About ─────────────────────────────────────────────────
         "about.title":    "About Me",
         "about.p1":       "I'm <strong>Islam Al-Nasher</strong> (إسلام الناشر), a <strong>Full-Stack Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
-        "about.p2":       "Full-Stack Web Developer <strong>2023 - Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI and website hardening. Open to full-time roles & freelance projects.",
+        "about.p2":       "Full-Stack Web Developer <strong>2023 - Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI and website hardening. Open to full-time roles & freelance projects. MIS undergraduate, expected 2029.",
         "about.p3":       "My focus is <strong>full-stack web development</strong> and <strong>practical AI integration</strong>. Game dev, mobile and extra languages are side interests — the work I take on is web products built to last.",
         "about.cv":       "View CV",
         "about.stat1":    "Years Old",
@@ -56,6 +77,8 @@ const translations = {
         "skills.tabEditors": "Code Editors",
 
         // ── Certificates ─────────────────────────────────────────
+        "certs.showAll":     "View all {n} certificates",
+        "certs.showLess":    "Show fewer certificates",
         "certs.title":       "Certificates",
         "certs.subtitle":    "Verified certificates from universities and training providers — open any card to view the full document.",
         "certs.filter.all":       "All",
@@ -108,17 +131,38 @@ const translations = {
         // ── Hero ─────────────────────────────────────────────────
         "hero.greeting":  "مرحباً، أنا",
         "hero.headline":  "مطوّر Full-Stack (Next.js/TS/Prisma) من مصر",
-        "hero.desc":      "-سنة، مطوّر ويب من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
+        "hero.desc":      "أبني مواقع وتطبيقات ويب من الألف للياء — من قواعد بيانات وAPIs لواجهات مصقولة — مع تركيز على تكامل AI وتقوية حماية المواقع.",
         "hero.cta1":      "استعرض مشاريعي",
         "hero.cta2":      "لنتحدث",
         "hero.watchIntro": "شاهد التعريف",
         "video.title":    "فيديو التعريف — إسلام الناشر",
         "video.hint":     "2:09 · ترجمة إنجليزية مدمجة",
 
+        // ── Selected work ─────────────────────────────────────────────
+        "work.title":    "أعمال مختارة",
+        "work.subtitle": "أربعة مشاريع بتوري كيف أفكر — المشكلة، اللي بنيته، والنتيجة.",
+        "work.link":     "عرض المشروع ↗",
+        "work.c1.tag":   "محرك لغة",
+        "work.c1.title": "يعقوب",
+        "work.c1.body":  "الناطقين بالعربي ما كانوش يقدروا يكتبوا كود بلغتهم. بنيت مفسّر مبني على Lua بكلمات ومتغيرات عربية ومكتبة قياسية معرّبة.",
+        "work.c1.metric":"C · مفتوح المصدر · 1★",
+        "work.c2.tag":   "منصة SaaS",
+        "work.c2.title": "OpsDesk",
+        "work.c2.body":  "الفرق بتتشتت بين الصلاحيات والمستخدمين وسجلات التغيير. بنيت منصة واحدة بـ Next.js 14 وPrisma فيها لوحة حسب الدور وإدارة فرق وسجل تدقيق.",
+        "work.c2.metric":"Next.js · Prisma · صلاحيات",
+        "work.c3.tag":   "ضغط ملفات",
+        "work.c3.title": "TurboQuant",
+        "work.c3.body":  "الملفات محتاجة تصغر من غير ما نفقد ولا بايت. بنيت ضاغط lossless مع كونسول ويبيأكد إن كل عملية فك مطابقة تماماً للأصل.",
+        "work.c3.metric":"Python · كونسول ويب · 1★",
+        "work.c4.tag":   "ذكاء اصطناعي عربي",
+        "work.c4.title": "MasryGPT",
+        "work.c4.body":  "الموديلات العامة بيفوّتوا تفاصيل المصرية. درّبت موديل محادثة 1.5B ومحول على بيانات عربية عشان اللهجة تبقى لغة أساسية مش استثناء.",
+        "work.c4.metric":"579 تحميل · 4 داتاسيتس",
+
         // ── About ─────────────────────────────────────────────────
         "about.title":    "عنّي",
         "about.p1":       "أنا <strong>إسلام الناشر</strong> (Islam Al-Nasher)، <strong>مطوّر Full-Stack (Next.js/TS/Prisma)</strong> من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
-        "about.p2":       "مطور Full-Stack <strong>2023 - الحاضر (3 سنوات)</strong>: <strong>مواقع شركات ومتاجر وتطبيقات مخصصة</strong> — مع AI عربي أولاً وتقوية المواقع. متاح للوظائف بدوام كامل والمشاريع الحرة.",
+        "about.p2":       "مطور Full-Stack <strong>2023 - الحاضر (3 سنوات)</strong>: <strong>مواقع شركات ومتاجر وتطبيقات مخصصة</strong> — مع AI عربي أولاً وتقوية المواقع. متاح للوظائف بدوام كامل والمشاريع الحرة. طالب في نظم المعلومات الإدارية، من المتوقع التخرج سنة 2029.",
         "about.p3":       "تركيزي على <strong>تطوير الويب الشامل</strong> و<strong>تكامل AI عملي</strong>. تطوير الألعاب والموبايل واللغات الإضافية اهتمامات جانبية — والخدمات اللي أقدّمها هي منتجات ويب تُبنى لتدوم.",
         "about.cv":       "عرض السيرة الذاتية",
         "about.stat1":    "سنة عمر",
@@ -149,6 +193,8 @@ const translations = {
         "skills.tabEditors": "محررات الكود",
 
         // ── Certificates ─────────────────────────────────────────
+        "certs.showAll":     "عرض كل الشهادات ({n})",
+        "certs.showLess":    "عرض أقل",
         "certs.title":       "الشهادات",
         "certs.subtitle":    "شهادات موثّقة من جامعات ومزوّدي تدريب — اضغط أي بطاقة لعرض المستند كاملًا.",
         "certs.filter.all":       "الكل",
@@ -218,17 +264,9 @@ function applyLanguage(lang) {
         if (t[key]) el.placeholder = t[key];
     });
 
-    // Special: hero desc injects age span
+    // Hero description is plain copy now — age belongs in the About section.
     const heroDescEl = document.getElementById("hero-desc-text");
-    if (heroDescEl) {
-        const ageSpan = document.getElementById("age");
-        const ageVal  = ageSpan ? ageSpan.textContent : "19";
-        if (lang === "ar") {
-            heroDescEl.innerHTML = `<span id="age" class="hero__age" aria-label="العمر الديناميكي">${ageVal}</span>${t["hero.desc"]}`;
-        } else {
-            heroDescEl.innerHTML = `A <span id="age" class="hero__age" aria-label="Dynamic age">${ageVal}</span>${t["hero.desc"]}`;
-        }
-    }
+    if (heroDescEl && t["hero.desc"]) heroDescEl.textContent = t["hero.desc"];
 
     // Direction + lang attribute
     document.documentElement.setAttribute("lang", lang);

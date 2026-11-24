@@ -27,8 +27,19 @@ import { CERTIFICATES as CERTIFICATE_LIST } from "./data/certificates.mjs";
   const grid = document.getElementById("certs-grid");
   const filterBar = document.querySelector(".certs__filters");
 
+  const FEATURED_IDS = [
+    "fso",
+    "oneroadmap",
+    "simplilearn-fs101",
+    "hf-agents",
+    "hf-mcp-unit3",
+    "kaggle-intermediate-ml",
+  ];
+
   let activeFilter = "all";
+  let showAll = false;
   let visibleItems = [];
+  let showAllBtn = null;
   let lightboxIndex = -1;
   let lastFocused = null;
 
@@ -57,9 +68,24 @@ import { CERTIFICATES as CERTIFICATE_LIST } from "./data/certificates.mjs";
   }
 
   function filtered() {
-    return activeFilter === "all"
-      ? CERTIFICATES.slice()
-      : CERTIFICATES.filter((c) => c.cat === activeFilter);
+    const base =
+      activeFilter === "all"
+        ? CERTIFICATES.slice()
+        : CERTIFICATES.filter((c) => c.cat === activeFilter);
+    if (showAll || activeFilter !== "all") return base;
+    return FEATURED_IDS.map((id) => base.find((c) => c.id === id)).filter(Boolean);
+  }
+
+  function updateShowAllButton() {
+    if (!showAllBtn) return;
+    const visible = activeFilter === "all" && CERTIFICATES.length > FEATURED_IDS.length;
+    showAllBtn.hidden = !visible;
+    showAllBtn.textContent = showAll
+      ? t("certs.showLess") || "Show fewer"
+      : (t("certs.showAll") || "View all certificates").replace(
+          "{n}",
+          String(CERTIFICATES.length)
+        );
   }
 
   /* ─────────────────────────────────────────
@@ -151,6 +177,7 @@ import { CERTIFICATES as CERTIFICATE_LIST } from "./data/certificates.mjs";
       empty.className = "certs__empty";
       empty.textContent = t("certs.empty");
       grid.appendChild(empty);
+      updateShowAllButton();
       return;
     }
 
@@ -161,6 +188,7 @@ import { CERTIFICATES as CERTIFICATE_LIST } from "./data/certificates.mjs";
       grid.appendChild(card);
       requestAnimationFrame(() => card.classList.add("card--visible"));
     });
+    updateShowAllButton();
   }
 
   /* ─────────────────────────────────────────
@@ -176,6 +204,18 @@ import { CERTIFICATES as CERTIFICATE_LIST } from "./data/certificates.mjs";
       });
     }
     render();
+  }
+
+  function initShowAll() {
+    if (!grid) return;
+    showAllBtn = document.createElement("button");
+    showAllBtn.type = "button";
+    showAllBtn.className = "btn btn--secondary certs__show-all";
+    showAllBtn.addEventListener("click", () => {
+      showAll = !showAll;
+      render();
+    });
+    grid.insertAdjacentElement("afterend", showAllBtn);
   }
 
   function initFilters() {
@@ -343,6 +383,7 @@ import { CERTIFICATES as CERTIFICATE_LIST } from "./data/certificates.mjs";
 
   document.addEventListener("DOMContentLoaded", () => {
     initFilters();
+    initShowAll();
     render();
   });
 })();

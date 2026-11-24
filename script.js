@@ -438,6 +438,51 @@
   fetchHFProjects();
 
   /* ───────────────────────────────────────
+     7c. SKILL EVIDENCE (replaces self-rated dots)
+     ─────────────────────────────────────── */
+  const SKILL_EVIDENCE = {
+    React: "OpsDesk · bilingual stores",
+    "Next.js": "OpsDesk · Souqna · this site",
+    TypeScript: "All production projects",
+    JavaScript: "Full Stack Open · web apps",
+    Prisma: "OpsDesk · commerce backends",
+    PostgreSQL: "OpsDesk · analytics",
+    SQLite: "Souqna · TurboQuant console",
+    "Node.js": "APIs · CLI tooling",
+    "Express.js": "REST APIs in stores",
+    "Tailwind CSS": "All recent interfaces",
+    Python: "TurboQuant · Android guide",
+    C: "Yakout interpreter",
+    Lua: "Yakout language engine",
+    Git: "Every project",
+    "GitHub Actions": "CI for this site and stores",
+    Docker: "OpsDesk deployments",
+    Nginx: "Linux deployments",
+    Vercel: "Portfolio · dashboards",
+    Blender: "MCP agent tooling",
+    Arabic: "RTL interfaces · NLP datasets",
+  };
+
+  function annotateSkillEvidence() {
+    document.querySelectorAll(".skill-card").forEach((card) => {
+      const mastery = card.querySelector(".skill-card__mastery");
+      if (!mastery) return;
+      const name = card.querySelector(".skill-card__name")?.textContent.trim();
+      const evidence = SKILL_EVIDENCE[name];
+      if (!evidence) {
+        mastery.remove();
+        return;
+      }
+      const label = document.createElement("span");
+      label.className = "skill-card__usage";
+      label.textContent = "↳ " + evidence;
+      mastery.replaceChildren(label);
+      mastery.classList.add("skill-card__usage-wrap");
+    });
+  }
+  annotateSkillEvidence();
+
+  /* ───────────────────────────────────────
      8. OPEN SOURCE IMPACT — GitHub PR Search
      ─────────────────────────────────────── */
   const ossContainer = document.getElementById("oss-cards");

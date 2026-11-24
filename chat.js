@@ -394,7 +394,10 @@
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });
-      if (!res.ok) return;
+      if (!res.ok) {
+        disableAssistant();
+        return;
+      }
       const cfg = await res.json();
       planAvailable = Boolean(cfg.plan_mode);
       if (!planAvailable) {
@@ -403,8 +406,19 @@
       }
       renderChips();
     } catch {
-      /* keep the button — the server may simply not expose /api/config */
+      disableAssistant();
     }
+  }
+
+  /* On a static host (e.g. GitHub Pages) there is no /api/chat backend.
+     Hide the widget and its CTA instead of leaving a dead button. */
+  function disableAssistant() {
+    window.portfolioChatAvailable = false;
+    window.openPortfolioChat = function () {
+      window.location.href = "mailto:aslamalkarywka@gmail.com";
+    };
+    root.remove();
+    document.querySelectorAll("[data-ai-chat-cta]").forEach((el) => el.remove());
   }
 
   document.addEventListener("keydown", (e) => {
