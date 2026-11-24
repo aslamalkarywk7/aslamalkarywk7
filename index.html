@@ -103,6 +103,13 @@
                         <div class="hero__image-glow"></div>
                         <img class="hero__image" src="img/my.png" alt="Islam Al-Nashar — Web Developer"
                             width="320" height="320" loading="eager" />
+                        <button class="hero__play" id="hero-play" type="button"
+                            aria-label="Watch introduction video" aria-haspopup="dialog">
+                            <span class="hero__play-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+                            </span>
+                            <span class="hero__play-text" data-i18n="hero.watchIntro">Watch intro</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1028,9 +1035,25 @@
         </div>
     </footer>
 
+    <!-- ═══════════════ INTRO VIDEO MODAL ═══════════════ -->
+    <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title" hidden>
+        <div class="video-modal__backdrop" data-video-close></div>
+        <div class="video-modal__panel">
+            <button class="video-modal__close" type="button" data-video-close aria-label="Close video">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
+            </button>
+            <h2 class="video-modal__title" id="video-modal-title" data-i18n="video.title">Introduction — Islam Al-Nashar</h2>
+            <video class="video-modal__player" id="video-modal-player"
+                src="video/islam-intro.mp4" poster="video/islam-intro-poster.jpg"
+                controls playsinline preload="none"></video>
+            <p class="video-modal__hint" data-i18n="video.hint">2:09 · English subtitles burned in</p>
+        </div>
+    </div>
+
     <script src="script.js" defer></script>
     <script src="animations.js" defer></script>
     <script src="i18n.js" defer></script>
+    <script src="video-modal.js" defer></script>
     <script type="module" src="certificates.js"></script>
     <!-- AI assistant: set window.PORTFOLIO_CHAT_ENDPOINT when the API is hosted
          on another origin (e.g. GitHub Pages + Vercel). Default: same origin. -->

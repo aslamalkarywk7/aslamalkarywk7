@@ -18,6 +18,9 @@ const translations = {
         "hero.desc":      "-year-old Web Developer from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
         "hero.cta1":      "Explore My Projects",
         "hero.cta2":      "Let's Talk",
+        "hero.watchIntro": "Watch intro",
+        "video.title":    "Introduction — Islam Al-Nashar",
+        "video.hint":     "2:09 · English subtitles burned in",
 
         // ── About ─────────────────────────────────────────────────
         "about.title":    "About Me",
@@ -108,6 +111,9 @@ const translations = {
         "hero.desc":      "-سنة، مطوّر ويب من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
         "hero.cta1":      "استعرض مشاريعي",
         "hero.cta2":      "لنتحدث",
+        "hero.watchIntro": "شاهد التعريف",
+        "video.title":    "فيديو التعريف — إسلام النشار",
+        "video.hint":     "2:09 · ترجمة إنجليزية مدمجة",
 
         // ── About ─────────────────────────────────────────────────
         "about.title":    "عنّي",
