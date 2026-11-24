@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════
    CERTIFICATES — catalogue, grid, filters, lightbox
-   Islam Al-Nashar Portfolio
+   Islam Al-Nasher Portfolio
    ---------------------------------------------------------------
    The catalogue below is the single source of truth for every
    certificate shown in the #certificates section. Files live in

@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════
    ADVANCED ANIMATIONS SUITE
-   Islam Al-Nashar Portfolio — All Animations
+   Islam Al-Nasher Portfolio — All Animations
    ═══════════════════════════════════════════ */
 
 (function () {
