@@ -17,13 +17,13 @@
       open: "Open the AI assistant",
       close: "Close the assistant",
       title: "Ask Islam's AI",
-      subtitle: "Services, ideas, and background",
+      subtitle: "Projects, AI work, services & updates",
       planMode: "Plan mode",
       planModeOn: "Plan mode is on — the assistant will build a step-by-step plan",
       planGoal: "Plan",
       planEffort: { small: "Small", medium: "Medium", large: "Large" },
       welcome:
-        "Hi — I'm the AI assistant for Islam Al-Nasher, a Full-Stack Developer from Egypt. Ask me about his services, his stack, his certificates, or tell me what you want to build and I'll suggest how he can help.",
+        "Hi — I'm the AI assistant for Islam Al-Nasher, a Full-Stack Developer from Egypt. Ask me about his projects, his AI work, his services, his certificates, or what's new — I'll answer with real names, numbers and links.",
       placeholder: "Ask about services, ideas, or Islam's background…",
       send: "Send",
       thinking: "Thinking…",
@@ -36,13 +36,13 @@
       open: "افتح مساعد الذكاء الاصطناعي",
       close: "أغلق المساعد",
       title: "اسأل ذكاء إسلام",
-      subtitle: "الخدمات والأفكار والخبرة",
+      subtitle: "المشاريع والذكاء الاصطناعي والخدمات والتحديثات",
       planMode: "وضع التخطيط",
       planModeOn: "وضع التخطيط مُفعّل — سيبني المساعد خطة خطوة بخطوة",
       planGoal: "الخطة",
       planEffort: { small: "صغير", medium: "متوسط", large: "كبير" },
       welcome:
-        "مرحباً — أنا مساعد إسلام الناشر، مطوّر Full-Stack من مصر. اسألني عن خدماته أو تقنياته أو شهاداته، أو أخبرني بما تريد بناءه وسأقترح كيف يمكنه مساعدتك.",
+        "مرحباً — أنا مساعد إسلام الناشر، مطوّر Full-Stack من مصر. اسألني عن مشاريعه وأعماله في الذكاء الاصطناعي وخدماته وشهاداته، أو عم الجديد في موقعه — هجاوبك بأسماء وأرقام ولينكات حقيقية.",
       placeholder: "اسأل عن الخدمات أو الأفكار أو خبرة إسلام…",
       send: "إرسال",
       thinking: "جارٍ التفكير…",
@@ -55,16 +55,18 @@
 
   const STARTERS = {
     en: [
+      { label: "What projects have you built?" },
+      { label: "What is your AI work?" },
+      { label: "What's new on your portfolio?" },
       { label: "What services do you offer?" },
       { label: "Plan a project for me", plan: true },
-      { label: "What is your tech stack?" },
-      { label: "Show me your certificates" },
     ],
     ar: [
+      { label: "ما المشاريع التي بنيتها؟" },
+      { label: "ما أعمالك في الذكاء الاصطناعي؟" },
+      { label: "ما الجديد في بورتفوليو؟" },
       { label: "ما الخدمات التي تقدمها؟" },
       { label: "خطط لي مشروعاً", plan: true },
-      { label: "ما هي تقنياتك المستخدمة؟" },
-      { label: "أرني شهاداتك" },
     ],
   };
 

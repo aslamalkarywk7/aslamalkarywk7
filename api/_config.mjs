@@ -3,8 +3,8 @@
  *
  *   SCOPE = "personal"  → the website assistant only knows things about Islam:
  *                         profile, stack, experience, education, certificates,
- *                         services, work, contact — and can look them up in the
- *                         portfolio's own documentation.
+ *                         services, projects, AI work, updates, contact — and
+ *                         can look them up in the portfolio's own documentation.
  *                         No planning, no project templates, no live counters.
  *
  *   SCOPE = "full"      → everything, including project planning, the
@@ -25,6 +25,7 @@ const PERSONAL_TOOLS = [
   "list_certificates",
   "get_services",
   "get_featured_work",
+  "get_projects",
   "get_contact_channels",
   "search_portfolio_docs",
 ];

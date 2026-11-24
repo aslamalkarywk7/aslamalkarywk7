@@ -17,7 +17,10 @@ import { fileURLToPath } from "node:url";
 
 import { CERTIFICATES } from "../data/certificates.mjs";
 import { CORPUS } from "../data/docs-corpus.mjs";
-import { KNOWLEDGE, PROFILE, PROJECT_TEMPLATES, FEATURED_WORK } from "./_knowledge.mjs";
+import {
+  KNOWLEDGE, PROFILE, PROJECT_TEMPLATES, FEATURED_WORK,
+  PROJECT_DATA, RECENT_UPDATES,
+} from "./_knowledge.mjs";
 import { allowedTools, toolAllowed } from "./_config.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -309,6 +312,15 @@ export const TOOLS = [
       parameters: { type: "object", properties: {} },
     },
   },
+  {
+    type: "function",
+    function: {
+      name: "get_projects",
+      description:
+        "Verified project and update data: 12 curated GitHub repositories with Arabic descriptions, all Hugging Face models and datasets with dated download snapshots, and major portfolio updates. Use for 'what have you built', 'show your AI work', and 'what's new' questions.",
+      parameters: { type: "object", properties: {} },
+    },
+  },
 ];
 
 /* ── Executors ─────────────────────────────────────────────────────────── */
@@ -408,6 +420,9 @@ export async function runTool(name, args = {}, opts = {}) {
     case "get_featured_work":
       return { featured_work: FEATURED_WORK };
 
+    case "get_projects":
+      return { projects: PROJECT_DATA, recent_updates: RECENT_UPDATES };
+
     default:
       return { error: "unknown_tool", tool: name };
   }
@@ -452,7 +467,7 @@ const CONTACT = {
     "Free to talk about scope, timeline and price. Full-time roles and freelance both on the table.",
 };
 
-export { KNOWLEDGE, PROJECT_TEMPLATES, FEATURED_WORK };
+export { KNOWLEDGE, PROJECT_TEMPLATES, FEATURED_WORK, PROJECT_DATA, RECENT_UPDATES };
 
 /** The tools that are actually exposed in the active scope. */
 export function scopedTools(scope) {
