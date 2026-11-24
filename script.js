@@ -145,7 +145,43 @@
   const GITHUB_USER = "aslamalkarywk7";
   const API_URL = `https://api.github.com/users/${GITHUB_USER}/repos?per_page=100&sort=updated&type=owner`;
   const projectsContainer = document.getElementById("github-projects");
-  const INITIAL_COUNT = 6;
+
+  // Curated projects shown first, in this order.
+  const PROJECT_ORDER = [
+    "souqna",
+    "maktabi-store",
+    "islam-alnashar-perfumes",
+    "aura-analytics",
+    "Wardian-Conservatory-3D-Glass-Terrarium",
+    "AndroidReverseEngineering-Guide",
+    "fullstackopen",
+    "aslamalkarywk7",
+    "blender-mcp",
+    "TurboQuant",
+    "opsdesk",
+    "yaqout-langar",
+  ];
+  const PROJECT_ORDER_INDEX = Object.fromEntries(
+    PROJECT_ORDER.map((name, i) => [name, i])
+  );
+
+  // Short Arabic descriptions for the curated projects (English falls back to GitHub).
+  const PROJECT_NOTES = {
+    souqna: "متجر ثنائي اللغة AR/EN — سلة، JWT، SQLite",
+    "maktabi-store": "مكتبة/كتب أونلاين ثنائية اللغة",
+    "islam-alnashar-perfumes": "متجر عطور فاخر AR/EN",
+    "aura-analytics": "لوحة تحليلات لايف ثنائية اللغة",
+    "Wardian-Conservatory-3D-Glass-Terrarium": "صوبة زجاجية ثلاثية الأبعاد",
+    "AndroidReverseEngineering-Guide": "دليل هندسة عكسية للأندرويد ⭐ 8",
+    fullstackopen: "حلول دورة Full Stack Open",
+    aslamalkarywk7: "مستودع البورتفوليو نفسه ⭐ 1",
+    "blender-mcp": "التحكم في Blender عبر MCP",
+    TurboQuant: "ضغط ملفات lossless + web console ⭐ 1",
+    opsdesk: "SaaS لإدارة الأعمال — Next.js 14 + Prisma",
+    "yaqout-langar": "لغة يعقوب: Lua مع كلمات عربية ⭐ 1",
+  };
+
+  const INITIAL_COUNT = 12;
   let allRepos = [];
 
   // Language colors (common ones)
@@ -173,15 +209,18 @@
     return LANG_COLORS[lang] || "#722f37";
   }
 
+  function projectDescription(repo) {
+    const isArabic = document.documentElement.dir === "rtl";
+    const curated = isArabic ? PROJECT_NOTES[repo.name] : null;
+    let text = curated || repo.description || "No description provided.";
+    return text.length > 170 ? text.slice(0, 167) + "..." : text;
+  }
+
   function createProjectCard(repo) {
     const card = document.createElement("article");
     card.className = "project-card";
 
-    const desc = repo.description
-      ? repo.description.length > 160
-        ? repo.description.slice(0, 157) + "..."
-        : repo.description
-      : "No description provided.";
+    const desc = projectDescription(repo);
 
     const langHTML = repo.language
       ? `<span class="project-card__lang"><span class="project-card__lang-dot" style="background:${getLangColor(repo.language)}"></span>${repo.language}</span>`
@@ -198,7 +237,7 @@
           <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1h-8a1 1 0 00-1 1v6.708A2.486 2.486 0 014.5 9h8V1.5zm-8 11h8v1.5h-8a1 1 0 110-2 .75.75 0 010 .5z"/>
         </svg>
       </div>
-      <p class="project-card__desc">${desc}</p>
+      <p class="project-card__desc" data-repo-desc="${repo.name}">${desc}</p>
       <div class="project-card__footer">
         ${langHTML}
         <div class="project-card__links">
@@ -264,8 +303,15 @@
 
       // Filter forks, sort by most recently updated
       const filtered = repos
-        .filter((r) => !r.fork)
-        .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+        .filter((r) => !r.fork || PROJECT_ORDER_INDEX[r.name] !== undefined)
+        .sort((a, b) => {
+          const ai = PROJECT_ORDER_INDEX[a.name];
+          const bi = PROJECT_ORDER_INDEX[b.name];
+          if (ai !== undefined && bi !== undefined) return ai - bi;
+          if (ai !== undefined) return -1;
+          if (bi !== undefined) return 1;
+          return new Date(b.updated_at) - new Date(a.updated_at);
+        });
 
       if (filtered.length === 0) {
         showFallback();
@@ -289,6 +335,16 @@
       showFallback();
     }
   }
+
+  // Keep curated Arabic descriptions in sync with the language toggle.
+  document.addEventListener("portfolio:langchange", () => {
+    document.querySelectorAll("[data-repo-desc]").forEach((el) => {
+      const repo = allRepos.find(
+        (r) => r.name === el.getAttribute("data-repo-desc")
+      );
+      if (repo) el.textContent = projectDescription(repo);
+    });
+  });
 
   // Wire up load-more button
   const loadMoreBtn = document.getElementById("load-more-btn");
