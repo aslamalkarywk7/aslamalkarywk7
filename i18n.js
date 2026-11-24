@@ -26,7 +26,7 @@ const translations = {
         "about.title":    "About Me",
         "about.p1":       "I'm <strong>Islam Al-Nasher</strong> (إسلام الناشر), a <strong>Full-Stack Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
         "about.p2":       "Full-Stack Web Developer <strong>2023 - Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI and website hardening. Open to full-time roles & freelance projects.",
-        "about.p3":       "Focused on <strong>full-stack web</strong> and <strong>AI integration</strong>. Game dev, mobile/desktop and long language lists are curiosity only — see docs for honest scope.",
+        "about.p3":       "My focus is <strong>full-stack web development</strong> and <strong>practical AI integration</strong>. Game dev, mobile and extra languages are side interests — the work I take on is web products built to last.",
         "about.cv":       "View CV",
         "about.stat1":    "Years Old",
         "about.stat2":    "Languages",
@@ -44,7 +44,7 @@ const translations = {
 
         // ── Skills ──────────────────────────────────────────────
         "skills.title":    "Tech Stack",
-        "skills.subtitle": "Production web stack first. Explored tech is Familiar — full map in docs.",
+        "skills.subtitle": "Production web stack first. Everything else is clearly marked as explored — my focus is shipping reliable products.",
         "skills.tab1":     "Languages",
         "skills.tabFrontend": "Frontend",
         "skills.tabBackend": "Backend",
@@ -119,7 +119,7 @@ const translations = {
         "about.title":    "عنّي",
         "about.p1":       "أنا <strong>إسلام الناشر</strong> (Islam Al-Nasher)، <strong>مطوّر Full-Stack (Next.js/TS/Prisma)</strong> من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
         "about.p2":       "مطور Full-Stack <strong>2023 - الحاضر (3 سنوات)</strong>: <strong>مواقع شركات ومتاجر وتطبيقات مخصصة</strong> — مع AI عربي أولاً وتقوية المواقع. متاح للوظائف بدوام كامل والمشاريع الحرة.",
-        "about.p3":       "أركّز على <strong>الويب الشامل</strong> و<strong>تكامل AI</strong>. تطوير الألعاب والموبايل وقوائم اللغات الطويلة فضول فقط — راجع docs للنطاق الصادق.",
+        "about.p3":       "تركيزي على <strong>تطوير الويب الشامل</strong> و<strong>تكامل AI عملي</strong>. تطوير الألعاب والموبايل واللغات الإضافية اهتمامات جانبية — والخدمات اللي أقدّمها هي منتجات ويب تُبنى لتدوم.",
         "about.cv":       "عرض السيرة الذاتية",
         "about.stat1":    "سنة عمر",
         "about.stat2":    "لغات برمجية",
@@ -137,7 +137,7 @@ const translations = {
 
         // ── Skills ──────────────────────────────────────────────
         "skills.title":    "مجموعة التقنيات",
-        "skills.subtitle": "الويب الإنتاجي أولاً. التقنيات المستكشفة Familiar — الخريطة الكاملة في docs.",
+        "skills.subtitle": "الويب الإنتاجي أولاً. أي تقنيات تانية متصنّفة كـ «مستكشفة» — تركيزي على تسليم منتجات موثوقة.",
         "skills.tab1":     "اللغات",
         "skills.tabFrontend": "واجهة أمامية",
         "skills.tabBackend": "خلفية",
