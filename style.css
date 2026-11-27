@@ -359,6 +359,31 @@ ol {
     border-color: var(--accent);
 }
 
+/* Secondary portrait — a different photo is picked on every refresh. */
+.hero__photo-alt {
+    position: absolute;
+    z-index: 2;
+    right: -38px;
+    bottom: 4px;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    background: var(--bg-card);
+    border: 3px solid var(--bg);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease, border-color 0.3s ease;
+}
+.hero__photo-alt:hover {
+    transform: scale(1.06);
+    border-color: var(--accent);
+}
+[dir="rtl"] .hero__photo-alt {
+    right: auto;
+    left: -38px;
+}
+
 /* Scroll indicator */
 .hero__scroll-indicator {
     position: absolute;
@@ -4188,5 +4213,32 @@ a.contact-card:hover .contact-card__arrow {
     }
     .contact-subtitle {
         max-width: 100%;
+    }
+}
+
+/* Rotating hero portrait — keep it inside the viewport on small screens. */
+@media (max-width: 900px) {
+    .hero__photo-alt {
+        width: 96px;
+        height: 96px;
+        right: -24px;
+        bottom: 0;
+    }
+    [dir="rtl"] .hero__photo-alt {
+        right: auto;
+        left: -24px;
+    }
+}
+@media (max-width: 380px) {
+    .hero__photo-alt {
+        width: 80px;
+        height: 80px;
+        right: -12px;
+        bottom: -2px;
+        border-width: 2px;
+    }
+    [dir="rtl"] .hero__photo-alt {
+        right: auto;
+        left: -12px;
     }
 }

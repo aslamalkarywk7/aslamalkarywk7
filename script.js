@@ -123,6 +123,26 @@
   } // End of index.html only section
 
   /* ─────────────────────────────────────────
+     3b. HERO PORTRAIT — changes on every refresh
+     ───────────────────────────────────────── */
+  const heroAltPortrait = document.getElementById("hero-photo-alt");
+  if (heroAltPortrait) {
+    const portraits = [
+      "img/portrait-1.png",
+      "img/portrait-2.webp",
+      "img/portrait-3.png",
+      "img/portrait-4.webp",
+    ];
+    let next = Math.floor(Math.random() * portraits.length);
+    const previous = Number(sessionStorage.getItem("hero-portrait-index"));
+    if (portraits.length > 1 && next === previous) {
+      next = (next + 1) % portraits.length;
+    }
+    heroAltPortrait.src = portraits[next];
+    sessionStorage.setItem("hero-portrait-index", String(next));
+  }
+
+  /* ─────────────────────────────────────────
      4. REVEAL ON SCROLL (IntersectionObserver)
      ───────────────────────────────────────── */
   const reveals = document.querySelectorAll(".reveal");
