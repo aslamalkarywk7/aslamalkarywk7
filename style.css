@@ -4035,3 +4035,158 @@ a.contact-card:hover .contact-card__arrow {
 @media (max-width: 560px) {
     .service-card { min-height: 0; }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE HARDENING — NAV + LAYOUT (English & Arabic)
+   Keeps both LTR and RTL layouts intact from 320px upward.
+   ═══════════════════════════════════════════════════════════ */
+.nav__inner {
+    gap: 16px;
+}
+.nav__logo {
+    flex: 0 1 auto;
+    min-width: 0;
+}
+.nav__logo-text {
+    min-width: 0;
+}
+.nav__logo-name,
+.nav__logo-sub {
+    white-space: nowrap;
+}
+.nav__logo-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nav__links {
+    flex: 1 1 auto;
+    justify-content: center;
+    gap: clamp(14px, 2vw, 36px);
+    min-width: 0;
+}
+.nav__actions {
+    flex: 0 0 auto;
+    margin-inline-start: auto;
+}
+
+/* Collapse the desktop links early enough that the logo never wraps,
+   in both English (longer labels) and Arabic. */
+@media (max-width: 900px) {
+    /* A backdrop-filter on the header makes it the containing block for
+       position:fixed children, which would shrink the overlay to the header. */
+    .nav.menu-open {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+    .nav__links {
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
+        padding: 96px 24px 40px;
+        background: rgba(10, 10, 10, 0.97);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .nav__links.open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .nav__link {
+        padding: 14px 8px;
+        font-size: 1.1rem;
+        text-align: center;
+        border-bottom: 1px solid var(--border);
+    }
+    .nav__link::after {
+        display: none;
+    }
+    .nav__toggle {
+        display: flex;
+        z-index: 3;
+    }
+    /* Keep the logo and language switch reachable while the menu is open. */
+    .nav__logo,
+    .nav__actions {
+        position: relative;
+        z-index: 3;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav__logo-icon {
+        width: 28px;
+        height: 28px;
+    }
+    .nav__logo-name {
+        font-size: 1rem;
+    }
+    .nav__logo-sub {
+        display: none;
+    }
+    .lang-toggle-btn {
+        padding: 6px 10px;
+        font-size: 0.72rem;
+    }
+}
+
+/* Small-screen contact cards: let long labels/links shrink instead of
+   pushing the document wider than the viewport (seen at 320px). */
+.contact-hub__left,
+.contact-form-wrap {
+    min-width: 0;
+}
+.social-row__name {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Long unbroken phrases (e.g. "Full-Stack Developer (Next.js/TS/Prisma)")
+   must wrap inside the column instead of widening the whole page at 320px. */
+.about__text,
+.about__text p,
+.about__actions,
+.about__stats {
+    min-width: 0;
+}
+.about__text p,
+.about__text strong {
+    overflow-wrap: anywhere;
+}
+.about__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.about__stat {
+    min-width: 0;
+}
+.work__grid,
+.services__grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+}
+@media (max-width: 380px) {
+    .contact-card {
+        padding: 16px;
+        gap: 10px;
+    }
+    .contact-card__icon-wrap {
+        width: 38px;
+        height: 38px;
+    }
+    .social-row {
+        padding: 8px 6px;
+        gap: 8px;
+    }
+    .contact-subtitle {
+        max-width: 100%;
+    }
+}

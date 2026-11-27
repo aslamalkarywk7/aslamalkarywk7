@@ -88,8 +88,17 @@
   
     // Mobile toggle
     if (navToggle && navLinks) {
+      const closeMenu = () => {
+        navLinks.classList.remove("open");
+        nav.classList.remove("menu-open");
+        navToggle.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+      };
+
       navToggle.addEventListener("click", () => {
         const isOpen = navLinks.classList.toggle("open");
+        nav.classList.toggle("menu-open", isOpen);
         navToggle.classList.toggle("open");
         navToggle.setAttribute("aria-expanded", isOpen);
         document.body.style.overflow = isOpen ? "hidden" : "";
@@ -97,12 +106,17 @@
 
       // Close mobile menu on link click
       navLinks.querySelectorAll(".nav__link").forEach((link) => {
-        link.addEventListener("click", () => {
-          navLinks.classList.remove("open");
-          navToggle.classList.remove("open");
-          navToggle.setAttribute("aria-expanded", "false");
-          document.body.style.overflow = "";
-        });
+        link.addEventListener("click", closeMenu);
+      });
+
+      // Escape closes the menu; resizing to desktop resets its state so the
+      // overlay cannot stay open after the breakpoint changes.
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeMenu();
+      });
+      const mobileNav = window.matchMedia("(max-width: 900px)");
+      mobileNav.addEventListener("change", (event) => {
+        if (!event.matches) closeMenu();
       });
     }
 
