@@ -4242,3 +4242,93 @@ a.contact-card:hover .contact-card__arrow {
         left: -12px;
     }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   COMFORTABLE CARD SYSTEM — consistent with Full-Stack Services
+   ═══════════════════════════════════════════════════════════ */
+:root {
+    --card: #141414;
+    --muted: #9a9a9a;
+    --accent-light: #b4565f;
+}
+
+/* Soft ambient wash behind each content section (same as Services). */
+.about,
+.profiles,
+.oss-impact,
+.skills,
+.certs,
+.projects,
+.work {
+    position: relative;
+    isolation: isolate;
+}
+.about::before,
+.profiles::before,
+.oss-impact::before,
+.skills::before,
+.certs::before,
+.projects::before,
+.work::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(
+        600px 320px at 12% 18%,
+        rgba(114, 47, 55, 0.1),
+        transparent 70%
+    );
+}
+
+.section__subtitle {
+    margin-bottom: 34px;
+}
+
+/* One card shell for every content section. */
+.about__stat,
+.skill-card,
+.oss-card,
+.project-card,
+.cert-card,
+.work-card {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background:
+        linear-gradient(155deg, rgba(255, 255, 255, 0.04), transparent 55%),
+        var(--card);
+    transition:
+        transform 0.28s ease,
+        border-color 0.28s ease,
+        box-shadow 0.28s ease;
+}
+.skill-card {
+    border-radius: 16px;
+}
+
+.about__stat:hover,
+.oss-card:hover,
+.project-card:hover,
+.cert-card:hover,
+.work-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow:
+        0 18px 44px rgba(0, 0, 0, 0.42),
+        0 0 0 1px rgba(114, 47, 55, 0.18);
+}
+
+/* Chips and grids get the same breathing room. */
+.hf-item {
+    padding: 9px 14px;
+}
+.hf-item:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+.certs__grid,
+.projects__grid,
+.oss-grid,
+.work__grid {
+    gap: 18px;
+}
