@@ -9,14 +9,14 @@ Currently deepening advanced AI integration and full-stack engineering.
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-722f37?style=for-the-badge&logo=vercel&logoColor=white)](https://aslamalkarywk7.github.io/aslamalkarywk7/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-722f37?style=for-the-badge&logo=vercel&logoColor=white)](https://islam-alnasher.is-a.dev/)
 [![GitHub](https://img.shields.io/badge/GitHub-722f37?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aslamalkarywk7)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-722f37?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/islam-elnashar/)
 [![Hugging%20Face](https://img.shields.io/badge/Hugging%20Face-722f37?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/ISLAM-PO)
 [![dev.to](https://img.shields.io/badge/dev.to-722f37?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/islam_alnashera_19f64a4e)
 [![Email](https://img.shields.io/badge/Email-722f37?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aslamalkarywka@gmail.com)
 
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=aslamalkarywk7.aslamalkarywk7)](https://aslamalkarywk7.github.io/aslamalkarywk7/)
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=aslamalkarywk7.aslamalkarywk7)](https://islam-alnasher.is-a.dev/)
 
 </div>
 
@@ -370,7 +370,7 @@ Tell me what you need — scope, timeline and price are all open.
 
 [![Email](https://img.shields.io/badge/Email_me-722f37?style=for-the-badge&logo=gmail&logoColor=white&label=)](mailto:aslamalkarywka@gmail.com)
 [![GitHub Issues](https://img.shields.io/badge/Ask_on_GitHub-722f37?style=for-the-badge&logo=github&logoColor=white&label=)](https://github.com/aslamalkarywk7/aslamalkarywk7/issues)
-[![Portfolio](https://img.shields.io/badge/Visit_the_site-722f37?style=for-the-badge&logo=googlechrome&logoColor=white&label=)](https://aslamalkarywk7.github.io/aslamalkarywk7/)
+[![Portfolio](https://img.shields.io/badge/Visit_the_site-722f37?style=for-the-badge&logo=googlechrome&logoColor=white&label=)](https://islam-alnasher.is-a.dev/)
 
 </div>
 

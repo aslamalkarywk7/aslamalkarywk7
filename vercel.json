@@ -3,5 +3,23 @@
   "framework": null,
   "buildCommand": null,
   "outputDirectory": ".",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "www.islam-alnasher.is-a.dev" }
+      ],
+      "destination": "https://islam-alnasher.is-a.dev/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "aslamalkarywk7.vercel.app" }
+      ],
+      "destination": "https://islam-alnasher.is-a.dev/$1",
+      "permanent": true
+    }
+  ]
 }

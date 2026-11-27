@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aslamalkarywk7.github.io/aslamalkarywk7/sitemap.xml
+Sitemap: https://islam-alnasher.is-a.dev/sitemap.xml

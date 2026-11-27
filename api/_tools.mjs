@@ -462,7 +462,7 @@ const CONTACT = {
   linkedin: "https://www.linkedin.com/in/islam-elnashar/",
   huggingface: "https://huggingface.co/ISLAM-PO",
   devto: "https://dev.to/islam_alnashera_19f64a4e",
-  portfolio: "https://aslamalkarywk7.github.io/aslamalkarywk7/",
+  portfolio: "https://islam-alnasher.is-a.dev/",
   response_note:
     "Free to talk about scope, timeline and price. Full-time roles and freelance both on the table.",
 };
