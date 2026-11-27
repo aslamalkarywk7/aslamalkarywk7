@@ -3,6 +3,5 @@
   "framework": null,
   "buildCommand": null,
   "outputDirectory": ".",
-  "cleanUrls": true,
-  "maxDuration": 10
+  "cleanUrls": true
 }
