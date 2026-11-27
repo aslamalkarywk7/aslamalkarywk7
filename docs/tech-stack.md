@@ -2,7 +2,7 @@
 
 > Docs: [README](../README.md) • [Full-Stack](full-stack.md) • [Stack](tech-stack.md) • [AI](ai-integrations.md) • [Security](defensive-security.md) • [Linux](linux-systems.md) • [Other](other-skills.md) • [Contributions](../CONTRIBUTIONS.md) • [Q&A](qa.md) • [MCP](mcp.md)
 
-> **Document control** — Owner: Islam Al-Nasher • Last verified: 18 Oct 2026 • Scope: extended stack & language map.
+> **Document control** — Owner: Islam Al-Nasher • Last verified: 27 Nov 2026 • Scope: extended stack & language map.
 > Rule: **Production** = what I ship in web repos. **Explored** = curiosity only.
 
 ---
@@ -22,9 +22,12 @@
 - Docker, WireGuard, Tailscale, FFmpeg — SaaS deploys and video/HLS pipelines
 
 ### AI & Automation
-- OpenAI API, Gemini API, LangChain — chat/content/translation in sites
-- Selenium, Puppeteer, Playwright — E2E and scraping
-- Pandas, NumPy, Scikit-learn — small preprocessing only
+- LLM APIs: Groq (this portfolio's assistant), OpenAI, Gemini — chat/content/translation in sites
+- Orchestration & local models: LangChain, Ollama, LLaMA, Qwen, Gemma
+- ML/data libraries: Pandas, NumPy, TensorFlow, PyTorch, Scikit-learn
+- Browser automation/testing: Playwright, Puppeteer, Selenium
+- CI/CD & delivery: GitHub Actions, Bash, Docker, Nginx, Vercel, Netlify
+- Type-safe validation/auth: Zod, Auth.js
 
 ### Design & Tools
 - Figma, Adobe XD, Miro, Lucidchart, PowerPoint, Google Drawings

@@ -103,6 +103,8 @@ const translations = {
         "skills.tab3":     "AI & DevOps",
         "skills.tab4":     "Design & Tools",
         "skills.tabEditors": "Code Editors",
+        "skills.tabAutomation": "Automation & AI",
+        "skills.automationNote": "Automation, libraries and AI platforms I use in production and daily work.",
 
         // ── Certificates ─────────────────────────────────────────
         "certs.showAll":     "View all {n} certificates",
@@ -263,6 +265,8 @@ const translations = {
         "skills.tab3":     "AI وDevOps",
         "skills.tab4":     "التصميم والأدوات",
         "skills.tabEditors": "محررات الكود",
+        "skills.tabAutomation": "الأتمتة والذكاء الاصطناعي",
+        "skills.automationNote": "أدوات الأتمتة والمكاتب ومنصات الذكاء الاصطناعي التي أستخدمها في الإنتاج والعمل اليومي.",
 
         // ── Certificates ─────────────────────────────────────────
         "certs.showAll":     "عرض كل الشهادات ({n})",
