@@ -14,6 +14,26 @@ const translations = {
         "nav.contact":  "Contact",
         "nav.logoAria": "Home — Islam Al-Nasher aslamalkarywk7",
 
+        // ── Name / metadata / image alt ───────────────────────────
+        "name":                "Islam Al-Nasher",
+        "footer.identity":     "Islam Al-Nasher — Developer",
+        "footer.identityAria": "Islam Al-Nasher — Developer — identity badge",
+        "hero.imageAlt":       "Islam Al-Nasher — Web Developer",
+        "footer.imageAlt":     "Islam Al-Nasher — Web & Game Developer",
+        "github.chartAlt":     "Islam Al-Nasher's GitHub Contribution Chart",
+        "github.streakAlt":    "Islam Al-Nasher's GitHub Streak Stats",
+        "github.activityAlt":  "Islam Al-Nasher's GitHub Activity Graph",
+        "contact.namePlaceholder": "Islam Al-Nasher",
+        "meta.title":          "Islam Al-Nasher — Full-Stack Developer (Next.js/TS/Prisma)",
+        "meta.description":    "Islam Al-Nasher — Full-Stack Developer (Next.js/TS/Prisma) from Egypt. I build websites & web apps, with AI integration and site hardening as supporting skills.",
+        "meta.author":         "Islam Al-Nasher",
+        "meta.ogTitle":        "Islam Al-Nasher - Full-Stack Developer (Next.js/TS/Prisma)",
+        "meta.ogDescription":  "Full-Stack Developer from Egypt. I build websites & web apps, with AI integration and site hardening as supporting skills.",
+        "meta.twitterTitle":   "Islam Al-Nasher - Full-Stack Developer (Next.js/TS/Prisma)",
+        "meta.twitterDescription": "Full-Stack Developer from Egypt. Websites & web apps, AI integration, site hardening.",
+        "meta.keywords":       "Islam Al-Nasher, Web Developer, Next.js, TypeScript, Prisma, Portfolio, Egypt, مطور ويب, برمجيات",
+        "meta.copyright":      "© 2026 Islam Al-Nasher. All rights reserved.",
+
         // ── Hero ─────────────────────────────────────────────────
         "hero.greeting":  "Hi, I'm",
         "hero.headline":  "Full-Stack Developer (Next.js/TS/Prisma) from Egypt",
@@ -49,7 +69,7 @@ const translations = {
 
         // ── About ─────────────────────────────────────────────────
         "about.title":    "About Me",
-        "about.p1":       "I'm <strong>Islam Al-Nasher</strong> (إسلام الناشر), a <strong>Full-Stack Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
+        "about.p1":       "I'm <strong>Islam Al-Nasher</strong> (اسلام النشار), a <strong>Full-Stack Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
         "about.p2":       "Full-Stack Web Developer <strong>2023 - Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI and website hardening. Open to full-time roles & freelance projects. MIS undergraduate, expected 2029.",
         "about.p3":       "My focus is <strong>full-stack web development</strong> and <strong>practical AI integration</strong>. Game dev, mobile and extra languages are side interests — the work I take on is web products built to last.",
         "about.stat1":    "Years Old",
@@ -151,7 +171,27 @@ const translations = {
         "nav.services": "الخدمات",
         "nav.projects": "المشاريع",
         "nav.contact":  "تواصل",
-        "nav.logoAria": "الرئيسية — Islam Al-Nasher aslamalkarywk7",
+        "nav.logoAria": "الرئيسية — اسلام النشار aslamalkarywk7",
+
+        // ── Name / metadata / image alt ───────────────────────────
+        "name":                "اسلام النشار",
+        "footer.identity":     "اسلام النشار — مطوّر",
+        "footer.identityAria": "اسلام النشار — مطوّر — شارة الهوية",
+        "hero.imageAlt":       "اسلام النشار — مطور ويب",
+        "footer.imageAlt":     "اسلام النشار — مطور ويب وألعاب",
+        "github.chartAlt":     "مخطط مساهمات اسلام النشار على GitHub",
+        "github.streakAlt":    "إحصائيات سلسلة المساهمات لاسلام النشار على GitHub",
+        "github.activityAlt":  "رسم نشاط اسلام النشار على GitHub",
+        "contact.namePlaceholder": "اسلام النشار",
+        "meta.title":          "اسلام النشار — مطور Full-Stack (Next.js/TS/Prisma)",
+        "meta.description":    "اسلام النشار — مطور Full-Stack (Next.js/TS/Prisma) من مصر. أبني مواقع وتطبيقات ويب، مع تكامل الذكاء الاصطناعي وتقوية الحماية كمهارات مساندة.",
+        "meta.author":         "اسلام النشار",
+        "meta.ogTitle":        "اسلام النشار — مطور Full-Stack (Next.js/TS/Prisma)",
+        "meta.ogDescription":  "مطور Full-Stack من مصر. أبني مواقع وتطبيقات ويب، مع تكامل الذكاء الاصطناعي وتقوية الحماية.",
+        "meta.twitterTitle":   "اسلام النشار — مطور Full-Stack (Next.js/TS/Prisma)",
+        "meta.twitterDescription": "مطور Full-Stack من مصر. مواقع وتطبيقات ويب، ذكاء اصطناعي، وتقوية حماية.",
+        "meta.keywords":       "اسلام النشار, مطور ويب, Next.js, TypeScript, Prisma, بورتفوليو, مصر, برمجيات",
+        "meta.copyright":      "© 2026 اسلام النشار. جميع الحقوق محفوظة.",
 
         // ── Hero ─────────────────────────────────────────────────
         "hero.greeting":  "مرحباً، أنا",
@@ -161,7 +201,7 @@ const translations = {
         "hero.cta2":      "لنتحدث",
         "hero.watchIntro": "شاهد التعريف",
         "hero.playAria":  "شاهد التعريف — فيديو التعريف",
-        "video.title":    "فيديو التعريف — إسلام الناشر",
+        "video.title":    "فيديو التعريف — اسلام النشار",
         "video.hint":     "2:09 · ترجمة إنجليزية مدمجة",
         "video.close":    "إغلاق الفيديو",
 
@@ -188,7 +228,7 @@ const translations = {
 
         // ── About ─────────────────────────────────────────────────
         "about.title":    "عنّي",
-        "about.p1":       "أنا <strong>إسلام الناشر</strong> (Islam Al-Nasher)، <strong>مطوّر Full-Stack (Next.js/TS/Prisma)</strong> من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
+        "about.p1":       "أنا <strong>اسلام النشار</strong>، <strong>مطوّر Full-Stack (Next.js/TS/Prisma)</strong> من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
         "about.p2":       "مطور Full-Stack <strong>2023 - الحاضر (3 سنوات)</strong>: <strong>مواقع شركات ومتاجر وتطبيقات مخصصة</strong> — مع AI عربي أولاً وتقوية المواقع. متاح للوظائف بدوام كامل والمشاريع الحرة. طالب في نظم المعلومات الإدارية، من المتوقع التخرج سنة 2029.",
         "about.p3":       "تركيزي على <strong>تطوير الويب الشامل</strong> و<strong>تكامل AI عملي</strong>. تطوير الألعاب والموبايل واللغات الإضافية اهتمامات جانبية — والخدمات اللي أقدّمها هي منتجات ويب تُبنى لتدوم.",
         "about.stat1":    "سنة عمر",
@@ -267,7 +307,7 @@ const translations = {
         "contact.title":       "تواصل معي",
         "contact.subtitle":    "مفتوح لوظائف Full-Stack بدوام كامل، والتعاون، والمشاريع الحرة — لنبني شيئًا رائعًا معًا.",
         "contact.email.label": "أرسل بريدًا إلكترونيًا",
-        "contact.email.aria":  "أرسل بريدًا إلكترونيًا aslamalkarywka@gmail.com — إرسال بريد إلى إسلام الناشر",
+        "contact.email.aria":  "أرسل بريدًا إلكترونيًا aslamalkarywka@gmail.com — إرسال بريد إلى اسلام النشار",
         "contact.socials":     "مراكز التواصل الاجتماعي",
         "contact.soon":        "قريبًا",
         "contact.form.name":   "الاسم",
@@ -275,7 +315,7 @@ const translations = {
         "contact.form.msg":    "الرسالة",
         "contact.form.btn":    "إرسال الرسالة",
         "contact.success":     "جاري فتح تطبيق البريد — الرسالة موجهة إليّ، اضغط إرسال!",
-        "footer.rights":       "إسلام الناشر. جميع الحقوق محفوظة.",
+        "footer.rights":       "اسلام النشار. جميع الحقوق محفوظة.",
 
         // ── Lang button ─────────────────────────────────────────
         "lang.btn": "English",
@@ -315,6 +355,19 @@ function applyLanguage(lang) {
         const key = el.getAttribute("data-i18n-aria-label");
         if (t[key]) el.setAttribute("aria-label", t[key]);
     });
+
+    // Image alt text (never leave the English name in the Arabic version)
+    document.querySelectorAll("[data-i18n-alt]").forEach(el => {
+        const key = el.getAttribute("data-i18n-alt");
+        if (t[key]) el.alt = t[key];
+    });
+
+    // Metadata (title / description / social tags)
+    document.querySelectorAll("[data-i18n-content]").forEach(el => {
+        const key = el.getAttribute("data-i18n-content");
+        if (t[key]) el.setAttribute("content", t[key]);
+    });
+    if (t["meta.title"]) document.title = t["meta.title"];
 
     // Hero description is plain copy now — age belongs in the About section.
     const heroDescEl = document.getElementById("hero-desc-text");

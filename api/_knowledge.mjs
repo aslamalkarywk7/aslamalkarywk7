@@ -8,7 +8,7 @@
 
 export const OWNER = {
   name: "Islam Al-Nasher",
-  nameAr: "إسلام الناشر",
+  nameAr: "اسلام النشار",
   email: "aslamalkarywka@gmail.com",
   github: "https://github.com/aslamalkarywk7",
   linkedin: "https://www.linkedin.com/in/islam-elnashar/",
@@ -96,7 +96,7 @@ export const RECENT_UPDATES = [
 
 export const KNOWLEDGE = `
 ## Who he is
-- Name: Islam Al-Nasher (إسلام الناشر), 20 years old, based in Egypt.
+- Name: Islam Al-Nasher (اسلام النشار), 20 years old, based in Egypt.
 - Role: Full-Stack Developer (Next.js / TypeScript / Prisma). He builds websites and web applications.
 - Supporting skills: AI integration (he integrates AI, he is not an AI researcher) and website hardening / defensive security.
 - Languages: Arabic (native, Egyptian dialect), English (working / technical), Spanish (basic).
@@ -139,7 +139,7 @@ TypeScript, JavaScript, Next.js, React, Node.js, Prisma, PostgreSQL, SQLite, Tai
 export const PROFILE = {
   identity: {
     name: "Islam Al-Nasher",
-    name_ar: "إسلام الناشر",
+    name_ar: "اسلام النشار",
     age: 20,
     location: "Egypt",
     role: "Full-Stack Developer (Next.js / TypeScript / Prisma)",
