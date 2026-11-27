@@ -384,7 +384,7 @@ function applyLanguage(lang) {
 
     // SEO: each language gets its own crawlable URL, self-canonical + hreflang.
     const baseUrl = window.location.origin + window.location.pathname;
-    const enUrl = baseUrl;
+    const enUrl = baseUrl + "?lang=en";
     const arUrl = baseUrl + "?lang=ar";
     const setLink = (id, href) => {
         const el = document.getElementById(id);
@@ -396,11 +396,12 @@ function applyLanguage(lang) {
     setLink("hreflang-x-default", enUrl);
     const ogLocale = document.getElementById("og-locale");
     if (ogLocale) ogLocale.content = lang === "ar" ? "ar_EG" : "en_US";
+    const ogUrl = document.getElementById("og-url");
+    if (ogUrl) ogUrl.content = lang === "ar" ? arUrl : enUrl;
 
     // Keep the address bar in sync so the URL is shareable/indexable.
     const currentUrl = new URL(window.location.href);
-    if (lang === "ar") currentUrl.searchParams.set("lang", "ar");
-    else currentUrl.searchParams.delete("lang");
+    currentUrl.searchParams.set("lang", lang);
     window.history.replaceState(
         null,
         "",
