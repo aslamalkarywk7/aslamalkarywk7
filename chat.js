@@ -224,7 +224,7 @@
   let planAvailable = false;
 
   function applyCopy() {
-    launcher.setAttribute("aria-label", t("open"));
+    launcher.setAttribute("aria-label", opened ? t("close") : t("open"));
     closeBtn.setAttribute("aria-label", t("close"));
     panel.setAttribute("aria-label", t("title"));
     head.querySelector(".ai-chat__title").textContent = t("title");
@@ -466,7 +466,7 @@
         } catch {
           /* not JSON → the API is not deployed at this origin */
         }
-        throw new Error(msg || (res.status === 429 ? t("offline") : t("generic")));
+        throw new Error(msg || (res.status === 429 ? t("busy") : t("generic")));
       }
 
       if (!res.body || !res.body.getReader) throw new Error(t("generic"));

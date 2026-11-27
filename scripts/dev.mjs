@@ -59,11 +59,18 @@ const server = http.createServer(async (req, res) => {
     return handleChat(body, res, {
       GROQ_API_KEY: process.env.GROQ_API_KEY,
       GROQ_MODEL: process.env.GROQ_MODEL,
+      DISABLE_TOOLS: process.env.DISABLE_TOOLS,
     });
   }
 
   /* static files */
-  let rel = decodeURIComponent(url.pathname);
+  let rel;
+  try {
+    rel = decodeURIComponent(url.pathname);
+  } catch {
+    res.writeHead(400, { "Content-Type": "text/plain; charset=utf-8" });
+    return res.end("Bad request");
+  }
   if (rel.endsWith("/")) rel += "index.html";
   const file = path.join(ROOT, path.normalize(rel).replace(/^([/\\])+/, ""));
 
@@ -102,17 +109,28 @@ function loadEnv(file) {
 function readJson(req) {
   return new Promise((resolve) => {
     let data = "";
-    req.on("data", (c) => {
-      data += c;
-      if (data.length > 200_000) req.destroy();
-    });
-    req.on("end", () => {
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
       try {
         resolve(JSON.parse(data || "{}"));
       } catch {
         resolve({});
       }
+    };
+    req.on("data", (c) => {
+      if (done) return;
+      data += c;
+      if (data.length > 200_000) {
+        data = data.slice(0, 200_000);
+        // Resolve immediately, but keep the socket alive so the handler can
+        // still send a response instead of dropping the connection.
+        finish();
+        req.resume();
+      }
     });
-    req.on("error", () => resolve({}));
+    req.on("end", finish);
+    req.on("error", finish);
   });
 }

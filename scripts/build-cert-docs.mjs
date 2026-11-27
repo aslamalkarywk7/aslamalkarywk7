@@ -123,7 +123,7 @@ const README_LEGACY = /(## 🎓 Certificates\r?\n\r?\n)[\s\S]*?(?=\r?\n## 👋 A
 if (README_MARKED.test(readme)) {
   readme = readme.replace(
     README_MARKED,
-    `<!-- CERTS:START -->\n${readmeBlock}\n<!-- CERTS:END -->`
+    () => `<!-- CERTS:START -->\n${readmeBlock}\n<!-- CERTS:END -->`
   );
 } else if (README_LEGACY.test(readme)) {
   readme = readme.replace(README_LEGACY, (_, head) => head + readmeBlock);
@@ -142,12 +142,13 @@ const docBlock = block(
 );
 
 const DOC_MARKED = /<!-- CERTS:START -->[\s\S]*?<!-- CERTS:END -->/;
-const DOC_LEGACY = /(### [^\r\n]+\r?\n\r?\n)[\s\S]*$/;
+/* Anchor the fallback to the certificates heading, not the first `###` one. */
+const DOC_LEGACY = /(^### Certificates[^\r\n]*\r?\n\r?\n)[\s\S]*/m;
 
 if (DOC_MARKED.test(doc)) {
   doc = doc.replace(
     DOC_MARKED,
-    `<!-- CERTS:START -->\n${docBlock}\n<!-- CERTS:END -->`
+    () => `<!-- CERTS:START -->\n${docBlock}\n<!-- CERTS:END -->`
   );
 } else if (DOC_LEGACY.test(doc)) {
   doc = doc.replace(DOC_LEGACY, (_, head) => head + docBlock);

@@ -9,8 +9,10 @@ const translations = {
         "nav.about":    "About",
         "nav.skills":   "Skills",
         "nav.certificates": "Certificates",
+        "nav.services": "Services",
         "nav.projects": "Projects",
         "nav.contact":  "Contact",
+        "nav.logoAria": "Home — Islam Al-Nasher aslamalkarywk7",
 
         // ── Hero ─────────────────────────────────────────────────
         "hero.greeting":  "Hi, I'm",
@@ -19,8 +21,10 @@ const translations = {
         "hero.cta1":      "Explore My Projects",
         "hero.cta2":      "Let's Talk",
         "hero.watchIntro": "Watch intro",
+        "hero.playAria":  "Watch intro — watch the introduction video",
         "video.title":    "Introduction — Islam Al-Nasher",
         "video.hint":     "2:09 · English subtitles burned in",
+        "video.close":    "Close video",
 
         // ── Selected work ─────────────────────────────────────────────
         "work.title":    "Selected Work",
@@ -48,7 +52,6 @@ const translations = {
         "about.p1":       "I'm <strong>Islam Al-Nasher</strong> (إسلام الناشر), a <strong>Full-Stack Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.",
         "about.p2":       "Full-Stack Web Developer <strong>2023 - Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI and website hardening. Open to full-time roles & freelance projects. MIS undergraduate, expected 2029.",
         "about.p3":       "My focus is <strong>full-stack web development</strong> and <strong>practical AI integration</strong>. Game dev, mobile and extra languages are side interests — the work I take on is web products built to last.",
-        "about.cv":       "View CV",
         "about.stat1":    "Years Old",
         "about.stat2":    "Languages",
         "about.stat3":    "Technologies",
@@ -58,6 +61,10 @@ const translations = {
         "github.heading": "GitHub Contribution Ecosystem",
         "github.sub":     "A live snapshot of my public activity and coding stats.",
         "github.trophies":"Collaboration & Badges",
+
+        // ── Profiles & Datasets ─────────────────────────────────
+        "profiles.title":    "Profiles & Datasets",
+        "profiles.subtitle": "My AI work on Hugging Face — Arabic-first models and datasets, loaded live from the source.",
 
         // ── Open Source Impact ──────────────────────────────────
         "oss.title":    "Open Source Impact",
@@ -98,6 +105,20 @@ const translations = {
         "certs.next":    "Next",
         "certs.empty":   "No certificates in this category yet.",
 
+        // ── Services ────────────────────────────────────────────
+        "services.eyebrow": "WHAT I CAN DO FOR YOU",
+        "services.title":   "Full-Stack Services",
+        "services.subtitle":"Practical help with clear scope and real deliverables.",
+        "services.s1title": "Business websites, portfolios & stores",
+        "services.s1desc":  "React / Next.js / Node.js — the stack I use every day.",
+        "services.s2title": "Arabic-first AI for your site",
+        "services.s2desc":  "Chat assistants, content and translation — built for real users, not experiments.",
+        "services.s3title": "Website hardening & protection",
+        "services.s3desc":  "Audits, fixes and monitoring against common attacks — I harden the products I build.",
+        "services.s4title": "Linux & Deploy",
+        "services.s4desc":  "Bash, Docker, GitHub Actions CI, Nginx / Vercel — from code to live product.",
+        "services.s4link":  "Open-source work on GitHub ↗",
+
         // ── Projects ────────────────────────────────────────────
         "projects.title":    "Projects",
         "projects.subtitle": "Pulled live from my GitHub — always up to date.",
@@ -107,6 +128,7 @@ const translations = {
         "contact.title":       "Get In Touch",
         "contact.subtitle":    "Open to full-time Full-Stack roles, collaborations, and freelance projects — let's build something great together.",
         "contact.email.label": "Drop an Email",
+        "contact.email.aria":  "Drop an Email aslamalkarywka@gmail.com — send email to Islam Al-Nasher",
         "contact.socials":     "Social Hubs",
         "contact.soon":        "Coming Soon",
         "contact.form.name":   "Name",
@@ -118,6 +140,7 @@ const translations = {
 
         // ── Lang button ─────────────────────────────────────────
         "lang.btn": "عربي",
+        "lang.aria": "Switch language — عربي",
     },
 
     ar: {
@@ -125,8 +148,10 @@ const translations = {
         "nav.about":    "عني",
         "nav.skills":   "المهارات",
         "nav.certificates": "الشهادات",
+        "nav.services": "الخدمات",
         "nav.projects": "المشاريع",
         "nav.contact":  "تواصل",
+        "nav.logoAria": "الرئيسية — Islam Al-Nasher aslamalkarywk7",
 
         // ── Hero ─────────────────────────────────────────────────
         "hero.greeting":  "مرحباً، أنا",
@@ -135,8 +160,10 @@ const translations = {
         "hero.cta1":      "استعرض مشاريعي",
         "hero.cta2":      "لنتحدث",
         "hero.watchIntro": "شاهد التعريف",
+        "hero.playAria":  "شاهد التعريف — فيديو التعريف",
         "video.title":    "فيديو التعريف — إسلام الناشر",
         "video.hint":     "2:09 · ترجمة إنجليزية مدمجة",
+        "video.close":    "إغلاق الفيديو",
 
         // ── Selected work ─────────────────────────────────────────────
         "work.title":    "أعمال مختارة",
@@ -164,7 +191,6 @@ const translations = {
         "about.p1":       "أنا <strong>إسلام الناشر</strong> (Islam Al-Nasher)، <strong>مطوّر Full-Stack (Next.js/TS/Prisma)</strong> من مصر — أبني مواقع وتطبيقات ويب، مع تكامل AI وتقوية الحماية كمهارات مساندة.",
         "about.p2":       "مطور Full-Stack <strong>2023 - الحاضر (3 سنوات)</strong>: <strong>مواقع شركات ومتاجر وتطبيقات مخصصة</strong> — مع AI عربي أولاً وتقوية المواقع. متاح للوظائف بدوام كامل والمشاريع الحرة. طالب في نظم المعلومات الإدارية، من المتوقع التخرج سنة 2029.",
         "about.p3":       "تركيزي على <strong>تطوير الويب الشامل</strong> و<strong>تكامل AI عملي</strong>. تطوير الألعاب والموبايل واللغات الإضافية اهتمامات جانبية — والخدمات اللي أقدّمها هي منتجات ويب تُبنى لتدوم.",
-        "about.cv":       "عرض السيرة الذاتية",
         "about.stat1":    "سنة عمر",
         "about.stat2":    "لغات برمجية",
         "about.stat3":    "تقنيات",
@@ -174,6 +200,10 @@ const translations = {
         "github.heading": "نشاط GitHub",
         "github.sub":     "لقطة مباشرة من نشاطي العام وإحصاءات الكود.",
         "github.trophies":"التعاون والإنجازات",
+
+        // ── Profiles & Datasets ─────────────────────────────────
+        "profiles.title":    "الملفات الشخصية ومجموعات البيانات",
+        "profiles.subtitle": "أعمالي في الذكاء الاصطناعي على Hugging Face — موديلات وداتاسيتس عربية أولاً، مجلوبة مباشرة من المصدر.",
 
         // ── Open Source Impact ──────────────────────────────────
         "oss.title":    "أثري في المصادر المفتوحة",
@@ -214,6 +244,20 @@ const translations = {
         "certs.next":    "التالي",
         "certs.empty":   "لا توجد شهادات في هذا التصنيف بعد.",
 
+        // ── Services ────────────────────────────────────────────
+        "services.eyebrow": "ما الذي أستطيع فعله من أجلك",
+        "services.title":   "خدمات تطوير الويب الشامل",
+        "services.subtitle":"مساعدة عملية بنطاق واضح ومخرجات حقيقية يمكنك الاعتماد عليها.",
+        "services.s1title": "مواقع شركات ومعارض أعمال ومتاجر إلكترونية",
+        "services.s1desc":  "React / Next.js / Node.js — نفس التقنيات اللي بستخدمها كل يوم.",
+        "services.s2title": "ذكاء اصطناعي عربي أولاً لموقعك",
+        "services.s2desc":  "مساعدات محادثة ومحتوى وترجمة — مبنية لمستخدمين حقيقيين، مش تجارب معملية.",
+        "services.s3title": "تقوية حماية المواقع وتأمينها",
+        "services.s3desc":  "فحص وإصلاح ومراقبة ضد الهجمات الشائعة — بُقوّي حماية المنتجات اللي أبنيها.",
+        "services.s4title": "لينكس ونشر المواقع",
+        "services.s4desc":  "Bash وDocker وGitHub Actions CI وNginx / Vercel — من الكود لمنتج شغّال على الإنترنت.",
+        "services.s4link":  "أعمال مفتوحة المصدر على GitHub ↗",
+
         // ── Projects ────────────────────────────────────────────
         "projects.title":    "المشاريع",
         "projects.subtitle": "مجلوبة مباشرة من GitHub — دائمًا محدّثة.",
@@ -223,6 +267,7 @@ const translations = {
         "contact.title":       "تواصل معي",
         "contact.subtitle":    "مفتوح لوظائف Full-Stack بدوام كامل، والتعاون، والمشاريع الحرة — لنبني شيئًا رائعًا معًا.",
         "contact.email.label": "أرسل بريدًا إلكترونيًا",
+        "contact.email.aria":  "أرسل بريدًا إلكترونيًا aslamalkarywka@gmail.com — إرسال بريد إلى إسلام الناشر",
         "contact.socials":     "مراكز التواصل الاجتماعي",
         "contact.soon":        "قريبًا",
         "contact.form.name":   "الاسم",
@@ -234,6 +279,7 @@ const translations = {
 
         // ── Lang button ─────────────────────────────────────────
         "lang.btn": "English",
+        "lang.aria": "تغيير اللغة — English",
     }
 };
 
@@ -262,6 +308,12 @@ function applyLanguage(lang) {
     document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
         const key = el.getAttribute("data-i18n-placeholder");
         if (t[key]) el.placeholder = t[key];
+    });
+
+    // ARIA labels — keep accessible names in sync with the visible text
+    document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
+        const key = el.getAttribute("data-i18n-aria-label");
+        if (t[key]) el.setAttribute("aria-label", t[key]);
     });
 
     // Hero description is plain copy now — age belongs in the About section.

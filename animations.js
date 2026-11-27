@@ -6,6 +6,14 @@
 (function () {
   "use strict";
 
+  /* Shared pause state for every continuous requestAnimationFrame loop. */
+  let framesPaused = document.hidden;
+  let particleFrame = null;
+  let cursorFrame = null;
+  let logoFrame = null;
+  let restartParticles = null;
+  let restartLogo = null;
+
   /* ─────────────────────────────────────────
      1. PARTICLE NETWORK CANVAS ANIMATION
      ───────────────────────────────────────── */
@@ -13,7 +21,6 @@
   if (heroCanvas) {
     const ctx = heroCanvas.getContext("2d");
     let particles = [];
-    let animationId;
     let mouse = { x: null, y: null, radius: 150 };
 
     function resizeCanvas() {
@@ -94,13 +101,14 @@
     }
 
     function animate() {
+      if (framesPaused) return;
       ctx.clearRect(0, 0, heroCanvas.width, heroCanvas.height);
       particles.forEach((p) => {
         p.update();
         p.draw();
       });
       connectParticles();
-      animationId = requestAnimationFrame(animate);
+      particleFrame = requestAnimationFrame(animate);
     }
 
     // Mouse tracking
@@ -115,29 +123,10 @@
       mouse.y = null;
     });
 
+    restartParticles = animate;
     resizeCanvas();
     animate();
     window.addEventListener("resize", resizeCanvas);
-  }
-
-  /* ─────────────────────────────────────────
-     2. TYPEWRITER EFFECT FOR HERO NAME
-     ───────────────────────────────────────── */
-  const heroName = document.querySelector(".hero__name");
-  if (heroName) {
-    const originalText = heroName.textContent;
-    heroName.textContent = "";
-    heroName.style.opacity = "1";
-
-    let index = 0;
-    function typeWriter() {
-      if (index < originalText.length) {
-        heroName.textContent += originalText.charAt(index);
-        index++;
-        setTimeout(typeWriter, 80);
-      }
-    }
-    setTimeout(typeWriter, 500);
   }
 
   /* ─────────────────────────────────────────
@@ -299,6 +288,7 @@
   });
 
   function animateCursor() {
+    if (framesPaused) return;
     cursor.style.left = `${cursorX}px`;
     cursor.style.top = `${cursorY}px`;
 
@@ -307,7 +297,7 @@
     cursorGlow.style.left = `${glowX}px`;
     cursorGlow.style.top = `${glowY}px`;
 
-    requestAnimationFrame(animateCursor);
+    cursorFrame = requestAnimationFrame(animateCursor);
   }
   animateCursor();
 
@@ -331,13 +321,15 @@
   if (logoOrbit) {
     let angle = 0;
     function animateLogo() {
+      if (framesPaused) return;
       angle += 0.02;
       const x = 50 + Math.cos(angle) * 35;
       const y = 55 + Math.sin(angle) * 40;
       logoOrbit.setAttribute("cx", x);
       logoOrbit.setAttribute("cy", y);
-      requestAnimationFrame(animateLogo);
+      logoFrame = requestAnimationFrame(animateLogo);
     }
+    restartLogo = animateLogo;
     animateLogo();
   }
 
@@ -548,6 +540,22 @@
     setTimeout(() => {
       document.body.style.opacity = "1";
     }, 100);
+  });
+
+  /* Pause / resume every continuous loop when the tab is hidden. */
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      framesPaused = true;
+      [particleFrame, cursorFrame, logoFrame].forEach((id) => {
+        if (id !== null) cancelAnimationFrame(id);
+      });
+      particleFrame = cursorFrame = logoFrame = null;
+    } else if (framesPaused) {
+      framesPaused = false;
+      if (restartParticles) restartParticles();
+      animateCursor();
+      if (restartLogo) restartLogo();
+    }
   });
 
   console.log("🎨 All animations loaded successfully!");

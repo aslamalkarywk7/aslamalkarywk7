@@ -24,9 +24,7 @@
   }
 
   const age = calculateAge();
-  const ageEl = document.getElementById("age");
   const ageStatEl = document.getElementById("ageStat");
-  if (ageEl) ageEl.textContent = age;
   if (ageStatEl) ageStatEl.textContent = age;
 
   /* ─────────────────────────────────────────
@@ -34,6 +32,29 @@
      ───────────────────────────────────────── */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* Escape untrusted values before injecting them into innerHTML. */
+  function escapeHtml(value) {
+    return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;",
+    })[ch]);
+  }
+
+  /* Only allow absolute http(s) URLs in links set from API data. */
+  function safeHttpUrl(value) {
+    try {
+      const url = new URL(value);
+      return url.protocol === "http:" || url.protocol === "https:"
+        ? url.href
+        : null;
+    } catch {
+      return null;
+    }
+  }
 
   /* ─────────────────────────────────────────
      3. NAVIGATION — Scroll & Mobile Toggle
@@ -221,27 +242,29 @@
     card.className = "project-card";
 
     const desc = projectDescription(repo);
+    const codeUrl = safeHttpUrl(repo.html_url);
+    const demoUrl = safeHttpUrl(repo.homepage);
 
     const langHTML = repo.language
-      ? `<span class="project-card__lang"><span class="project-card__lang-dot" style="background:${getLangColor(repo.language)}"></span>${repo.language}</span>`
+      ? `<span class="project-card__lang"><span class="project-card__lang-dot" style="background:${getLangColor(repo.language)}"></span>${escapeHtml(repo.language)}</span>`
       : '<span class="project-card__lang">—</span>';
 
-    const demoLink = repo.homepage
-      ? `<a href="${repo.homepage}" target="_blank" rel="noopener noreferrer" class="project-card__link">Live Demo ↗</a>`
+    const demoLink = demoUrl
+      ? `<a href="${escapeHtml(demoUrl)}" target="_blank" rel="noopener noreferrer" class="project-card__link">Live Demo ↗</a>`
       : "";
 
     card.innerHTML = `
       <div class="project-card__header">
-        <h3 class="project-card__name">${repo.name.replace(/[-_]/g, " ")}</h3>
+        <h3 class="project-card__name">${escapeHtml(repo.name.replace(/[-_]/g, " "))}</h3>
         <svg class="project-card__icon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
           <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1h-8a1 1 0 00-1 1v6.708A2.486 2.486 0 014.5 9h8V1.5zm-8 11h8v1.5h-8a1 1 0 110-2 .75.75 0 010 .5z"/>
         </svg>
       </div>
-      <p class="project-card__desc" data-repo-desc="${repo.name}">${desc}</p>
+      <p class="project-card__desc" data-repo-desc="${escapeHtml(repo.name)}">${escapeHtml(desc)}</p>
       <div class="project-card__footer">
         ${langHTML}
         <div class="project-card__links">
-          <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="project-card__link">Code ↗</a>
+          ${codeUrl ? `<a href="${escapeHtml(codeUrl)}" target="_blank" rel="noopener noreferrer" class="project-card__link">Code ↗</a>` : ""}
           ${demoLink}
         </div>
       </div>
@@ -372,6 +395,21 @@
      7b. HUGGING FACE MODELS & DATASETS
      ─────────────────────────────────────── */
   const HF_AUTHOR = "ISLAM-PO";
+  let hfTotalItems = 0;
+  let hfTotalDownloads = 0;
+
+  function renderHfSummary() {
+    const summary = document.getElementById("hf-summary");
+    if (!summary || !hfTotalItems) return;
+    const template =
+      window.portfolioI18n?.t("profiles.summary") ||
+      "{downloads} downloads across {count} public models and datasets — Arabic-first NLP and generative AI.";
+    summary.textContent = template
+      .replace(/\{downloads\}/g, hfTotalDownloads.toLocaleString("en-US"))
+      .replace(/\{count\}/g, String(hfTotalItems));
+  }
+
+  document.addEventListener("portfolio:langchange", renderHfSummary);
 
   function hfChip(item, kind) {
     const a = document.createElement("a");
@@ -402,8 +440,6 @@
       { key: "models", list: document.getElementById("hf-models"), count: document.getElementById("hf-models-count") },
       { key: "datasets", list: document.getElementById("hf-datasets"), count: document.getElementById("hf-datasets-count") },
     ];
-    let totalItems = 0;
-    let totalDownloads = 0;
 
     await Promise.all(
       groups.map(async ({ key, list, count }) => {
@@ -419,9 +455,9 @@
           list.innerHTML = "";
           items.forEach((item) => list.appendChild(hfChip(item, key)));
           if (count) count.textContent = `${items.length} public ${key}`;
-          totalItems += items.length;
+          hfTotalItems += items.length;
           items.forEach((item) => {
-            totalDownloads += Number(item.downloads) || 0;
+            hfTotalDownloads += Number(item.downloads) || 0;
           });
         } catch (err) {
           console.warn("Hugging Face fetch failed:", err.message);
@@ -429,11 +465,7 @@
       })
     );
 
-    const summary = document.getElementById("hf-summary");
-    if (summary && totalItems) {
-      summary.textContent =
-        `${totalDownloads.toLocaleString("en-US")} downloads across ${totalItems} public models and datasets — Arabic-first NLP and generative AI.`;
-    }
+    renderHfSummary();
   }
   fetchHFProjects();
 
@@ -521,22 +553,22 @@
       state === "merged" ? "Merged" : state === "open" ? "Open" : "Closed";
 
     const card = document.createElement("a");
-    card.href = url;
+    card.href = safeHttpUrl(url) || "#";
     card.target = "_blank";
     card.rel = "noopener noreferrer";
     card.className = "oss-card card--enter";
-    card.setAttribute("aria-label", `View contribution to ${repoDisplayName}`);
+    card.setAttribute("aria-label", "View contribution to " + repoDisplayName);
 
     card.innerHTML = `
       <span class="oss-card__arrow" aria-hidden="true">&#x2197;</span>
       <div class="oss-card__body">
-        <h3 class="oss-card__name">${repoDisplayName}</h3>
-        <p class="oss-card__subtitle">${subtitle}</p>
-        <p class="oss-card__desc">${title}</p>
+        <h3 class="oss-card__name">${escapeHtml(repoDisplayName)}</h3>
+        <p class="oss-card__subtitle">${escapeHtml(subtitle)}</p>
+        <p class="oss-card__desc">${escapeHtml(title)}</p>
       </div>
       <div class="oss-card__meta">
-        <span class="oss-card__tag">${owner}</span>
-        <span class="oss-card__badge oss-card__badge--${state}">${stateLabel}</span>
+        <span class="oss-card__tag">${escapeHtml(owner)}</span>
+        <span class="oss-card__badge oss-card__badge--${escapeHtml(state)}">${escapeHtml(stateLabel)}</span>
       </div>
     `;
     return card;
@@ -616,7 +648,7 @@
           state = "closed";
         }
 
-        const raw = item.title;
+        const raw = String(item.title || "");
         const title = raw.length > 100 ? raw.slice(0, 97) + "…" : raw;
 
         return {
@@ -1012,135 +1044,42 @@
   if (!heroSection) return; // Guard: only run on index.html
 
   /* ─────────────────────────────────────────
-     1. CANVAS PARTICLES BACKGROUND
+     1. DYNAMIC TEXT SPLITTING & STAGGERED REVEAL
      ───────────────────────────────────────── */
-  const canvas = document.getElementById("hero-canvas");
-  if (canvas) {
-    const ctx = canvas.getContext("2d");
-    let particles = [];
-    let animationFrameId;
-    let mouse = { x: null, y: null, radius: 160 };
+  // i18n swaps textContent on every [data-i18n] node, which wipes these spans.
+  // Keep the splitter public so it can run again after each language change.
+  function splitHeroWords() {
+    document.querySelectorAll(
+      ".hero__greeting.reveal, .hero__name.reveal, .hero__headline.reveal"
+    ).forEach((el) => {
+      // Guard against double-wrapping when called more than once.
+      if (el.querySelector(".reveal-word")) return;
 
-    // Resize canvas
-    function resizeCanvas() {
-      canvas.width = heroSection.offsetWidth;
-      canvas.height = heroSection.offsetHeight;
-      initParticles();
-    }
+      const words = el.textContent.trim().split(/\s+/).filter(Boolean);
+      if (!words.length) return;
 
-    class Particle {
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 2 + 1;
-        this.vx = (Math.random() - 0.5) * 0.35;
-        this.vy = (Math.random() - 0.5) * 0.35;
-      }
-      update() {
-        this.x += this.vx;
-        this.y += this.vy;
+      const fragment = document.createDocumentFragment();
+      words.forEach((word, idx) => {
+        const span = document.createElement("span");
+        span.className = "reveal-word";
+        span.textContent = word;
+        span.style.setProperty("--word-idx", idx);
+        fragment.appendChild(span);
 
-        // Bounce off walls
-        if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-
-        // Mouse interaction (gentle pull)
-        if (mouse.x !== null && mouse.y !== null) {
-          const dx = mouse.x - this.x;
-          const dy = mouse.y - this.y;
-          const dist = Math.hypot(dx, dy);
-          if (dist < mouse.radius) {
-            const force = (mouse.radius - dist) / mouse.radius;
-            this.x += (dx / dist) * force * 0.3;
-            this.y += (dy / dist) * force * 0.3;
-          }
+        if (idx < words.length - 1) {
+          fragment.appendChild(document.createTextNode(" "));
         }
-      }
-      draw() {
-        ctx.fillStyle = "rgba(114, 47, 55, 0.35)";
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-      }
-    }
-
-    function initParticles() {
-      const density = Math.floor((canvas.width * canvas.height) / 9500);
-      particles = [];
-      for (let i = 0; i < Math.min(density, 100); i++) {
-        particles.push(new Particle());
-      }
-    }
-
-    function animateParticles() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      // Update and draw particles
-      for (let i = 0; i < particles.length; i++) {
-        particles[i].update();
-        particles[i].draw();
-      }
-
-      // Draw connecting lines
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const dist = Math.hypot(dx, dy);
-
-          if (dist < 100) {
-            const alpha = ((100 - dist) / 100) * 0.07;
-            ctx.strokeStyle = `rgba(114, 47, 55, ${alpha})`;
-            ctx.lineWidth = 0.8;
-            ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.stroke();
-          }
-        }
-      }
-
-      animationFrameId = requestAnimationFrame(animateParticles);
-    }
-
-    // Event listeners
-    window.addEventListener("resize", resizeCanvas);
-    heroSection.addEventListener("mousemove", (e) => {
-      const rect = heroSection.getBoundingClientRect();
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
+      });
+      el.replaceChildren(fragment);
     });
-    heroSection.addEventListener("mouseleave", () => {
-      mouse.x = null;
-      mouse.y = null;
-    });
-
-    resizeCanvas();
-    animateParticles();
   }
 
-  /* ─────────────────────────────────────────
-     2. DYNAMIC TEXT SPLITTING & STAGGERED REVEAL
-     ───────────────────────────────────────── */
-  const revealElements = document.querySelectorAll(
-    ".hero__greeting.reveal, .hero__name.reveal, .hero__headline.reveal"
-  );
-  revealElements.forEach((el) => {
-    const originalText = el.textContent.trim();
-    const words = originalText.split(/\s+/);
-    el.innerHTML = "";
+  window.portfolioSplitHeroWords = splitHeroWords;
+  splitHeroWords();
 
-    words.forEach((word, idx) => {
-      const span = document.createElement("span");
-      span.className = "reveal-word";
-      span.textContent = word;
-      span.style.setProperty("--word-idx", idx);
-      el.appendChild(span);
-
-      if (idx < words.length - 1) {
-        el.appendChild(document.createTextNode(" "));
-      }
-    });
+  document.addEventListener("portfolio:langchange", () => {
+    // i18n has finished updating text by the time this event fires.
+    queueMicrotask(splitHeroWords);
   });
 
   /* ─────────────────────────────────────────

@@ -3823,9 +3823,19 @@ a.contact-card:hover .contact-card__arrow {
 }
 
 /* ═══════════════ Hugging Face chips ═══════════════ */
+/* Auto-fit keeps the models/datasets cards side by side on wide screens and
+   stacks them into one column on narrow screens (e.g. 360px viewports). */
+.hf-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 16px;
+}
+.hf-cards > * { min-width: 0; }
 .hf-item {
     display: inline-flex;
     align-items: center;
+    min-width: 0;
+    overflow-wrap: anywhere;
     gap: 7px;
     padding: 7px 11px;
     border: 1px solid var(--border);

@@ -38,7 +38,7 @@ function loadSections() {
 
   const files = ["README.md", "docs/full-stack.md", "docs/tech-stack.md",
     "docs/ai-integrations.md", "docs/defensive-security.md",
-    "docs/linux-systems.md", "docs/other-skills.md", "docs/full-stack.md",
+    "docs/linux-systems.md", "docs/other-skills.md",
     "docs/qa.md", "docs/certificates.md", "CONTRIBUTIONS.md"];
 
   const sections = [];

@@ -15,27 +15,37 @@ import { TOOLS, runTool, scopedTools } from "./_tools.mjs";
 import { ACTIVE } from "./_config.mjs";
 
 export const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
-export const DEFAULT_MODEL = "qwen/qwen3.8-27b";
+export const DEFAULT_MODEL = "llama-3.3-70b-versatile";
 
 const MAX_HISTORY = 16;          // client messages kept
 const MAX_USER_CHARS = 2000;     // per message
 const MAX_TOKENS = 700;
 const TEMPERATURE = 0.55;
-const MAX_TOOL_ROUNDS = 3;       // ground → record the plan → answer
+const MAX_TOOL_ROUNDS = 2;       // ground → record the plan → answer
 const RATE_LIMIT = 20;           // requests …
 const RATE_WINDOW_MS = 5 * 60e3; // … per 5 minutes, per IP
-const RETRY_ON_429_MS = 5000;    // wait before one retry when the provider throttles
+const RETRY_ON_429_MS = 1500;    // wait before one retry when the provider throttles
+const GROQ_TIMEOUT_MS = 6000;    // per-request timeout for the Groq fetch
 
 /* ── Rate limiting (best effort — serverless instances are ephemeral) ────── */
 const hits = new Map();
 
+/* On horizontally-scaled serverless every instance keeps its own bucket.
+   Production needs a shared store (Vercel KV) or edge rate limiting. */
 function rateLimited(ip) {
   const now = Date.now();
-  const list = (hits.get(ip) || []).filter((t) => now - t < RATE_WINDOW_MS);
+  /* Prune only expired entries — never wipe every bucket at once. */
+  for (const [key, times] of hits) {
+    const live = times.filter((t) => now - t < RATE_WINDOW_MS);
+    if (live.length) hits.set(key, live);
+    else hits.delete(key);
+  }
+  const list = hits.get(ip) || [];
+  /* Rejected requests must not be pushed: that would keep the bucket full. */
+  if (list.length >= RATE_LIMIT) return true;
   list.push(now);
   hits.set(ip, list);
-  if (hits.size > 5000) hits.clear();
-  return list.length > RATE_LIMIT;
+  return false;
 }
 
 function clientIp(req) {
@@ -45,8 +55,33 @@ function clientIp(req) {
 }
 
 /* ── CORS ────────────────────────────────────────────────────────────────── */
+/** Only same-origin requests and explicitly allowed origins are accepted. */
+function originAllowed(req) {
+  const origin = req.headers?.origin;
+  if (!origin) return true; // no Origin header: non-browser request, permitted
+
+  const allowed = (process.env.ALLOWED_ORIGINS || "")
+    .split(",")
+    .map((o) => o.trim())
+    .filter(Boolean);
+  if (allowed.includes(origin)) return true;
+
+  let parsed;
+  try {
+    parsed = new URL(origin);
+  } catch {
+    return false;
+  }
+  const hosts = [req.headers?.host, req.headers?.["x-forwarded-host"]]
+    .flatMap((value) => (typeof value === "string" ? value.split(",") : []))
+    .map((value) => value.trim())
+    .filter(Boolean);
+  return hosts.includes(parsed.host); // same-origin browser call
+}
+
 export function corsHeaders(req) {
-  const origin = req.headers?.origin || "*";
+  const origin = req.headers?.origin;
+  if (!origin || !originAllowed(req)) return {}; // no CORS headers for disallowed origins
   return {
     "Access-Control-Allow-Origin": origin,
     "Access-Control-Allow-Methods": "POST, OPTIONS",
@@ -63,7 +98,7 @@ function cleanMessages(raw) {
     .filter(
       (m) =>
         m &&
-        (m.role === "user" || m.role === "assistant") &&
+        m.role === "user" && // client-supplied assistant/tool messages are ignored
         typeof m.content === "string" &&
         m.content.trim(),
     )
@@ -90,42 +125,54 @@ async function readGroqStream(body, onContent) {
     const { done, value } = await reader.read();
     if (done) break;
     carry += decoder.decode(value, { stream: true });
+    carry = carry.replace(/\r\n/g, "\n"); // normalise CRLF before framing
+
+    /* A CR can land at the very end of a chunk; hold it until the next read. */
+    const danglingCR = carry.endsWith("\r");
+    if (danglingCR) carry = carry.slice(0, -1);
 
     let idx;
     while ((idx = carry.indexOf("\n\n")) !== -1) {
       const frame = carry.slice(0, idx);
       carry = carry.slice(idx + 2);
 
+      /* SSE allows a frame to span several data: lines — join them first. */
+      const dataLines = [];
       for (const line of frame.split("\n")) {
         if (!line.startsWith("data:")) continue;
-        const data = line.slice(5).trim();
-        if (!data || data === "[DONE]") continue;
+        let part = line.slice(5);
+        if (part.startsWith(" ")) part = part.slice(1);
+        dataLines.push(part);
+      }
+      const data = dataLines.join("\n").trim();
+      if (!data || data === "[DONE]") continue;
 
-        let json;
-        try {
-          json = JSON.parse(data);
-        } catch {
-          continue;
-        }
+      let json;
+      try {
+        json = JSON.parse(data);
+      } catch {
+        continue;
+      }
+      if (json.error) throw new Error("groq_stream_error");
 
-        const delta = json.choices?.[0]?.delta;
-        if (!delta) continue;
+      const delta = json.choices?.[0]?.delta;
+      if (!delta) continue;
 
-        if (typeof delta.content === "string" && delta.content) {
-          content += delta.content;
-          if (onContent) onContent(delta.content);
-        }
+      if (typeof delta.content === "string" && delta.content) {
+        content += delta.content;
+        if (onContent) onContent(delta.content);
+      }
 
-        for (const tc of delta.tool_calls || []) {
-          const i = tc.index ?? 0;
-          const cur = toolCalls.get(i) || { id: "", name: "", args: "" };
-          if (tc.id) cur.id = tc.id;
-          if (tc.function?.name) cur.name = tc.function.name;
-          if (tc.function?.arguments) cur.args += tc.function.arguments;
-          toolCalls.set(i, cur);
-        }
+      for (const tc of delta.tool_calls || []) {
+        const i = tc.index ?? 0;
+        const cur = toolCalls.get(i) || { id: "", name: "", args: "" };
+        if (tc.id) cur.id = tc.id;
+        if (tc.function?.name) cur.name = tc.function.name;
+        if (tc.function?.arguments) cur.args += tc.function.arguments;
+        toolCalls.set(i, cur);
       }
     }
+    if (danglingCR) carry += "\r";
   }
 
   return {
@@ -236,7 +283,24 @@ export async function handleChat(body, res, env = {}) {
     "X-Accel-Buffering": "no",
   });
 
-  const toolsEnabled = env.DISABLE_TOOLS !== "1" && env.DISABLE_TOOLS !== true;
+  /* Stop writing as soon as the browser goes away. */
+  let clientClosed = false;
+  res.on("close", () => { clientClosed = true; });
+  const write = (text) => {
+    if (!clientClosed && !res.writableEnded) res.write(text);
+  };
+  const finish = () => {
+    if (res.writableEnded) return; // [DONE] + end exactly once
+    if (!clientClosed) write("data: [DONE]\n\n");
+    res.end();
+  };
+  const failStream = (kind = "upstream_error") => {
+    write(`data: ${JSON.stringify({ t: "", error: kind })}\n\n`);
+    finish();
+  };
+
+  const disableTools = env.DISABLE_TOOLS ?? process.env.DISABLE_TOOLS;
+  const toolsEnabled = disableTools !== "1" && disableTools !== true;
   const usedTools = [];
 
   /* One Groq round.
@@ -275,6 +339,7 @@ export async function handleChat(body, res, env = {}) {
         method: "POST",
         headers,
         body: payload,
+        signal: AbortSignal.timeout(GROQ_TIMEOUT_MS),
       });
 
       if (upstream.status !== 429 || attempt >= 1) {
@@ -300,23 +365,28 @@ export async function handleChat(body, res, env = {}) {
   let answered = false;
 
   for (let round = 0; round < MAX_TOOL_ROUNDS; round++) {
+    if (clientClosed) return;
     let body;
     try {
       body = await callGroq(round);
     } catch (err) {
-      const kind = err.status === 429 ? "rate_limited" : "upstream_error";
-      res.write(`data: ${JSON.stringify({ t: "", error: kind })}\n\n`);
-      res.write("data: [DONE]\n\n");
-      res.end();
+      failStream(err.status === 429 ? "rate_limited" : "upstream_error");
       return;
     }
 
     /* Content is buffered: if this round turns out to be a tool call, the
        partial text is discarded instead of flashing on screen. */
     let buffer = "";
-    const { content, toolCalls: nativeCalls } = await readGroqStream(body, (chunk) => {
-      buffer += chunk;
-    });
+    let streamed;
+    try {
+      streamed = await readGroqStream(body, (chunk) => {
+        buffer += chunk;
+      });
+    } catch {
+      failStream("upstream_error");
+      return;
+    }
+    const { toolCalls: nativeCalls } = streamed;
 
     let toolCalls = nativeCalls;
     if (!toolCalls.length && buffer) {
@@ -328,7 +398,7 @@ export async function handleChat(body, res, env = {}) {
     }
 
     if (!toolCalls.length) {
-      if (buffer) res.write(`data: ${JSON.stringify({ t: buffer })}\n\n`);
+      if (buffer) write(`data: ${JSON.stringify({ t: buffer })}\n\n`);
       answered = true;
       break;
     }
@@ -341,6 +411,7 @@ export async function handleChat(body, res, env = {}) {
     });
 
     for (const call of toolCalls) {
+      if (clientClosed) return;
       let args = {};
       try {
         args = JSON.parse(call.function.arguments || "{}");
@@ -361,7 +432,7 @@ export async function handleChat(body, res, env = {}) {
          Forward it to the browser as its own event so the UI can render a
          checklist next to the answer. */
       if (call.function.name === "record_plan" && result && result.recorded) {
-        res.write(`data: ${JSON.stringify({ plan: result })}\n\n`);
+        write(`data: ${JSON.stringify({ plan: result })}\n\n`);
       }
 
       messages.push({
@@ -380,15 +451,21 @@ export async function handleChat(body, res, env = {}) {
       content:
         "Answer the visitor now, using the information you already retrieved. Do not request any more tools.",
     });
+    if (clientClosed) return;
     try {
       const body = await callGroq(MAX_TOOL_ROUNDS + 1); // no schema at all
       let buffer = "";
-      const { content } = await readGroqStream(body, (chunk) => {
-        buffer += chunk;
-      });
+      try {
+        await readGroqStream(body, (chunk) => {
+          buffer += chunk;
+        });
+      } catch {
+        failStream("upstream_error");
+        return;
+      }
       /* the model may still try to call a tool in text form — drop it */
       const clean = stripTextToolCalls(buffer);
-      res.write(
+      write(
         `data: ${JSON.stringify({
           t:
             clean ||
@@ -396,26 +473,31 @@ export async function handleChat(body, res, env = {}) {
         })}\n\n`
       );
     } catch (err) {
-      res.write(
-        `data: ${JSON.stringify({
-          t: "",
-          error: err.status === 429 ? "rate_limited" : "upstream_error",
-        })}\n\n`
-      );
+      failStream(err.status === 429 ? "rate_limited" : "upstream_error");
+      return;
     }
   }
 
-  res.write("data: [DONE]\n\n");
-  res.end();
+  finish();
 }
 
 /** Shared OPTIONS / rate-limit guard used by both entry points. */
 export function preflight(req, res) {
+  if (!originAllowed(req)) {
+    res.writeHead(403, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ error: "origin_not_allowed" }));
+    return;
+  }
   res.writeHead(204, corsHeaders(req));
   res.end();
 }
 
 export function guard(req, res) {
+  if (!originAllowed(req)) {
+    res.writeHead(403, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ error: "origin_not_allowed" }));
+    return true;
+  }
   if (rateLimited(clientIp(req))) {
     res.writeHead(429, { ...corsHeaders(req), "Content-Type": "application/json" });
     res.end(

@@ -37,7 +37,8 @@
     <!-- ═══════════════ NAVIGATION ═══════════════ -->
     <header class="nav" id="nav" role="banner">
         <div class="nav__inner container">
-            <a href="#" class="nav__logo" aria-label="Home">
+            <a href="#" class="nav__logo" aria-label="Home — Islam Al-Nasher aslamalkarywk7"
+                data-i18n-aria-label="nav.logoAria">
                 <svg class="nav__logo-icon" width="32" height="32" viewBox="0 0 100 100" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <!-- Hexagon frame -->
@@ -59,12 +60,13 @@
                 <a href="#about" class="nav__link" data-i18n="nav.about">About</a>
                 <a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a>
                 <a href="#certificates" class="nav__link" data-i18n="nav.certificates">Certificates</a>
-                <a href="#services" class="nav__link">Services</a>
+                <a href="#services" class="nav__link" data-i18n="nav.services">Services</a>
                 <a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a>
                 <a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a>
             </nav>
             <div class="nav__actions">
-                <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Toggle language" title="Switch language">
+                <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Switch language — عربي"
+                    title="Switch language" data-i18n-aria-label="lang.aria">
                     <span class="lang-toggle-btn__globe" aria-hidden="true">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"/>
@@ -99,10 +101,11 @@
                 <div class="hero__visual reveal">
                     <div class="hero__image-wrapper">
                         <div class="hero__image-glow"></div>
-                        <img class="hero__image" src="img/my.png" alt="Islam Al-Nasher — Web Developer"
+                        <img class="hero__image" src="img/my.webp" alt="Islam Al-Nasher — Web Developer"
                             width="320" height="320" loading="eager" />
                         <button class="hero__play" id="hero-play" type="button"
-                            aria-label="Watch introduction video" aria-haspopup="dialog">
+                            aria-label="Watch intro — watch the introduction video" aria-haspopup="dialog"
+                            data-i18n-aria-label="hero.playAria">
                             <span class="hero__play-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
                             </span>
@@ -125,9 +128,7 @@
                         <p data-i18n="about.p1" data-i18n-html>I'm <strong>Islam Al-Nasher</strong> (إسلام الناشر), a <strong>Full-Stack Developer (Next.js/TS/Prisma)</strong> from Egypt — I build websites & web apps, with AI integration and site hardening as supporting skills.</p>
                         <p data-i18n="about.p2" data-i18n-html>Full-Stack Web Developer <strong>2023 — Present (3 years)</strong>: <strong>business sites, stores, and custom web apps</strong> — plus Arabic-first AI for sites (chat assistants, content & translation) and website hardening. Open to full-time roles & freelance projects. MIS undergraduate, expected 2029.</p>
                         <p data-i18n="about.p3" data-i18n-html>My focus is <strong>full-stack web development</strong> and <strong>practical AI integration</strong>. Game dev, mobile and extra languages are side interests — the work I take on is web products built to last.</p>
-                        <div class="about__actions" style="margin-top: 24px;">
-                            <a href="https://github.com/aslamalkarywk7" class="btn btn--secondary" data-i18n="about.cv" target="_blank" rel="noopener">View CV</a>
-                        </div>
+                        <div class="about__actions" style="margin-top: 24px;"></div>
                     </div>
                     <div class="about__stats reveal">
                         <div class="about__stat">
@@ -176,15 +177,15 @@
         <!-- ═══════════════ PROFILES & DATASETS ═══════════════ -->
         <section class="profiles section" id="profiles" aria-label="Profiles and datasets">
             <div class="container">
-                <h2 class="section__title reveal">Profiles & Datasets</h2>
-                <p class="section__subtitle reveal">My AI work on Hugging Face — Arabic-first models and datasets, loaded live from the source.</p>
+                <h2 class="section__title reveal" data-i18n="profiles.title">Profiles &amp; Datasets</h2>
+                <p class="section__subtitle reveal" data-i18n="profiles.subtitle">My AI work on Hugging Face — Arabic-first models and datasets, loaded live from the source.</p>
                 <div class="reveal" style="display:grid;gap:16px">
                     <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
                         <a href="https://huggingface.co/ISLAM-PO" target="_blank" rel="noopener" class="btn btn--primary">Hugging Face — ISLAM-PO</a>
                         <a href="https://aslamalkarywk7.github.io/aslamalkarywk7/" target="_blank" rel="noopener" class="btn btn--secondary">Portfolio</a>
                         <a href="https://dev.to/islam_alnashera_19f64a4e" target="_blank" rel="noopener" class="btn btn--secondary">dev.to — articles & research</a>
                     </div>
-                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <div class="hf-cards">
                         <div style="border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--card)">
                             <h3 style="margin:0 0 8px">🤖 Models <span id="hf-models-count" style="font-weight:400;font-size:12px;color:var(--muted)">8 public models</span></h3>
                             <p id="hf-models" class="hf-list" style="margin:0;display:flex;flex-wrap:wrap;gap:8px">
@@ -221,7 +222,7 @@
                 <h2 class="section__title reveal" data-i18n="oss.title">Open Source Impact</h2>
                 <p class="section__subtitle reveal" data-i18n="oss.subtitle">Real pull requests fetched live from the GitHub API — every card links directly to the actual contribution.</p>
                 <!-- oss-cards is populated entirely by script.js -->
-                <div class="oss-grid" id="oss-cards" aria-live="polite" aria-label="Open source contributions list">
+                <div class="oss-grid" id="oss-cards" role="list" aria-live="polite" aria-label="Open source contributions list">
                     <!-- ── Skeleton placeholders (replaced by JS) ──── -->
                     <div class="oss-card oss-card--skel" aria-hidden="true">
                         <div class="oss-skel oss-skel--title"></div>
@@ -807,9 +808,9 @@
         <section class="services section" id="services" aria-label="Full-Stack services">
             <div class="container">
                 <div class="services__head reveal">
-                    <span class="services__eyebrow">WHAT I CAN DO FOR YOU</span>
-                    <h2 class="section__title">Full-Stack Services</h2>
-                    <p class="section__subtitle">Practical help with clear scope and real deliverables.</p>
+                    <span class="services__eyebrow" data-i18n="services.eyebrow">WHAT I CAN DO FOR YOU</span>
+                    <h2 class="section__title" data-i18n="services.title">Full-Stack Services</h2>
+                    <p class="section__subtitle" data-i18n="services.subtitle">Practical help with clear scope and real deliverables.</p>
                 </div>
                 <div class="services__grid">
                     <article class="service-card reveal">
@@ -817,8 +818,8 @@
                             <span class="service-card__icon" aria-hidden="true">🌐</span>
                             <span class="service-card__num" aria-hidden="true">01</span>
                         </div>
-                        <h3 class="service-card__title">Business websites, portfolios &amp; stores</h3>
-                        <p class="service-card__desc">React / Next.js / Node.js — the stack I use every day.</p>
+                        <h3 class="service-card__title" data-i18n="services.s1title">Business websites, portfolios &amp; stores</h3>
+                        <p class="service-card__desc" data-i18n="services.s1desc">React / Next.js / Node.js — the stack I use every day.</p>
                         <span class="service-card__accent" aria-hidden="true"></span>
                     </article>
                     <article class="service-card reveal">
@@ -826,8 +827,8 @@
                             <span class="service-card__icon" aria-hidden="true">🤖</span>
                             <span class="service-card__num" aria-hidden="true">02</span>
                         </div>
-                        <h3 class="service-card__title">Arabic-first AI for your site</h3>
-                        <p class="service-card__desc">Chat assistants, content and translation — built for real users, not experiments.</p>
+                        <h3 class="service-card__title" data-i18n="services.s2title">Arabic-first AI for your site</h3>
+                        <p class="service-card__desc" data-i18n="services.s2desc">Chat assistants, content and translation — built for real users, not experiments.</p>
                         <span class="service-card__accent" aria-hidden="true"></span>
                     </article>
                     <article class="service-card reveal">
@@ -835,8 +836,8 @@
                             <span class="service-card__icon" aria-hidden="true">🔒</span>
                             <span class="service-card__num" aria-hidden="true">03</span>
                         </div>
-                        <h3 class="service-card__title">Website hardening &amp; protection</h3>
-                        <p class="service-card__desc">Audits, fixes and monitoring against common attacks — I harden the products I build.</p>
+                        <h3 class="service-card__title" data-i18n="services.s3title">Website hardening &amp; protection</h3>
+                        <p class="service-card__desc" data-i18n="services.s3desc">Audits, fixes and monitoring against common attacks — I harden the products I build.</p>
                         <span class="service-card__accent" aria-hidden="true"></span>
                     </article>
                     <article class="service-card reveal">
@@ -844,8 +845,8 @@
                             <span class="service-card__icon" aria-hidden="true">🐧</span>
                             <span class="service-card__num" aria-hidden="true">04</span>
                         </div>
-                        <h3 class="service-card__title">Linux &amp; Deploy</h3>
-                        <p class="service-card__desc">Bash, Docker, GitHub Actions CI, Nginx / Vercel — from code to live product. <a href="https://github.com/aslamalkarywk7/aslamalkarywk7/blob/main/CONTRIBUTIONS.md">Open-source work on GitHub ↗</a></p>
+                        <h3 class="service-card__title" data-i18n="services.s4title">Linux &amp; Deploy</h3>
+                        <p class="service-card__desc"><span data-i18n="services.s4desc">Bash, Docker, GitHub Actions CI, Nginx / Vercel — from code to live product.</span> <a href="https://github.com/aslamalkarywk7/aslamalkarywk7/blob/main/CONTRIBUTIONS.md" data-i18n="services.s4link">Open-source work on GitHub ↗</a></p>
                         <span class="service-card__accent" aria-hidden="true"></span>
                     </article>
                 </div>
@@ -950,7 +951,8 @@
                 <div class="contact-hub__left">
                     <!-- Email Card — entire card is a mailto link -->
                     <a href="mailto:aslamalkarywka@gmail.com" class="contact-card contact-card--email reveal"
-                        aria-label="Send email to Islam Al-Nasher">
+                        aria-label="Drop an Email aslamalkarywka@gmail.com — send email to Islam Al-Nasher"
+                        data-i18n-aria-label="contact.email.aria">
                         <div class="contact-card__icon-wrap" aria-hidden="true">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
@@ -1001,7 +1003,7 @@
 
                             <!-- Hugging Face -->
                             <a href="https://huggingface.co/ISLAM-PO" target="_blank" rel="noopener noreferrer"
-                                class="social-row social-row--active" aria-label="Hugging Face profile">
+                                class="social-row social-row--active" aria-label="Hugging Face — ISLAM-PO profile">
                                 <span class="social-row__icon" aria-hidden="true" style="font-weight:700;font-size:14px">🤖</span>
                                 <span class="social-row__name">Hugging Face — ISLAM-PO</span>
                                 <span class="social-row__arrow" aria-hidden="true">&#x2197;</span>
@@ -1009,7 +1011,7 @@
 
                             <!-- Portfolio -->
                             <a href="https://aslamalkarywk7.github.io/aslamalkarywk7/" target="_blank" rel="noopener noreferrer"
-                                class="social-row social-row--active" aria-label="Portfolio site">
+                                class="social-row social-row--active" aria-label="Portfolio — live site — open portfolio">
                                 <span class="social-row__icon" aria-hidden="true" style="font-weight:700;font-size:14px">🌐</span>
                                 <span class="social-row__name">Portfolio — live site</span>
                                 <span class="social-row__arrow" aria-hidden="true">&#x2197;</span>
@@ -1017,7 +1019,7 @@
 
                             <!-- dev.to -->
                             <a href="https://dev.to/islam_alnashera_19f64a4e" target="_blank" rel="noopener noreferrer"
-                                class="social-row social-row--active" aria-label="dev.to articles">
+                                class="social-row social-row--active" aria-label="DEV — dev.to — articles &amp; research — read articles">
                                 <span class="social-row__icon" aria-hidden="true" style="font-weight:700;font-size:12px;letter-spacing:-0.5px">DEV</span>
                                 <span class="social-row__name">dev.to — articles & research</span>
                                 <span class="social-row__arrow" aria-hidden="true">&#x2197;</span>
@@ -1083,9 +1085,9 @@
             <!-- ── Personal identity + Copyright ──────────────────────── -->
             <div class="footer-bottom">
                 <!-- Developer identity badge: portrait + name -->
-                <div class="footer-identity" aria-label="Islam Al-Nasher, Developer">
+                <div class="footer-identity" role="group" aria-label="Islam Al-Nasher — Developer — identity badge">
                     <div class="footer-identity__portrait">
-                        <img src="img/my.png" alt="Islam Al-Nasher — Web &amp; Game Developer" loading="lazy" width="52"
+                        <img src="img/my.webp" alt="Islam Al-Nasher — Web &amp; Game Developer" loading="lazy" width="52"
                             height="52" />
                     </div>
                     <span class="footer-identity__name">Islam Al-Nasher — Developer</span>
@@ -1099,7 +1101,8 @@
     <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title" hidden>
         <div class="video-modal__backdrop" data-video-close></div>
         <div class="video-modal__panel">
-            <button class="video-modal__close" type="button" data-video-close aria-label="Close video">
+            <button class="video-modal__close" type="button" data-video-close aria-label="Close video"
+                data-i18n-aria-label="video.close">
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
             </button>
             <h2 class="video-modal__title" id="video-modal-title" data-i18n="video.title">Introduction — Islam Al-Nasher</h2>

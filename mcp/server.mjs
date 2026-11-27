@@ -50,11 +50,11 @@ function send(message) {
 }
 
 function ok(id, result) {
-  send({ jsonrpc: "2.0", id, result });
+  return { jsonrpc: "2.0", id, result };
 }
 
 function fail(id, code, message) {
-  send({ jsonrpc: "2.0", id, error: { code, message } });
+  return { jsonrpc: "2.0", id, error: { code, message } };
 }
 
 /* ── tool schema conversion: OpenAI function → MCP ──────────────────────── */
@@ -67,8 +67,21 @@ function toMcpTools() {
 }
 
 /* ── method handlers ────────────────────────────────────────────────────── */
+/* Return the reply instead of writing it, so batches can be sent as one
+   JSON array. An unexpected throw can never crash the stdio loop. */
 async function handle(msg) {
-  const { id, method, params } = msg;
+  try {
+    return await handleRequest(msg);
+  } catch {
+    return fail(msg?.id ?? null, -32603, "Internal error");
+  }
+}
+
+async function handleRequest(msg) {
+  const { id, method, params } = msg || {};
+
+  /* Messages with an id but no method are client responses, not requests. */
+  if (id !== undefined && method === undefined) return null;
 
   switch (method) {
     case "initialize": {
@@ -133,23 +146,34 @@ async function handle(msg) {
 const rl = readline.createInterface({ input: process.stdin, terminal: false });
 
 rl.on("line", async (line) => {
-  const text = line.trim();
-  if (!text) return;
-
-  let msg;
   try {
-    msg = JSON.parse(text);
+    const text = line.trim();
+    if (!text) return;
+
+    let msg;
+    try {
+      msg = JSON.parse(text);
+    } catch {
+      send(fail(null, -32700, "Parse error"));
+      return;
+    }
+
+    // Batches (array of messages) get ONE JSON array response.
+    if (Array.isArray(msg)) {
+      const results = [];
+      for (const one of msg) {
+        const reply = await handle(one);
+        if (reply) results.push(reply); // notifications produce no reply
+      }
+      send(results);
+      return;
+    }
+
+    const reply = await handle(msg);
+    if (reply) send(reply);
   } catch {
-    return fail(null, -32700, "Parse error");
+    send({ jsonrpc: "2.0", id: null, error: { code: -32603, message: "Internal error" } });
   }
-
-  // Batches (array of messages) are part of JSON-RPC.
-  if (Array.isArray(msg)) {
-    for (const one of msg) await handle(one);
-    return;
-  }
-
-  await handle(msg);
 });
 
 rl.on("close", () => process.exit(0));

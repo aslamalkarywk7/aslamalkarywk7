@@ -360,8 +360,15 @@ import { CERTIFICATES as CERTIFICATE_LIST } from "./data/certificates.mjs";
   function onKeydown(e) {
     if (!lb || lb.root.hidden) return;
     if (e.key === "Escape") closeLightbox();
-    else if (e.key === "ArrowLeft") stepLightbox(-1);
-    else if (e.key === "ArrowRight") stepLightbox(1);
+    else if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+      // The nav buttons are visually flipped in RTL, so flip the keys too.
+      const dirEl = lb.root.closest("[dir]");
+      const isRtl =
+        (dirEl && dirEl.getAttribute("dir") === "rtl") ||
+        document.documentElement.dir === "rtl";
+      const forward = (e.key === "ArrowRight") !== isRtl;
+      stepLightbox(forward ? 1 : -1);
+    }
   }
 
   /* ─────────────────────────────────────────

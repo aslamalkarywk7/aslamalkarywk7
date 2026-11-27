@@ -30,6 +30,7 @@ export default async function handler(req, res) {
   return handleChat(body, res, {
     GROQ_API_KEY: process.env.GROQ_API_KEY,
     GROQ_MODEL: process.env.GROQ_MODEL,
+    DISABLE_TOOLS: process.env.DISABLE_TOOLS,
   });
 }
 
