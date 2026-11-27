@@ -4332,3 +4332,72 @@ a.contact-card:hover .contact-card__arrow {
 .work__grid {
     gap: 18px;
 }
+
+/* ── Editorial section labels ─────────────────────────────── */
+.section__eyebrow {
+    display: block;
+    margin-bottom: 12px;
+    font: 700 10px/1 var(--mono);
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--accent-light);
+}
+[dir="rtl"] .section__eyebrow {
+    letter-spacing: 0;
+    font-size: 11px;
+}
+
+/* ── Soft light sweep on hover (no extra boxes, no layout overflow) ── */
+.service-card,
+.about__stat,
+.work-card,
+.cert-card {
+    background-size: 220% 100%, auto;
+    background-position: 0% 0;
+    transition:
+        transform 0.28s ease,
+        border-color 0.28s ease,
+        box-shadow 0.28s ease,
+        background-position 0.8s ease;
+}
+.service-card:hover,
+.about__stat:hover,
+.work-card:hover,
+.cert-card:hover {
+    background-position: 100% 0;
+}
+
+/* ── Refined details ──────────────────────────────────────── */
+.about__stat-number {
+    background: linear-gradient(135deg, var(--accent-light), #d98a92);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.skill-card__icon,
+.project-card__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(180, 86, 95, 0.24);
+    background: rgba(114, 47, 55, 0.12);
+    color: var(--accent-light);
+}
+.project-card__icon {
+    padding: 10px;
+    box-sizing: border-box;
+}
+.skill-card__icon {
+    margin: 0 auto;
+}
+.work-card__tag,
+.oss-card__tag,
+.cert-card__tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(114, 47, 55, 0.12);
+    border: 1px solid rgba(180, 86, 95, 0.22);
+}

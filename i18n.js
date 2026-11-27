@@ -161,6 +161,15 @@ const translations = {
         "contact.success":     "Opening your email app — message addressed to me, just press send!",
         "footer.rights":       "Islam Al-Nasher. All rights reserved.",
 
+        // ── Section eyebrows ───────────────────────────────────
+        "eyebrow.about":     "01 / PROFILE",
+        "eyebrow.profiles":  "02 / AI WORK",
+        "eyebrow.oss":       "03 / OPEN SOURCE",
+        "eyebrow.skills":    "04 / CAPABILITIES",
+        "eyebrow.certs":     "05 / CREDENTIALS",
+        "eyebrow.projects":  "06 / REPOSITORIES",
+        "eyebrow.work":      "07 / CASE STUDIES",
+
         // ── Lang button ─────────────────────────────────────────
         "lang.btn": "عربي",
         "lang.aria": "Switch language — عربي",
@@ -322,6 +331,15 @@ const translations = {
         "contact.form.btn":    "إرسال الرسالة",
         "contact.success":     "جاري فتح تطبيق البريد — الرسالة موجهة إليّ، اضغط إرسال!",
         "footer.rights":       "اسلام النشار. جميع الحقوق محفوظة.",
+
+        // ── Section eyebrows ───────────────────────────────────
+        "eyebrow.about":     "٠١ / نبذة",
+        "eyebrow.profiles":  "٠٢ / أعمال الذكاء الاصطناعي",
+        "eyebrow.oss":       "٠٣ / المصادر المفتوحة",
+        "eyebrow.skills":    "٠٤ / القدرات",
+        "eyebrow.certs":     "٠٥ / الشهادات",
+        "eyebrow.projects":  "٠٦ / المستودعات",
+        "eyebrow.work":      "٠٧ / دراسات الحالة",
 
         // ── Lang button ─────────────────────────────────────────
         "lang.btn": "English",
